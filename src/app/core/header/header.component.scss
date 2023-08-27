@@ -1,0 +1,43 @@
+/* Navbar */
+.navbar {
+  background-color: transparent;
+}
+/* Navbar */
+
+/* Hamburger icon */
+.hamburger {
+  line-height: 1;
+  background-color: var(--bgColor);
+}
+
+.hamburger-box {
+  display: block;
+}
+/* Hamburger icon */
+
+/* ng-select flags */
+::ng-deep {
+  &.ng-select-container {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  &.ng-dropdown-panel {
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    border: 0 !important;
+  }
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+}
+/* ng-select flags */
