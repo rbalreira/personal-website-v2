@@ -1,4 +1,12 @@
-svg {
-    width: 150px;
-    height: 50px;
+.logo {
+  width: 150px;
+  height: 50px;
+
+  polygon {
+    fill: var(--logo-fill);
+  }
+
+  path {
+    fill: var(--logo-fill);
+  }
 }

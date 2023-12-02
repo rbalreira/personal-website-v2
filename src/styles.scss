@@ -1,16 +1,15 @@
+@charset 'utf-8';
+
 /* You can add global styles to this file, and also import other style files */
 
-/* Importing Dark Mode theme */
-@import "../styles/themes/dark-theme.scss";
-
-/* Importing Light Mode theme */
-@import "../styles/themes/light-theme.scss";
+/* Importing Bootstrap SCSS file. */
+@use "./assets/scss/index" as i;
 
 /* Importing Bootstrap SCSS file. */
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap";
 
 /* Importing Hamburgers SCSS file */
-@import "hamburgers/_sass/hamburgers/hamburgers.scss";
+@use "hamburgers/_sass/hamburgers/hamburgers.scss";
 
 /* Importing ng-select CSS file */
 @import "~@ng-select/ng-select/themes/default.theme.css";
@@ -19,14 +18,9 @@
 @import "flag-icon-css/sass/flag-icons.scss";
 
 body.dark {
-  @include darken();
+  @include i.dark-mode();
 }
 
 body.light {
-  @include lighten();
-}
-
-body {
-  background-color: var(--bgColor);
-  color: var(--textColor);
+  @include i.light-mode();
 }

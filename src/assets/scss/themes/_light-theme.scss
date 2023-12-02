@@ -1,0 +1,14 @@
+$bgColor_light: hsl(360, 100%, 100%);
+$textColor_light: hsl(0, 0%, 0%);
+$borderColor_light: hsl(0, 0%, 0%);
+$logoFill_light: hsl(0, 0%, 0%);
+$hamburgerColor_light: hsl(0, 0%, 0%);
+
+// mixin that enables css variables in light mode
+@mixin light-mode() {
+  background-color: #{$bgColor_light};
+  color: #{$textColor_light};
+  border-color: #{$borderColor_light};
+  --logo-fill: #{$logoFill_light};
+  --hamburger-color: #{$hamburgerColor_light};
+}

@@ -7,11 +7,16 @@
 /* Hamburger icon */
 .hamburger {
   line-height: 1;
-  background-color: var(--bgColor);
 }
 
 .hamburger-box {
   display: block;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: var(--hamburger-color) !important;
 }
 /* Hamburger icon */
 

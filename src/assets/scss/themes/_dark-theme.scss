@@ -1,0 +1,14 @@
+$bgColor_dark: hsl(0, 0%, 0%);
+$textColor_dark: hsl(360, 100%, 100%);
+$borderColor_dark: hsl(360, 100%, 100%);
+$logoFill_dark: hsl(360, 100%, 100%);
+$hamburgerColor_dark: hsl(360, 100%, 100%);
+
+// mixin that enables css variables in dark mode
+@mixin dark-mode() {
+  background-color: #{$bgColor_dark};
+  color: #{$textColor_dark};
+  border-color: #{$borderColor_dark};
+  --logo-fill: #{$logoFill_dark};
+  --hamburger-color: #{$hamburgerColor_dark};
+}
