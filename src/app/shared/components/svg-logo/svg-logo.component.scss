@@ -1,12 +1,11 @@
 .logo {
-  width: 150px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 
-  polygon {
-    fill: var(--logo-fill);
-  }
-
-  path {
+  ellipse,
+  #{&}-path3,
+  #{&}-path4,
+  #{&}-path5 {
     fill: var(--logo-fill);
   }
 }

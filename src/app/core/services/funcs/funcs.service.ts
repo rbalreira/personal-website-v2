@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { DayNightModeToggleService } from '@app/shared/components/day-night-mode-toggle/day-night-mode-toggle.service';
-import { Mode } from '@app/shared/components/day-night-mode-toggle/day-night-mode-toggle.model';
+import { DayNightModeToggleService } from '@app/features/day-night-mode-toggle/services/day-night-mode-toggle.service';
+import { Mode } from '@app/features/day-night-mode-toggle/models/day-night-mode-toggle.model';
 
 @Injectable({
   providedIn: 'root',

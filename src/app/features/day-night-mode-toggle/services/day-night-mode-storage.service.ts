@@ -1,5 +1,5 @@
 import { Injectable, InjectionToken } from '@angular/core';
-import { Mode } from './day-night-mode-toggle.model';
+import { Mode } from '../models/day-night-mode-toggle.model';
 
 /**
  * Injection Token for ModeStorage

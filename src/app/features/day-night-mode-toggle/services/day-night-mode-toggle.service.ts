@@ -5,7 +5,7 @@ import {
   ModeStorage,
   MODE_STORAGE_SERVICE,
 } from './day-night-mode-storage.service';
-import { Mode } from './day-night-mode-toggle.model';
+import { Mode } from '../models/day-night-mode-toggle.model';
 
 /**
  * Angular service that provides the mode toggle feature.

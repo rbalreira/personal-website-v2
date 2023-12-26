@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DayNightModeToggleComponent } from './day-night-mode-toggle.component';
+import { DayNightModeToggleComponent } from './components/day-night-mode-toggle.component';
 
 describe('DayNightToggleSwitchComponent', () => {
   let component: DayNightModeToggleComponent;
