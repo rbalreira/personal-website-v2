@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from '@app/shared/shared.module';
 import { FeaturesModule } from '@app/features/features.module';
-import { throwIfAlreadyLoaded } from './module-import-guard';
+import { throwIfAlreadyLoaded } from './guards/module-import-guard';
 
 import { HeaderComponent } from './components/header/header.component';
 
