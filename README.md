@@ -29,3 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Support
 
 [Folder Structure](https://medium.com/@shijin_nath/angular-right-file-structure-and-best-practices-that-help-to-scale-2020-52ce8d967df5)
+[Re-importing the CoreModule Prevention](https://github.com/mgechev/angular-seed/blob/master/src/client/app/core/module-import-guard.ts)
+[Sass Guidelines](https://sass-guidelin.es/)
