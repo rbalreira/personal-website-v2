@@ -14,7 +14,11 @@
   h1 {
     font-weight: bold;
     font-family: "FontSignature";
-    animation: 2s anim-lineUp ease-out;
+    animation: anim-lineUp linear 3s backwards;
+  }
+
+  p {
+    animation: anim-lineUp linear 3s 1s backwards;
   }
 }
 

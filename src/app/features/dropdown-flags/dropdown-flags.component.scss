@@ -1,0 +1,24 @@
+/**
+ * Helper class to make the dropdown flags hoverable with transition.
+ */
+.dropdown-flags {
+  &-toggle:first-child:active {
+    border-color: transparent;
+  }
+
+  /**
+  * Min-width override of dropdown menu to fit the content.
+  */
+  &-menu {
+    min-width: 1rem;
+    transition: all 0.4s;
+    overflow: hidden;
+    transform-origin: top center;
+    transform: scale(1, 0);
+    display: block;
+  }
+
+  &:hover &-menu {
+    transform: scale(1);
+  }
+}

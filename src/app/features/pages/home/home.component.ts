@@ -1,17 +1,13 @@
-import { DayNightModeToggleService } from '@app/features/day-night-mode-toggle/services/day-night-mode-toggle.service';
-import { FuncsService } from '@app/core/services/funcs/funcs.service';
-
-import { bootstrapApplication } from '@angular/platform-browser';
-import { provideAnimations } from '@angular/platform-browser/animations';
 import { Component } from '@angular/core';
 
+import { DayNightModeToggleService } from '@app/features/day-night-mode-toggle/services/day-night-mode-toggle.service';
+import { FuncsService } from '@app/core/services/funcs/funcs.service';
 import { Mode } from '@app/features/day-night-mode-toggle/models/day-night-mode-toggle.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  animations: [],
 })
 export class HomeComponent {
   title = 'portfolio-website';
@@ -33,7 +29,3 @@ export class HomeComponent {
     });
   }
 }
-
-bootstrapApplication(HomeComponent, {
-  providers: [provideAnimations()],
-});

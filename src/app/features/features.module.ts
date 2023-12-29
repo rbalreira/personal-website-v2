@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@app/shared/shared.module';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {
   DayNightModeStorageService,
@@ -11,9 +12,15 @@ import { DayNightModeToggleService } from './day-night-mode-toggle/services/day-
 import { AboutMeComponent } from './about-me/components/about-me.component';
 import { DayNightModeToggleComponent } from './day-night-mode-toggle/components/day-night-mode-toggle.component';
 import { IntroComponent } from './intro/components/intro.component';
+import { DropdownFlagsComponent } from './dropdown-flags/dropdown-flags.component';
 
 @NgModule({
-  declarations: [AboutMeComponent, DayNightModeToggleComponent, IntroComponent],
+  declarations: [
+    AboutMeComponent,
+    DayNightModeToggleComponent,
+    IntroComponent,
+    DropdownFlagsComponent,
+  ],
   providers: [
     DayNightModeToggleService,
     {
@@ -21,7 +28,12 @@ import { IntroComponent } from './intro/components/intro.component';
       useClass: DayNightModeStorageService,
     },
   ],
-  imports: [CommonModule, SharedModule],
-  exports: [AboutMeComponent, DayNightModeToggleComponent, IntroComponent],
+  imports: [CommonModule, SharedModule, NgbDropdownModule],
+  exports: [
+    AboutMeComponent,
+    DayNightModeToggleComponent,
+    IntroComponent,
+    DropdownFlagsComponent,
+  ],
 })
 export class FeaturesModule {}
