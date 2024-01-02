@@ -38,7 +38,6 @@
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
     "@ng-bootstrap/ng-bootstrap": "^15.0.1",
-    "@ng-select/ng-select": "^11.0.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "flag-icon-css": "^4.1.7",
