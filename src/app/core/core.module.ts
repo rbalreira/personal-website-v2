@@ -2,7 +2,6 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NgSelectModule } from '@ng-select/ng-select';
 
 import { SharedModule } from '@app/shared/shared.module';
 import { FeaturesModule } from '@app/features/features.module';
@@ -18,7 +17,6 @@ import { FuncsService } from './services/funcs/funcs.service';
     CommonModule,
     SharedModule,
     FeaturesModule,
-    NgSelectModule,
     FormsModule,
   ],
   declarations: [HeaderComponent],
