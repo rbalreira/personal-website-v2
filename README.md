@@ -31,3 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Folder Structure](https://medium.com/@shijin_nath/angular-right-file-structure-and-best-practices-that-help-to-scale-2020-52ce8d967df5)
 [Re-importing the CoreModule Prevention](https://github.com/mgechev/angular-seed/blob/master/src/client/app/core/module-import-guard.ts)
 [Sass Guidelines](https://sass-guidelin.es/)
+[Sass configuration paths Angular.json](https://dev.to/danywalls/how-to-simplify-and-clean-your-sass-import-with-angular-json-57pg)
+[Angular docs](https://angular.io/docs)
+[Bootstrap docs](https://getbootstrap.com/docs/4.1)
+[Ng Boostrap](https://ng-bootstrap.github.io/#/getting-started)
+[Sass @use and @forward explanation](https://www.youtube.com/watch?v=CR-a8upNjJ0)
