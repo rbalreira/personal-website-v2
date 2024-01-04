@@ -1,14 +1,18 @@
-$bgColor_dark: hsl(0, 0%, 0%);
-$textColor_dark: hsl(360, 100%, 100%);
-$borderColor_dark: hsl(360, 100%, 100%);
-$logoFill_dark: hsl(15, 49%, 78%);
-$hamburgerColor_dark: hsl(360, 100%, 100%);
+$bg-color_dark: hsl(0, 0%, 0%);
+$text-color_dark: hsl(360, 100%, 100%);
+$border-color_dark: hsl(360, 100%, 100%);
+$logo-fill_dark: hsl(15, 49%, 78%);
+$hamburger-color_dark: hsl(360, 100%, 100%);
+$nav-menu-bg-color_dark: hsl(0, 0%, 0%);
+$hamburger-hover-color_dark: rgb(84, 18, 18);
 
 // mixin that enables css variables in dark mode
 @mixin dark-mode() {
-  background-color: #{$bgColor_dark};
-  color: #{$textColor_dark};
-  border-color: #{$borderColor_dark};
-  --logo-fill: #{$logoFill_dark};
-  --hamburger-color: #{$hamburgerColor_dark};
+  background-color: #{$bg-color_dark};
+  color: #{$text-color_dark};
+  border-color: #{$border-color_dark};
+  --logo-fill: #{$logo-fill_dark};
+  --hamburger-color: #{$hamburger-color_dark};
+  --nav-menu-bg-color: #{$nav-menu-bg-color_dark};
+  --hamburger-hover-color: #{$hamburger-hover-color_dark};
 }

@@ -13,6 +13,7 @@ import { AboutMeComponent } from './about-me/components/about-me.component';
 import { DayNightModeToggleComponent } from './day-night-mode-toggle/components/day-night-mode-toggle.component';
 import { IntroComponent } from './intro/components/intro.component';
 import { DropdownFlagsComponent } from './dropdown-flags/dropdown-flags.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { DropdownFlagsComponent } from './dropdown-flags/dropdown-flags.componen
     DayNightModeToggleComponent,
     IntroComponent,
     DropdownFlagsComponent,
+    NavMenuComponent,
   ],
   providers: [
     DayNightModeToggleService,
@@ -34,6 +36,7 @@ import { DropdownFlagsComponent } from './dropdown-flags/dropdown-flags.componen
     DayNightModeToggleComponent,
     IntroComponent,
     DropdownFlagsComponent,
+    NavMenuComponent,
   ],
 })
 export class FeaturesModule {}

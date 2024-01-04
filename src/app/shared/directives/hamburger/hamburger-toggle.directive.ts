@@ -1,7 +1,7 @@
 import { Directive, HostBinding, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appHamburgerToggle]'
+  selector: '[appHamburgerToggle]',
 })
 export class HamburgerToggleDirective {
   @HostBinding('class.is-active')

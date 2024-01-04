@@ -36,3 +36,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Bootstrap docs](https://getbootstrap.com/docs/4.1)
 [Ng Boostrap](https://ng-bootstrap.github.io/#/getting-started)
 [Sass @use and @forward explanation](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+[CSS Clamp()](https://blog.bitsrc.io/css-clamp-the-responsive-combination-weve-all-been-waiting-for-f1ce1981ea6e)

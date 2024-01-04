@@ -1,5 +1,7 @@
+@use "abstracts" as a;
+
 /**
- * Helper class to make the dropdown flags hoverable with transition.
+ * Helper class to make the dropdown flags hoverable and with transition.
  */
 .dropdown-flags {
   &-toggle:first-child:active {
@@ -11,14 +13,19 @@
   */
   &-menu {
     min-width: 1rem;
-    transition: all 0.4s;
-    overflow: hidden;
-    transform-origin: top center;
-    transform: scale(1, 0);
-    display: block;
+
+    @include a.respond-to("small") {
+      transition: all 0.4s;
+      overflow: hidden;
+      transform-origin: top center;
+      transform: scale(1, 0);
+      display: block;
+    }
   }
 
-  &:hover &-menu {
-    transform: scale(1);
+  @include a.respond-to("small") {
+    &:hover &-menu {
+      transform: scale(1);
+    }
   }
 }

@@ -1,0 +1,17 @@
+@use "abstracts" as a;
+
+.container-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  & .toggle {
+    display: block;
+  }
+}
+
+@include a.respond-to("extra-small") {
+  .container-bottom .toggle {
+    display: none;
+  }
+}

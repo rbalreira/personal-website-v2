@@ -1,0 +1,30 @@
+// Breakpoints to use for Responsive Web Design
+$breakpoints: (
+  "2-extra-small": (
+    min-width: 300px,
+  ),
+  "extra-small": (
+    min-width: 400px,
+  ),
+  "small": (
+    min-width: 600px,
+  ),
+  "medium": (
+    min-width: 800px,
+  ),
+  "large": (
+    min-width: 1000px,
+  ),
+  "extra-large": (
+    min-width: 1200px,
+  ),
+  "2-extra-large": (
+    min-width: 1400px,
+  ),
+);
+
+// Defined variables for day-night mode toggle element
+$day-night-mode-toggle-light-color: hsl(56, 100%, 50%);
+$day-night-mode-toggle-dark-color: hsl(360, 100%, 100%);
+$day-night-mode-toggle-light-ring-color: hsl(49, 100%, 50%);
+$day-night-mode-toggle-dark-ring-color: hsl(216, 31%, 20%);

@@ -1,0 +1,50 @@
+@use "abstracts" as a;
+
+.nav-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--nav-menu-bg-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  &-content {
+    position: relative;
+    top: 20%;
+    left: 0;
+
+    @include a.respond-to("small") {
+      left: 11%;
+    }
+  }
+
+  & .row {
+    @include a.justify-content-center();
+
+    @include a.respond-to("small") {
+      justify-content: start;
+    }
+  }
+
+  & a {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: clamp(1.5rem, 3.2vw, 9rem);
+    color: #818181;
+    transition: 0.3s;
+    font-family: "Roboto-Regular";
+    display: block;
+
+    @include a.respond-to("small") {
+      text-align: justify;
+    }
+  }
+
+  &.is-active {
+    width: 100%;
+  }
+}

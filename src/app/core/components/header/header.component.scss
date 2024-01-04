@@ -1,13 +1,50 @@
+@use "abstracts" as a;
+
+/**
+ * Helper class to set Navbar as transparent and alternate display on breakpoints
+ * 1. Set background-color as transparent
+ * 2. Alternate display property for both day-night toggle and dropdown-flags elements based on breakpoints
+ */
 .navbar {
   background-color: transparent;
+
+  & .day-night-mode-toggle,
+  & .dropdown-flags {
+    display: none;
+  }
+
+  @include a.respond-to("extra-small") {
+    & .day-night-mode-toggle {
+      display: list-item;
+    }
+  }
+
+  @include a.respond-to("2-extra-small") {
+    & .dropdown-flags {
+      display: list-item;
+    }
+  }
 }
 
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-  background-color: var(--hamburger-color) !important;
-}
+/**
+ * Helper class to set background-colors and transitions for hamburger icon
+ */
+.hamburger {
+  &-inner,
+  &-inner::before,
+  &-inner::after {
+    background-color: var(--hamburger-color) !important;
 
-.hamburger:hover {
-  opacity: 1;
+    @include a.respond-to("small") {
+      transition: transform 0.15s ease, background-color 0.4s;
+    }
+  }
+
+  @include a.respond-to("small") {
+    &:hover &-inner::before,
+    &:hover &-inner::after,
+    &:hover &-inner {
+      background-color: var(--hamburger-hover-color) !important;
+    }
+  }
 }

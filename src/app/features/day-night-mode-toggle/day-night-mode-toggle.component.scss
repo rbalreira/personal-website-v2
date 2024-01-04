@@ -1,93 +1,97 @@
-.toggle_switch {
-  width: 100px;
-  height: 45px;
+@use "abstracts" as a;
+
+/**
+ * Helper class to set a container to wrap the toggle and add animations
+ * 1. Set container wrap with position relative
+ */
+.toggle-switch {
+  width: 5rem;
+  height: 5rem;
   position: relative;
-}
-input[type="checkbox"].switch_3 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  outline: 0;
-  z-index: 1;
-}
-svg.checkbox .outer-ring {
-  stroke-dasharray: 375;
-  stroke-dashoffset: 375;
-  -webkit-animation: resetRing 0.35s ease-in-out forwards;
-  animation: resetRing 0.35s ease-in-out forwards;
-}
-input[type="checkbox"].switch_3:checked + svg.checkbox .outer-ring {
-  -webkit-animation: animateRing 0.35s ease-in-out forwards;
-  animation: animateRing 0.35s ease-in-out forwards;
-}
-input[type="checkbox"].switch_3:checked + svg.checkbox .is_checked {
-  opacity: 1;
-  -webkit-transform: translateX(0) rotate(0deg);
-  transform: translateX(0) rotate(0deg);
-}
-input[type="checkbox"].switch_3:checked + svg.checkbox .is_unchecked {
-  opacity: 0;
-  -webkit-transform: translateX(-200%) rotate(180deg);
-  transform: translateX(-200%) rotate(180deg);
-}
-svg.checkbox {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-svg.checkbox .is_checked {
-  opacity: 0;
-  fill: yellow;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transform: translateX(200%) rotate(45deg);
-  transform: translateX(200%) rotate(45deg);
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-}
-svg.checkbox .is_unchecked {
-  opacity: 1;
-  fill: #fff;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transform: translateX(0) rotate(0deg);
-  transform: translateX(0) rotate(0deg);
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-}
-@-webkit-keyframes animateRing {
-  to {
-    stroke-dashoffset: 0;
-    stroke: #b0aa28;
+
+  /**
+  * 2. Style and position the input to represent the SVG element
+  */
+  input[type="checkbox"].switch {
+    cursor: pointer;
+    appearance: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    z-index: 1;
+
+    &:checked + svg.checkbox .outer-ring {
+      animation: animateRing 0.35s ease-in-out forwards;
+    }
+
+    &:checked + svg.checkbox .is-checked {
+      opacity: 1;
+      transform: translateX(0) rotate(0deg);
+    }
+
+    &:checked + svg.checkbox .is-unchecked {
+      opacity: 0;
+      transform: translateX(-200%) rotate(180deg);
+    }
+  }
+
+  /**
+  * 3. Move the SVG element to the same position as the input element 
+  */
+  svg.checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    & .outer-ring {
+      stroke-dasharray: 375;
+      stroke-dashoffset: 375;
+      animation: resetRing 0.35s ease-in-out forwards;
+    }
+
+    & .is-checked {
+      opacity: 0;
+      fill: a.$day-night-mode-toggle-light-color;
+      transform-origin: 50% 50%;
+      transform: translateX(200%) rotate(45deg);
+      transition: all 0.35s;
+    }
+
+    & .is-unchecked {
+      opacity: 1;
+      fill: a.$day-night-mode-toggle-dark-color;
+      transform-origin: 50% 50%;
+      transform: translateX(0) rotate(0deg);
+      transition: all 0.35s;
+    }
   }
 }
+
+/**
+* Helper keyframe to animate the ring around the element when it is checked to light mode
+*/
 @keyframes animateRing {
   to {
     stroke-dashoffset: 0;
-    stroke: #b0aa28;
+    stroke: a.$day-night-mode-toggle-light-ring-color;
   }
 }
-@-webkit-keyframes resetRing {
-  to {
-    stroke-dashoffset: 0;
-    stroke: #233043;
-  }
-}
+
+/**
+* Helper keyframe to animate the ring around the element when it is checked to dark mode
+*/
 @keyframes resetRing {
   to {
     stroke-dashoffset: 0;
-    stroke: #233043;
+    stroke: a.$day-night-mode-toggle-dark-ring-color;
   }
 }
