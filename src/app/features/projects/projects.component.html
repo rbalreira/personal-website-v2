@@ -1,0 +1,37 @@
+<div class="projects container">
+    <div class="row">
+        <ng-container *ngFor="let project of projects">
+            <div class="col-sm-12 col-md-6">
+                <img src="/assets/imgs/{{project.img}}" class="image-mobile img-fluid rounded" alt="{{project.name}}">
+                <div class="image-wrapper">
+                    <img src="/assets/imgs/{{project.img}}" class="img-fluid rounded" alt="{{project.name}}">
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <div class="overlay-content p-4">
+                            <a href="{{project.github}}">
+                                <ng-icon name="bootstrapGithub"></ng-icon>
+                            </a>
+                            <a href="{{project.site}}">
+                                <ng-icon name="bootstrapLink45deg"></ng-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-text col-sm-12 col-md-5 d-flex-column align-self-center">
+                <div>
+                    <h2>{{project.name}}</h2>
+                    <p>{{project.description}}</p>
+                </div>
+                <div>
+                    <a href="{{project.github}}" class="me-3">
+                        <ng-icon name="bootstrapGithub"></ng-icon>
+                    </a>
+                    <a href="{{project.site}}">
+                        <ng-icon name="bootstrapLink45deg"></ng-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="content-spacer"></div>
+        </ng-container>
+    </div>
+</div>

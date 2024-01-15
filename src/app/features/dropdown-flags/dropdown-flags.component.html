@@ -1,6 +1,6 @@
 <div ngbDropdown class="d-inline-block dropdown-flags">
     <button type="button" class="btn dropdown-flags-toggle" id="dropdownFlags" ngbDropdownToggle>
-        <span class="flag-icon flag-icon-{{selectedFlag}}" #dropdownFlagIcon></span>
+        <span class="flag-icon flag-icon-{{selectedFlag}}"></span>
     </button>
     <div ngbDropdownMenu aria-labelledby="dropdownFlags" class="dropdown-flags-menu">
         <button ngbDropdownItem *ngFor="let flag of flags" (click)="changeDropdownToggleValue(flag.name)">

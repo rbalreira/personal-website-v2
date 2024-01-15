@@ -8,6 +8,7 @@ import { FeaturesModule } from '@app/features/features.module';
 import { throwIfAlreadyLoaded } from './guards/module-import-guard';
 
 import { HeaderComponent } from './components/header/header.component';
+import { SectionComponent } from './components/section/section.component';
 
 import { FuncsService } from './services/funcs/funcs.service';
 
@@ -19,9 +20,9 @@ import { FuncsService } from './services/funcs/funcs.service';
     FeaturesModule,
     FormsModule,
   ],
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, SectionComponent],
   providers: [FuncsService],
-  exports: [RouterModule, HeaderComponent],
+  exports: [RouterModule, HeaderComponent, SectionComponent],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {

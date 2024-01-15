@@ -13,6 +13,7 @@
   */
   &-menu {
     min-width: 1rem;
+    margin: 0;
 
     @include a.respond-to("small") {
       transition: all 0.4s;

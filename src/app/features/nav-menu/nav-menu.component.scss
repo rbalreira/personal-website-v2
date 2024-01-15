@@ -1,5 +1,8 @@
 @use "abstracts" as a;
 
+/**
+* Helper class to create full-screen Menu overlay when hamburger is clicked.
+*/
 .nav-menu {
   height: 100%;
   width: 0;
@@ -11,6 +14,9 @@
   overflow-x: hidden;
   transition: 0.5s;
 
+  /**
+  * Helper class to position the content around the container menu.
+  */
   &-content {
     position: relative;
     top: 20%;
@@ -30,14 +36,14 @@
   }
 
   & a {
+    font-family: "Roboto-Regular";
+    display: block;
+    color: var(--nav-menu-color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     font-size: clamp(1.5rem, 3.2vw, 9rem);
-    color: #818181;
     transition: 0.3s;
-    font-family: "Roboto-Regular";
-    display: block;
 
     @include a.respond-to("small") {
       text-align: justify;
@@ -46,5 +52,33 @@
 
   &.is-active {
     width: 100%;
+  }
+
+  & .dropdown-flags {
+    display: flex;
+
+    @include a.respond-to("2-extra-small") {
+      display: none;
+    }
+  }
+
+  /**
+  * Helper class to create a linear gradient as background and animate the background position
+  * in order to have a background color transition from left to right.
+  * 1. Background-size set as 300% to avoid color bugs in some breakpoints
+  */
+  &-link {
+    background: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--nav-menu-hover-color) 50%
+      )
+      right;
+    background-size: 300%;
+    transition: 0.8s ease-out;
+
+    &:hover {
+      background-position: left;
+    }
   }
 }

@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@app/shared/shared.module';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgIconsModule, provideNgIconsConfig } from '@ng-icons/core';
+import { bootstrapGithub } from '@ng-icons/bootstrap-icons';
+import { bootstrapLink45deg } from '@ng-icons/bootstrap-icons';
 
 import {
   DayNightModeStorageService,
@@ -14,6 +17,7 @@ import { DayNightModeToggleComponent } from './day-night-mode-toggle/components/
 import { IntroComponent } from './intro/components/intro.component';
 import { DropdownFlagsComponent } from './dropdown-flags/dropdown-flags.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,21 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
     IntroComponent,
     DropdownFlagsComponent,
     NavMenuComponent,
+    ProjectsComponent,
+  ],
+  imports: [
+    CommonModule,
+    SharedModule,
+    NgbDropdownModule,
+    NgIconsModule.withIcons({ bootstrapGithub, bootstrapLink45deg }),
+  ],
+  exports: [
+    AboutMeComponent,
+    DayNightModeToggleComponent,
+    IntroComponent,
+    DropdownFlagsComponent,
+    NavMenuComponent,
+    ProjectsComponent,
   ],
   providers: [
     DayNightModeToggleService,
@@ -29,14 +48,9 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
       provide: MODE_STORAGE_SERVICE,
       useClass: DayNightModeStorageService,
     },
-  ],
-  imports: [CommonModule, SharedModule, NgbDropdownModule],
-  exports: [
-    AboutMeComponent,
-    DayNightModeToggleComponent,
-    IntroComponent,
-    DropdownFlagsComponent,
-    NavMenuComponent,
+    provideNgIconsConfig({
+      size: '2em',
+    }),
   ],
 })
 export class FeaturesModule {}
