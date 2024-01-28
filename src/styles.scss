@@ -15,14 +15,24 @@
 $hamburger-hover-opacity: 1;
 @import "hamburgers/_sass/hamburgers/hamburgers.scss";
 
-body {
-  margin: 0px 20px 40px 20px;
-}
-
 body.dark {
   @include i.dark-mode();
 }
 
 body.light {
   @include i.light-mode();
+}
+
+body {
+  margin: 0px 20px 40px 20px;
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  &.dark,
+  &.light {
+    transition: all 0.5s;
+  }
 }
