@@ -3,8 +3,12 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '@app/shared/shared.module';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgIconsModule, provideNgIconsConfig } from '@ng-icons/core';
-import { bootstrapGithub } from '@ng-icons/bootstrap-icons';
-import { bootstrapLink45deg } from '@ng-icons/bootstrap-icons';
+import {
+  bootstrapBrightnessHigh,
+  bootstrapMoon,
+  bootstrapGithub,
+  bootstrapLink45deg,
+} from '@ng-icons/bootstrap-icons';
 
 import {
   DayNightModeStorageService,
@@ -32,7 +36,12 @@ import { ProjectsComponent } from './projects/projects.component';
     CommonModule,
     SharedModule,
     NgbDropdownModule,
-    NgIconsModule.withIcons({ bootstrapGithub, bootstrapLink45deg }),
+    NgIconsModule.withIcons({
+      bootstrapBrightnessHigh,
+      bootstrapMoon,
+      bootstrapGithub,
+      bootstrapLink45deg,
+    }),
   ],
   exports: [
     AboutMeComponent,
