@@ -1,9 +1,8 @@
 <section>
-    <div class="section container">
-        <h3 *ngIf="sectionTitle">&#60;{{sectionTitle}}&#62;</h3>
+    <div class="container">
+        <h3 *ngIf="sectionTitle">{{sectionTitle}}</h3>
         <div class="mt-5 mb-5">
             <ng-content></ng-content>
         </div>
-        <h3 *ngIf="sectionTitle">&#60;&#47;{{sectionTitle}}&#62;</h3>
     </div>
 </section>
