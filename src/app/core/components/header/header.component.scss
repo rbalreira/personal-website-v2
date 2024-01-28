@@ -6,7 +6,11 @@
  * 2. Alternate display property for both day-night toggle and dropdown-flags elements based on breakpoints
  */
 .navbar {
-  background-color: transparent;
+  background-color: var(--navbar-bg-color);
+
+  &-brand {
+    color: var(--text-color);
+  }
 
   & .day-night-mode-toggle,
   & .dropdown-flags {
@@ -22,6 +26,14 @@
   @include a.respond-to("2-extra-small") {
     & .dropdown-flags {
       display: list-item;
+    }
+  }
+
+  .hamburger-item {
+    display: block;
+
+    @include a.respond-to("small") {
+      display: none;
     }
   }
 }

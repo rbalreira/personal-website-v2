@@ -1,16 +1,28 @@
 <header>
-    <nav class="navbar navbar-expand justify-content-between fixed-top ms-4 me-4">
+    <nav class="navbar navbar-expand justify-content-between fixed-top">
         <a class="navbar-brand p-0" href="#">
-            <app-svg-logo></app-svg-logo>
+            Balreira.dev
         </a>
         <ul class="navbar-nav align-items-center p-0">
-            <li class="nav-item day-night-mode-toggle">
-                <day-night-mode-toggle></day-night-mode-toggle>
+            <li class="nav-item me-3">
+                <a href="#">Home <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item me-3">
+                <a href="#">Projects</a>
+            </li>
+            <li class="nav-item me-3">
+                <a href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Contact</a>
             </li>
             <li class="nav-item dropdown-flags">
                 <app-dropdown-flags></app-dropdown-flags>
             </li>
-            <li class="nav-item">
+            <li class="nav-item day-night-mode-toggle">
+                <day-night-mode-toggle></day-night-mode-toggle>
+            </li>
+            <li class="nav-item hamburger-item">
                 <button class="hamburger hamburger--arrowturn p-0" type="button" appHamburgerToggle
                     (click)="getHamburgerToggle()">
                     <span class="hamburger-box">
