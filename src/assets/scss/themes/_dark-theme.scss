@@ -1,4 +1,5 @@
-$bg-color_dark: hsl(200, 71%, 12%);
+$bg-color_dark: #0a192f;
+$navbar-bg-color_dark: black;
 $text-color_dark: hsl(360, 100%, 100%);
 $section-title-color_dark: #ffd700;
 $border-color_dark: hsl(360, 100%, 100%);
@@ -9,12 +10,15 @@ $nav-menu-color_dark: hsl(360, 100%, 100%);
 $nav-menu-hover-color_dark: rgb(84, 18, 18);
 $hamburger-hover-color_dark: rgb(84, 18, 18);
 $overlay-image-color_dark: rgba(57, 57, 57, 0.5);
+$section-cosmetic-content-title-color_dark: #5a7ffb;
 
 // mixin that enables css variables in dark mode
 @mixin dark-mode() {
   background-color: #{$bg-color_dark};
   color: #{$text-color_dark};
   border-color: #{$border-color_dark};
+  --navbar-bg-color: #{$navbar-bg-color_dark};
+  --text-color: #{$text-color_dark};
   --section-title-color: #{$section-title-color_dark};
   --logo-fill: #{$logo-fill_dark};
   --hamburger-color: #{$hamburger-color_dark};
@@ -23,4 +27,5 @@ $overlay-image-color_dark: rgba(57, 57, 57, 0.5);
   --nav-menu-hover-color: #{$nav-menu-hover-color_dark};
   --hamburger-hover-color: #{$hamburger-hover-color_dark};
   --overlay-image-color: #{$overlay-image-color_dark};
+  --section-cosmetic-content-title-color: #{$section-cosmetic-content-title-color_dark};
 }

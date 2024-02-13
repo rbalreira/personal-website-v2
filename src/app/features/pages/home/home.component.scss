@@ -1,6 +1,9 @@
 @use "abstracts" as a;
 
-.container-bottom {
+/** 
+ * Utility class to position the footer components as fixed at the bottom of the page
+*/
+.footer {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -8,10 +11,10 @@
   & .toggle {
     display: block;
   }
-}
 
-@include a.respond-to("extra-small") {
-  .container-bottom .toggle {
-    display: none;
+  @include a.respond-to("extra-small") {
+    .toggle {
+      display: none;
+    }
   }
 }

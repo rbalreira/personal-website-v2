@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@app/shared/shared.module';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgIconsModule, provideNgIconsConfig } from '@ng-icons/core';
 import {
   bootstrapBrightnessHigh,
   bootstrapMoon,
   bootstrapGithub,
   bootstrapLink45deg,
+  bootstrapPinMapFill,
 } from '@ng-icons/bootstrap-icons';
 
 import {
@@ -22,6 +23,8 @@ import { IntroComponent } from './intro/components/intro.component';
 import { DropdownFlagsComponent } from './dropdown-flags/dropdown-flags.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -31,16 +34,20 @@ import { ProjectsComponent } from './projects/projects.component';
     DropdownFlagsComponent,
     NavMenuComponent,
     ProjectsComponent,
+    ExperienceComponent,
+    ContactComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
     NgbDropdownModule,
+    NgbNavModule,
     NgIconsModule.withIcons({
       bootstrapBrightnessHigh,
       bootstrapMoon,
       bootstrapGithub,
       bootstrapLink45deg,
+      bootstrapPinMapFill,
     }),
   ],
   exports: [
@@ -49,6 +56,7 @@ import { ProjectsComponent } from './projects/projects.component';
     IntroComponent,
     DropdownFlagsComponent,
     NavMenuComponent,
+    ExperienceComponent,
     ProjectsComponent,
   ],
   providers: [

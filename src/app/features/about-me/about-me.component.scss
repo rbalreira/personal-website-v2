@@ -1,0 +1,17 @@
+/**
+ * 1. Restrict responsive image to a maximum size, using the max-width property
+ * 2. Set filter in image doing a transition to original effect on hover
+ * 3. Moving image diagonally using the transform property and translate element
+ */
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  filter: sepia(100%);
+  transition: 0.5s ease-in-out;
+}
+
+img:hover {
+  filter: sepia(0);
+  transform: translate(-15px, -15px);
+}

@@ -1,0 +1,49 @@
+@use "abstracts" as a;
+
+/**
+ * 
+ */
+.experiences-nav {
+  flex-direction: column;
+
+  button {
+    color: var(--text-color);
+    border-radius: 0%;
+    border-left: 1px solid #112240;
+
+    &.active {
+      background-color: transparent;
+      color: #64ffda;
+      border-left-color: #64ffda;
+    }
+
+    &:hover {
+      background-color: #112240;
+      color: #64ffda;
+      outline: 0px;
+    }
+  }
+
+  & div {
+    flex-direction: row !important;
+    justify-content: center;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 600px;
+
+    .experience-name {
+      color: #64ffda;
+    }
+  }
+
+  @include a.respond-to("small") {
+    flex-direction: row;
+
+    & div {
+      justify-content: start;
+      flex-direction: column !important;
+    }
+  }
+}

@@ -1,3 +1,30 @@
+/**
+ * Styles to set cosmetic content before and after heading text (half square)
+ * 1. Set empty string content with a border color just for the bottom side
+ * 2. Set half right square before content 
+ * 3. Set half left square before content
+ */
 h3 {
   text-transform: uppercase;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: var(--section-cosmetic-content-title-color);
+    display: inline-block;
+  }
+
+  &::before {
+    margin-right: 5px;
+    border-right-color: var(--section-cosmetic-content-title-color);
+  }
+
+  &::after {
+    margin-left: 5px;
+    border-left-color: var(--section-cosmetic-content-title-color);
+  }
 }

@@ -1,4 +1,5 @@
 $bg-color_light: #faf0d7;
+$navbar-bg-color_light: gray;
 $text-color_light: hsl(0, 0%, 0%);
 $section-title-color_light: rgb(194, 32, 133);
 $border-color_light: hsl(0, 0%, 0%);
@@ -9,12 +10,15 @@ $nav-menu-color_light: hsl(0, 0%, 0%);
 $nav-menu-hover-color_light: rgb(77, 42, 16);
 $hamburger-hover-color_light: rgb(77, 42, 16);
 $overlay-image-color_light: rgba(57, 57, 57, 0.5);
+$section-cosmetic-content-title-color_light: #5a7ffb;
 
 // mixin that enables css variables in light mode
 @mixin light-mode() {
   background-color: #{$bg-color_light};
   color: #{$text-color_light};
   border-color: #{$border-color_light};
+  --navbar-bg-color: #{$navbar-bg-color_light};
+  --text-color: #{$text-color_light};
   --section-title-color: #{$section-title-color_light};
   --logo-fill: #{$logo-fill_light};
   --hamburger-color: #{$hamburger-color_light};
@@ -23,4 +27,5 @@ $overlay-image-color_light: rgba(57, 57, 57, 0.5);
   --nav-menu-hover-color: #{$nav-menu-hover-color_light};
   --hamburger-hover-color: #{$hamburger-hover-color_light};
   --overlay-image-color: #{$overlay-image-color_light};
+  --section-cosmetic-content-title-color: #{$section-cosmetic-content-title-color_light};
 }

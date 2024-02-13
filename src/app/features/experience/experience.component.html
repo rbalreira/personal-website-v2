@@ -1,0 +1,28 @@
+<div class="experiences-nav d-flex">
+    <div ngbNav #nav="ngbNav" class="nav-pills" orientation="vertical">
+        <ng-container *ngFor="let experience of experiences" ngbNavItem={{experience.name}}>
+            <button ngbNavLink>{{experience.name}}</button>
+            <ng-template ngbNavContent>
+                <div class="content">
+                    <h4>{{experience.role}} <span class="experience-name">&#64;{{experience.name}}</span></h4>
+                    <p>{{experience.duration}}</p>
+                    <ul>
+                        <ng-container *ngFor="let activity of experience.activities">
+                            <li>
+                                {{activity}}
+                            </li>
+                        </ng-container>
+                    </ul>
+                    <ul>
+                        <ng-container *ngFor="let s of experience.stack">
+                            <li>
+                                {{s}}
+                            </li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </ng-template>
+        </ng-container>
+    </div>
+    <div [ngbNavOutlet]="nav" class="ms-4"></div>
+</div>

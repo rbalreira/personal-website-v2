@@ -14,19 +14,5 @@
   &-menu {
     min-width: 1rem;
     margin: 0;
-
-    @include a.respond-to("small") {
-      transition: all 0.4s;
-      overflow: hidden;
-      transform-origin: top center;
-      transform: scale(1, 0);
-      display: block;
-    }
-  }
-
-  @include a.respond-to("small") {
-    &:hover &-menu {
-      transform: scale(1);
-    }
   }
 }
