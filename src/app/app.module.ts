@@ -6,7 +6,7 @@ import { FeaturesModule } from './features/features.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 
-import { HomeComponent } from './features/pages/home/home.component';
+import { HomeComponent } from './features/pages/home/components/home.component';
 
 @NgModule({
   declarations: [HomeComponent],

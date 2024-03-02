@@ -6,10 +6,21 @@ import { NgIconsModule, provideNgIconsConfig } from '@ng-icons/core';
 import {
   bootstrapBrightnessHigh,
   bootstrapMoon,
-  bootstrapGithub,
   bootstrapLink45deg,
-  bootstrapPinMapFill,
+  bootstrapArrowDownCircle,
+  bootstrapPinFill,
 } from '@ng-icons/bootstrap-icons';
+import {
+  simpleDotnet,
+  simpleCsharp,
+  simpleGo,
+  simpleReact,
+  simpleAngular,
+  simpleJavascript,
+  simpleTypescript,
+  simpleSass,
+  simpleCss3,
+} from '@ng-icons/simple-icons';
 
 import {
   DayNightModeStorageService,
@@ -20,21 +31,21 @@ import { DayNightModeToggleService } from './day-night-mode-toggle/services/day-
 import { AboutMeComponent } from './about-me/components/about-me.component';
 import { DayNightModeToggleComponent } from './day-night-mode-toggle/components/day-night-mode-toggle.component';
 import { IntroComponent } from './intro/components/intro.component';
-import { DropdownFlagsComponent } from './dropdown-flags/dropdown-flags.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { ContactComponent } from './contact/contact.component';
+import { DropdownFlagsComponent } from './dropdown-flags/components/dropdown-flags.component';
+import { NavMenuComponent } from './nav-menu/components/nav-menu.component';
+import { ProjectsComponent } from './projects/components/projects.component';
+import { ExperienceComponent } from './experience/components/experience.component';
+import { ContactComponent } from './contact/components/contact.component';
 
 @NgModule({
   declarations: [
-    AboutMeComponent,
     DayNightModeToggleComponent,
     IntroComponent,
     DropdownFlagsComponent,
     NavMenuComponent,
-    ProjectsComponent,
     ExperienceComponent,
+    ProjectsComponent,
+    AboutMeComponent,
     ContactComponent,
   ],
   imports: [
@@ -45,19 +56,29 @@ import { ContactComponent } from './contact/contact.component';
     NgIconsModule.withIcons({
       bootstrapBrightnessHigh,
       bootstrapMoon,
-      bootstrapGithub,
       bootstrapLink45deg,
-      bootstrapPinMapFill,
+      bootstrapArrowDownCircle,
+      bootstrapPinFill,
+      simpleDotnet,
+      simpleCsharp,
+      simpleGo,
+      simpleReact,
+      simpleAngular,
+      simpleJavascript,
+      simpleTypescript,
+      simpleSass,
+      simpleCss3,
     }),
   ],
   exports: [
-    AboutMeComponent,
     DayNightModeToggleComponent,
     IntroComponent,
     DropdownFlagsComponent,
     NavMenuComponent,
     ExperienceComponent,
     ProjectsComponent,
+    AboutMeComponent,
+    ContactComponent,
   ],
   providers: [
     DayNightModeToggleService,

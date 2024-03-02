@@ -1,0 +1,87 @@
+@use "abstracts" as a;
+
+/**
+ * Helper class to set common styles for social media list items
+ */
+.social-media {
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      border: none;
+      line-height: 0;
+
+      a {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        @include a.transition-ease-in-out();
+
+        &:hover,
+        &:focus {
+          color: #64ffda;
+          @include a.transform-translateY(-3px);
+        }
+
+        ng-icon {
+          font-size: x-small;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Helper class to set footer styles and flex-direction row for social media list items
+ */
+.is-footer {
+  text-align: center;
+  display: block;
+
+  .social-media-list {
+    flex-direction: row;
+    gap: 40px;
+
+    @include a.justify-content-center();
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  @include a.respond-to("medium") {
+    display: none;
+  }
+}
+
+/**
+ * Helper class to set fixed social media list items
+ */
+.is-not-footer {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  left: 50px;
+  z-index: 1;
+
+  .social-media-list {
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 90px;
+      margin: 0 auto;
+      background-color: #a8b2d1;
+    }
+
+    li {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include a.respond-to("medium") {
+    display: block;
+  }
+}

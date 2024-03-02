@@ -12,9 +12,8 @@ label {
   height: 2.5rem;
   border-radius: 50%;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  @include a.justify-content-center();
 
   input {
     position: absolute;

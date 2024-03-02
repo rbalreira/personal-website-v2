@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown-flags',
-  templateUrl: './dropdown-flags.component.html',
-  styleUrls: ['./dropdown-flags.component.scss'],
+  templateUrl: '../dropdown-flags.component.html',
+  styleUrls: ['../dropdown-flags.component.scss'],
 })
 export class DropdownFlagsComponent {
   flags = [

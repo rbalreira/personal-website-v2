@@ -1,15 +1,26 @@
-<app-header></app-header>
-<app-intro></app-intro>
-<app-section sectionTitle="Experience">
-    <app-experience class="d-flex justify-content-center"></app-experience>
-</app-section>
-<app-section sectionTitle="Projects">
-    <app-projects></app-projects>
-</app-section>
-<app-section sectionTitle="About Me">
-    <app-about-me></app-about-me>
-</app-section>
-<div class="footer">
+<header>
+    <app-header></app-header>
+</header>
+<main>
+    <app-intro></app-intro>
+    <app-section sectionTitle="Experience">
+        <app-experience class="d-flex justify-content-center"></app-experience>
+    </app-section>
+    <app-section sectionTitle="Projects">
+        <app-projects></app-projects>
+    </app-section>
+    <app-section sectionTitle="About Me">
+        <app-about-me></app-about-me>
+    </app-section>
+    <app-section sectionTitle="What's next?">
+        <app-contact></app-contact>
+    </app-section>
+</main>
+<footer>
+    <app-footer></app-footer>
+</footer>
+<div class="fixed-footer">
+    <app-social-media [footer]="false"></app-social-media>
     <day-night-mode-toggle class="toggle"></day-night-mode-toggle>
 </div>
 <router-outlet></router-outlet>

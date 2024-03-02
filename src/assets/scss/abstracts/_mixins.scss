@@ -18,8 +18,7 @@
       @content;
     }
   } @else {
-    @error 'No value found for `#{$breakpoint}`. '
-         + 'Please make sure it is defined in `$breakpoints` map.';
+    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
   }
 }
 
@@ -28,4 +27,18 @@
 @mixin justify-content-center() {
   display: flex;
   justify-content: center;
+}
+
+/// Transition ease-in-out timing-function
+/// @access public
+/// @param {seconds} $duration - Duration
+@mixin transition-ease-in-out($duration: 0.3s) {
+  transition: $duration ease-in-out;
+}
+
+/// Translate Y axis for specific element
+/// @access public
+/// @param {size} $value - Value
+@mixin transform-translateY($value: -10px) {
+  transform: translateY($value);
 }

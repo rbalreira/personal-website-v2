@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 
 import { DayNightModeToggleService } from '@app/features/day-night-mode-toggle/services/day-night-mode-toggle.service';
 import { FuncsService } from '@app/core/services/funcs/funcs.service';
-import { Mode } from '@app/features/day-night-mode-toggle/models/day-night-mode-toggle.model';
+import { Mode } from '@app/features/models/day-night-mode.enum';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  templateUrl: '../home.component.html',
+  styleUrls: ['../home.component.scss'],
 })
 export class HomeComponent {
   title = 'portfolio-website';

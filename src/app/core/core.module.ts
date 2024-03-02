@@ -7,10 +7,11 @@ import { SharedModule } from '@app/shared/shared.module';
 import { FeaturesModule } from '@app/features/features.module';
 import { throwIfAlreadyLoaded } from './guards/module-import-guard';
 
-import { HeaderComponent } from './components/header/header.component';
-import { SectionComponent } from './components/section/section.component';
+import { HeaderComponent } from './components/header/components/header.component';
+import { SectionComponent } from './components/section/components/section.component';
 
 import { FuncsService } from './services/funcs/funcs.service';
+import { FooterComponent } from './components/footer/components/footer.component';
 
 @NgModule({
   imports: [
@@ -20,9 +21,9 @@ import { FuncsService } from './services/funcs/funcs.service';
     FeaturesModule,
     FormsModule,
   ],
-  declarations: [HeaderComponent, SectionComponent],
+  declarations: [HeaderComponent, SectionComponent, FooterComponent],
   providers: [FuncsService],
-  exports: [RouterModule, HeaderComponent, SectionComponent],
+  exports: [RouterModule, HeaderComponent, SectionComponent, FooterComponent],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {

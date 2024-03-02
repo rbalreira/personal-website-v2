@@ -40,6 +40,7 @@
     "@ng-bootstrap/ng-bootstrap": "^15.0.1",
     "@ng-icons/bootstrap-icons": "^26.3.0",
     "@ng-icons/core": "^26.3.0",
+    "@ng-icons/simple-icons": "^27.0.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "flag-icon-css": "^4.1.7",

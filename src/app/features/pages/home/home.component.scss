@@ -1,9 +1,9 @@
 @use "abstracts" as a;
 
 /** 
- * Utility class to position the footer components as fixed at the bottom of the page
+ * Helper class to position the footer components as fixed at the bottom of the page
 */
-.footer {
+.fixed-footer {
   position: fixed;
   bottom: 0;
   right: 0;
