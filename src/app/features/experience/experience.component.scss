@@ -21,6 +21,7 @@
       background-color: #112240;
       color: #64ffda;
       outline: 0px;
+      @include a.transition-ease-in-out(0.5s);
     }
   }
 
@@ -35,6 +36,27 @@
 
     .experience-name {
       color: #64ffda;
+    }
+
+    .experience-activities {
+      li::marker {
+        color: #64ffda;
+      }
+    }
+
+    .experience-stack {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      li {
+        display: inline-block;
+        @include a.transition-ease-in-out();
+
+        &:hover {
+          @include a.transform-translateY();
+        }
+      }
     }
   }
 

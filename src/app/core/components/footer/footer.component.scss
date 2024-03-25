@@ -1,0 +1,11 @@
+@use "abstracts" as a;
+
+a {
+  @include a.transition-ease-in-out();
+
+  &:hover,
+  &:focus {
+    color: #64ffda;
+    @include a.transform-translateY(-3px);
+  }
+}

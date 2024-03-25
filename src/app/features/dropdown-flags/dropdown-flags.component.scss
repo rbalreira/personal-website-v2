@@ -1,7 +1,7 @@
 @use "abstracts" as a;
 
 /**
- * Helper class to make the dropdown flags hoverable and with transition.
+ * Helper class to adjust colors and dimensions.
  */
 .dropdown-flags {
   &-toggle:first-child:active {
@@ -14,5 +14,14 @@
   &-menu {
     min-width: 1rem;
     margin: 0;
+  }
+
+  &-toggle::after {
+    border-top-color: var(--text-color);
+    @include a.transition-ease-in-out(0.2s);
+  }
+
+  &-toggle:hover::after {
+    border-top-color: green;
   }
 }

@@ -3,16 +3,16 @@
 </header>
 <main>
     <app-intro></app-intro>
-    <app-section sectionTitle="Experience">
+    <app-section sectionTitle="Experience" id="experience">
         <app-experience class="d-flex justify-content-center"></app-experience>
     </app-section>
-    <app-section sectionTitle="Projects">
+    <app-section sectionTitle="Projects" id="projects">
         <app-projects></app-projects>
     </app-section>
-    <app-section sectionTitle="About Me">
+    <app-section sectionTitle="About Me" id="about">
         <app-about-me></app-about-me>
     </app-section>
-    <app-section sectionTitle="What's next?">
+    <app-section sectionTitle="What's next?" id="contact">
         <app-contact></app-contact>
     </app-section>
 </main>
@@ -21,6 +21,5 @@
 </footer>
 <div class="fixed-footer">
     <app-social-media [footer]="false"></app-social-media>
-    <day-night-mode-toggle class="toggle"></day-night-mode-toggle>
 </div>
 <router-outlet></router-outlet>

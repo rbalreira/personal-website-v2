@@ -6,17 +6,17 @@
                 <div class="content">
                     <h4>{{experience.role}} <span class="experience-name">&#64;{{experience.name}}</span></h4>
                     <p>{{experience.duration}}</p>
-                    <ul>
+                    <ul class="experience-activities">
                         <ng-container *ngFor="let activity of experience.activities">
                             <li>
                                 {{activity}}
                             </li>
                         </ng-container>
                     </ul>
-                    <ul>
-                        <ng-container *ngFor="let s of experience.stack">
+                    <ul class="experience-stack text-start p-0 mt-4">
+                        <ng-container *ngFor="let tech of experience.stack">
                             <li>
-                                {{s}}
+                                <ng-icon name="{{tech.icon}}"></ng-icon>
                             </li>
                         </ng-container>
                     </ul>

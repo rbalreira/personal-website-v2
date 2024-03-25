@@ -10,21 +10,41 @@
 
   &-brand {
     color: var(--text-color);
+    font-family: "InknutAntiqua-Bold";
+    font-size: larger;
+    display: inline-block;
+    position: relative;
+    @include a.transition-ease-in-out();
+
+    &:hover {
+      color: #64ffda;
+      @include a.transform-translateY(-3px);
+    }
+  }
+
+  & .list-items {
+    display: none;
+
+    @include a.respond-to("small-medium") {
+      display: list-item;
+    }
+
+    a {
+      font-family: "Poppins-Regular";
+      @include a.transition-ease-in-out();
+
+      &:hover,
+      &:focus {
+        color: #64ffda;
+      }
+    }
   }
 
   & .day-night-mode-toggle,
   & .dropdown-flags {
     display: none;
-  }
 
-  @include a.respond-to("extra-small") {
-    & .day-night-mode-toggle {
-      display: list-item;
-    }
-  }
-
-  @include a.respond-to("2-extra-small") {
-    & .dropdown-flags {
+    @include a.respond-to("extra-small") {
       display: list-item;
     }
   }
@@ -32,7 +52,7 @@
   .hamburger-item {
     display: block;
 
-    @include a.respond-to("small") {
+    @include a.respond-to("small-medium") {
       display: none;
     }
   }

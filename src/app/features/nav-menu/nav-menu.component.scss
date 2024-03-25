@@ -13,6 +13,7 @@
   background-color: var(--nav-menu-bg-color);
   overflow-x: hidden;
   transition: 0.5s;
+  display: block;
 
   /**
   * Helper class to position the content around the container menu.
@@ -36,7 +37,7 @@
   }
 
   & a {
-    font-family: "Roboto-Regular";
+    font-family: "Poppins-Regular";
     display: block;
     color: var(--nav-menu-color);
     text-transform: uppercase;
@@ -54,10 +55,8 @@
     width: 100%;
   }
 
-  & .dropdown-flags {
-    display: flex;
-
-    @include a.respond-to("2-extra-small") {
+  @include a.respond-to("extra-small") {
+    & .dropdown-mobile-items {
       display: none;
     }
   }
@@ -80,5 +79,9 @@
     &:hover {
       background-position: left;
     }
+  }
+
+  @include a.respond-to("small") {
+    display: none;
   }
 }

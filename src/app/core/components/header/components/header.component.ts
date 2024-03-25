@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    gsap.from('.navbar-brand', { duration: 1, x: '-150%', delay: 1.5 });
-    gsap.from('.navbar-nav', { duration: 1, x: '150%', delay: 1.5 });
+    //gsap.from('.navbar-brand', { duration: 1, x: '-150%', delay: 1.5 });
+    //gsap.from('.navbar-nav', { duration: 1, x: '150%', delay: 1.5 });
   }
 }

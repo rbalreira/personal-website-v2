@@ -1,27 +1,27 @@
-<nav class="navbar navbar-expand justify-content-between fixed-top">
-    <a class="navbar-brand p-0" href="#">
+<nav class="navbar navbar-expand justify-content-between fixed-top ps-3 pe-3">
+    <a class="navbar-brand p-0" href="/">
         Balreira.dev
     </a>
-    <ul class="navbar-nav align-items-center p-0">
-        <li class="nav-item me-3">
-            <a href="#">Experience <span class="visually-hidden">(current)</span></a>
+    <ul class="navbar-nav align-items-center">
+        <li class="nav-item me-3 list-items p-1">
+            <a href="#experience">Experience</a>
         </li>
-        <li class="nav-item me-3">
-            <a href="#">Projects</a>
+        <li class="nav-item me-3 list-items p-1">
+            <a href="#projects">Projects</a>
         </li>
-        <li class="nav-item me-3">
-            <a href="#">About</a>
+        <li class="nav-item me-3 list-items p-1">
+            <a href="#about">About</a>
         </li>
-        <li class="nav-item">
-            <a href="#">Contact</a>
+        <li class="nav-item list-items p-1">
+            <a href="#contact">Contact</a>
         </li>
-        <li class="nav-item dropdown-flags">
+        <li class="nav-item dropdown-flags p-1">
             <app-dropdown-flags></app-dropdown-flags>
         </li>
-        <li class="nav-item day-night-mode-toggle">
+        <li class="nav-item day-night-mode-toggle p-1">
             <day-night-mode-toggle></day-night-mode-toggle>
         </li>
-        <li class="nav-item hamburger-item">
+        <li class="nav-item hamburger-item ms-3 p-2">
             <button class="hamburger hamburger--arrowturn p-0" type="button" appHamburgerToggle
                 (click)="getHamburgerToggle()">
                 <span class="hamburger-box">

@@ -20,6 +20,14 @@ import {
   simpleTypescript,
   simpleSass,
   simpleCss3,
+  simpleMicrosoftsqlserver,
+  simpleNginx,
+  simpleDocker,
+  simplePostgresql,
+  simplePython,
+  simpleRedis,
+  simpleFlask,
+  simpleMqtt,
 } from '@ng-icons/simple-icons';
 
 import {
@@ -68,6 +76,14 @@ import { ContactComponent } from './contact/components/contact.component';
       simpleTypescript,
       simpleSass,
       simpleCss3,
+      simpleMicrosoftsqlserver,
+      simpleNginx,
+      simpleDocker,
+      simplePostgresql,
+      simplePython,
+      simpleRedis,
+      simpleFlask,
+      simpleMqtt,
     }),
   ],
   exports: [

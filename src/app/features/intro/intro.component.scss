@@ -6,12 +6,23 @@
 .intro {
   height: auto;
   text-align: center;
+  margin-top: 6rem;
+
+  @include a.respond-to("large") {
+    margin-top: auto;
+    height: 100vh;
+  }
 
   .main {
     &-title {
       font-weight: bold;
       font-family: "FontSignature";
-      animation: anim-lineUp linear 3s backwards;
+      font-size: clamp(3rem, 6vw, 4rem);
+      margin-top: 1.5rem;
+
+      @include a.respond-to("large") {
+        margin-top: auto;
+      }
     }
 
     &-last-name {
@@ -19,72 +30,33 @@
     }
 
     &-role {
-      animation: anim-lineUp linear 3s 1s backwards;
+      font-size: clamp(1.5rem, 4.5vw, 2rem);
+    }
+
+    &-based-address {
+      font-size: clamp(1rem, 3vw, 1.3rem);
     }
 
     &-pin-fill {
       position: absolute;
 
       ng-icon {
-        font-size: 0.4rem;
-      }
-    }
-  }
-
-  .stack {
-    padding: 0;
-    flex-direction: row;
-    gap: 20px;
-
-    @include a.justify-content-center();
-
-    li {
-      display: inline-block;
-      @include a.transition-ease-in-out();
-
-      &:hover {
-        @include a.transform-translateY();
+        color: rgb(194, 27, 27);
+        font-size: 0.5rem;
       }
     }
   }
 
   .stack-title {
     border-bottom: 2px solid #5a7ffb;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+  }
 
-    @include a.respond-to("small-medium") {
-      border-bottom: none;
-      border-right: 2px solid #5a7ffb;
-      padding-right: 2rem;
+  .stack {
+    @include a.transition-ease-in-out();
+
+    &:hover {
+      @include a.transform-translateY();
     }
-  }
-
-  &-wrapper {
-    margin-top: 7rem;
-
-    @include a.respond-to("small-medium") {
-      margin-top: 3rem;
-    }
-  }
-
-  @include a.respond-to("small-medium") {
-    height: 100vh;
-  }
-}
-
-@keyframes anim-lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
   }
 }
