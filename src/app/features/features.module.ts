@@ -7,7 +7,6 @@ import {
   bootstrapBrightnessHigh,
   bootstrapMoon,
   bootstrapLink45deg,
-  bootstrapArrowDownCircle,
   bootstrapPinFill,
   bootstrapFolder2Open,
 } from '@ng-icons/bootstrap-icons';
@@ -21,14 +20,6 @@ import {
   simpleTypescript,
   simpleSass,
   simpleCss3,
-  simpleMicrosoftsqlserver,
-  simpleNginx,
-  simpleDocker,
-  simplePostgresql,
-  simplePython,
-  simpleRedis,
-  simpleFlask,
-  simpleMqtt,
 } from '@ng-icons/simple-icons';
 
 import {
@@ -68,7 +59,6 @@ import { ProjectsV2Component } from './projects-v2/components/projects-v2.compon
       bootstrapBrightnessHigh,
       bootstrapMoon,
       bootstrapLink45deg,
-      bootstrapArrowDownCircle,
       bootstrapPinFill,
       bootstrapFolder2Open,
       simpleDotnet,
@@ -80,14 +70,6 @@ import { ProjectsV2Component } from './projects-v2/components/projects-v2.compon
       simpleTypescript,
       simpleSass,
       simpleCss3,
-      simpleMicrosoftsqlserver,
-      simpleNginx,
-      simpleDocker,
-      simplePostgresql,
-      simplePython,
-      simpleRedis,
-      simpleFlask,
-      simpleMqtt,
     }),
   ],
   exports: [
