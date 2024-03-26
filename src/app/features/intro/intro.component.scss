@@ -51,7 +51,7 @@
 
   .stack-title {
     border-bottom: 2px solid #5a7ffb;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, a.$font-size-subtitle);
     font-family: "Poppins-Regular";
   }
 

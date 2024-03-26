@@ -20,12 +20,8 @@
   */
   &-content {
     position: relative;
-    top: 20%;
+    top: 30%;
     left: 0;
-
-    @include a.respond-to("small") {
-      left: 11%;
-    }
   }
 
   & .row {
@@ -43,12 +39,8 @@
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    font-size: clamp(1.5rem, 3.2vw, 9rem);
+    font-size: clamp(1.5rem, 4.5vw, 9rem);
     transition: 0.3s;
-
-    @include a.respond-to("small") {
-      text-align: justify;
-    }
   }
 
   &.is-active {
@@ -81,7 +73,7 @@
     }
   }
 
-  @include a.respond-to("small") {
+  @include a.respond-to("small-medium") {
     display: none;
   }
 }

@@ -1,17 +1,31 @@
-/**
- * 1. Restrict responsive image to a maximum size, using the max-width property
- * 2. Set filter in image doing a transition to original effect on hover
- * 3. Moving image diagonally using the transform property and translate element
- */
-img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  filter: sepia(100%);
-  transition: 0.5s ease-in-out;
-}
+@use "abstracts" as a;
 
-img:hover {
-  filter: sepia(0);
-  transform: translate(-15px, -15px);
+/**
+ * Helper class to set filter in image and sizing text
+ * 1. Set filter in image doing a transition to original effect on hover
+ * 2. Moving image diagonally using the transform property and translate element
+ */
+.about-me {
+  @include a.adjust-container();
+
+  p {
+    font-size: a.$font-size-about-me-text;
+  }
+
+  h4 {
+    font-family: "Open-Sans-Bold";
+    font-size: a.$font-size-about-me-text;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    filter: sepia(100%);
+    transition: 0.5s ease-in-out;
+  }
+
+  img:hover {
+    filter: sepia(0);
+    transform: translate(-15px, -15px);
+  }
 }

@@ -9,6 +9,7 @@ import {
   bootstrapLink45deg,
   bootstrapArrowDownCircle,
   bootstrapPinFill,
+  bootstrapFolder2Open,
 } from '@ng-icons/bootstrap-icons';
 import {
   simpleDotnet,
@@ -44,6 +45,7 @@ import { NavMenuComponent } from './nav-menu/components/nav-menu.component';
 import { ProjectsComponent } from './projects/components/projects.component';
 import { ExperienceComponent } from './experience/components/experience.component';
 import { ContactComponent } from './contact/components/contact.component';
+import { ProjectsV2Component } from './projects-v2/components/projects-v2.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,7 @@ import { ContactComponent } from './contact/components/contact.component';
     ProjectsComponent,
     AboutMeComponent,
     ContactComponent,
+    ProjectsV2Component,
   ],
   imports: [
     CommonModule,
@@ -67,6 +70,7 @@ import { ContactComponent } from './contact/components/contact.component';
       bootstrapLink45deg,
       bootstrapArrowDownCircle,
       bootstrapPinFill,
+      bootstrapFolder2Open,
       simpleDotnet,
       simpleCsharp,
       simpleGo,
@@ -93,6 +97,7 @@ import { ContactComponent } from './contact/components/contact.component';
     NavMenuComponent,
     ExperienceComponent,
     ProjectsComponent,
+    ProjectsV2Component,
     AboutMeComponent,
     ContactComponent,
   ],

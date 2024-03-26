@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['../about-me.component.scss'],
 })
 export class AboutMeComponent {
-  subTitle = 'Full-Stack Developer based in Aveiro, Portugal';
+  role = 'Full-Stack Developer';
+  employment = 'Employee';
   description =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ' +
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +

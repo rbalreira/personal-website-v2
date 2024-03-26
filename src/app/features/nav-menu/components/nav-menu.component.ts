@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
 export class NavMenuComponent {
   @Input() hamburgerToggle = false;
 
-  content = ['Home', 'Projects', 'Skills', 'About', 'Contact'];
+  content = ['Experience', 'Projects', 'About', 'Contact'];
 }

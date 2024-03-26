@@ -6,6 +6,7 @@
  */
 .experiences-nav {
   flex-direction: column;
+  @include a.adjust-container();
 
   & .nav-pills {
     flex-direction: row !important;
@@ -78,6 +79,7 @@
 
     .experience-duration {
       font-size: v.$font-size-regular-text;
+      font-family: "Open-Sans-Medium";
       color: rgb(168, 178, 209);
     }
 
@@ -90,11 +92,7 @@
     }
 
     .experience-stack {
-      @include a.transition-ease-in-out();
-
-      &:hover {
-        @include a.transform-translateY();
-      }
+      @include a.style-tech-stack();
     }
   }
 }

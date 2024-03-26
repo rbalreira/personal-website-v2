@@ -9,6 +9,9 @@ $breakpoints: (
   "small": (
     min-width: 600px,
   ),
+  "2-small-medium": (
+    min-width: 768px,
+  ),
   "small-medium": (
     min-width: 769px,
   ),
@@ -31,3 +34,5 @@ $breakpoints: (
 
 // Font sizes
 $font-size-regular-text: 1rem;
+$font-size-subtitle: 1.3rem;
+$font-size-about-me-text: 1rem;

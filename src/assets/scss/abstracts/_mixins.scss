@@ -32,7 +32,7 @@
 /// Transition ease-in-out timing-function
 /// @access public
 /// @param {seconds} $duration - Duration
-@mixin transition-ease-in-out($duration: 0.3s) {
+@mixin transition-ease-in-out($duration: 0.2s) {
   transition: $duration ease-in-out;
 }
 
@@ -41,4 +41,36 @@
 /// @param {size} $value - Value
 @mixin transform-translateY($value: -10px) {
   transform: translateY($value);
+}
+
+/// Adjust max-width of container
+/// @access public
+@mixin adjust-container() {
+  @include respond-to("2-small-medium") {
+    max-width: 550px;
+  }
+
+  @include respond-to("medium") {
+    max-width: 650px;
+  }
+
+  @include respond-to("large") {
+    max-width: 750px;
+  }
+
+  @include respond-to("extra-large") {
+    max-width: 950px;
+  }
+}
+
+/// Styles technologies stack for sections
+/// @access public
+@mixin style-tech-stack() {
+  font-size: 0.9rem;
+  font-family: "Open-Sans-Bold";
+  color: gray;
+
+  p {
+    line-height: 0.5rem;
+  }
 }

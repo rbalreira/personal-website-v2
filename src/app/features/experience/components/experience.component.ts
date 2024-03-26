@@ -18,20 +18,7 @@ export class ExperienceComponent {
         'A platform for posting courses which are designed as per the Industry demand with full Career Assistance.',
         'A platform for posting courses which are designed as per the Industry demand with full Career Assistance.',
       ],
-      stack: [
-        {
-          name: '.NET',
-          icon: 'simpleDotnet',
-        },
-        {
-          name: 'C#',
-          icon: 'simpleCsharp',
-        },
-        {
-          name: 'Angular',
-          icon: 'simpleAngular',
-        },
-      ],
+      stack: ['.NET', 'C#', 'Angular'],
     },
     {
       id: 2,
@@ -47,32 +34,7 @@ export class ExperienceComponent {
         'Development of RESTFul API in order to send and store information in Database',
         'Implementation of translation management framework (i18next) in web application',
       ],
-      stack: [
-        {
-          name: '.NET',
-          icon: 'simpleDotnet',
-        },
-        {
-          name: 'C#',
-          icon: 'simpleCsharp',
-        },
-        {
-          name: 'React',
-          icon: 'simpleReact',
-        },
-        {
-          name: 'Microsoft SQL Server',
-          icon: 'simpleMicrosoftsqlserver',
-        },
-        {
-          name: 'Nginx',
-          icon: 'simpleNginx',
-        },
-        {
-          name: 'Docker',
-          icon: 'simpleDocker',
-        },
-      ],
+      stack: ['.NET', 'C#', 'React', 'Microsoft SQL Server', 'Nginx', 'Docker'],
     },
     {
       id: 3,
@@ -88,28 +50,7 @@ export class ExperienceComponent {
         'Implementation of unit tests in Python',
         'Localization algorithm in Python that calculates the position of a tag accordingly to the incoming signal by different gateways',
       ],
-      stack: [
-        {
-          name: 'PostgreSQL',
-          icon: 'simplePostgresql',
-        },
-        {
-          name: 'Python',
-          icon: 'simplePython',
-        },
-        {
-          name: 'Redis',
-          icon: 'simpleRedis',
-        },
-        {
-          name: 'Flask',
-          icon: 'simpleFlask',
-        },
-        {
-          name: 'MQTT',
-          icon: 'simpleMqtt',
-        },
-      ],
+      stack: ['PostgreSQL', 'Python', 'Redis', 'Flask', 'MQTT'],
     },
   ];
 }

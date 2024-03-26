@@ -1,0 +1,51 @@
+@use "abstracts" as a;
+
+/**
+ * Helper class to create a card for each Project content and style the content within
+ */
+.projects {
+  @include a.adjust-container();
+
+  &-project {
+    background-color: rgb(30, 70, 139);
+    border-radius: 15px;
+
+    @include a.transition-ease-in-out();
+
+    &:hover {
+      @include a.transform-translateY();
+    }
+  }
+
+  &-folder ng-icon {
+    font-size: 1.2rem;
+  }
+
+  &-links {
+    ng-icon {
+      transition: all 0.3s linear;
+      font-size: 0.8rem;
+    }
+
+    &:hover ng-icon,
+    &:hover ng-icon:focus,
+    &:hover ng-icon:active {
+      transform: scale(1.3);
+      color: var(--hamburger-hover-color);
+    }
+  }
+
+  &-title {
+    font-family: "Open-Sans-Medium";
+    font-size: a.$font-size-subtitle;
+    @include a.transition-ease-in-out();
+  }
+
+  &-description {
+    font-size: a.$font-size-regular-text;
+  }
+
+  &-stack {
+    @include a.style-tech-stack();
+  }
+}

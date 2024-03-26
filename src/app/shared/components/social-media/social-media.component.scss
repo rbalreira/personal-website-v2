@@ -51,7 +51,7 @@
     }
   }
 
-  @include a.respond-to("medium") {
+  @include a.respond-to("small-medium") {
     display: none;
   }
 }
@@ -81,7 +81,7 @@
     }
   }
 
-  @include a.respond-to("medium") {
+  @include a.respond-to("small-medium") {
     display: block;
   }
 }
