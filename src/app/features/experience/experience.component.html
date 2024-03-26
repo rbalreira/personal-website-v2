@@ -4,8 +4,12 @@
             <button ngbNavLink>{{experience.name}}</button>
             <ng-template ngbNavContent>
                 <div class="content">
-                    <h4>{{experience.role}} <span class="experience-name">&#64;{{experience.name}}</span></h4>
-                    <p>{{experience.duration}}</p>
+                    <h4 class="experience-title">{{experience.role}}
+                        <a href="{{experience.website}}" target="_blank">
+                            <span class="experience-name">&#64; {{experience.name}}</span>
+                        </a>
+                    </h4>
+                    <p class="experience-duration">{{experience.duration}}</p>
                     <ul class="experience-activities">
                         <ng-container *ngFor="let activity of experience.activities">
                             <li>
@@ -13,13 +17,13 @@
                             </li>
                         </ng-container>
                     </ul>
-                    <ul class="experience-stack text-start p-0 mt-4">
-                        <ng-container *ngFor="let tech of experience.stack">
-                            <li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-auto experience-stack" *ngFor="let tech of experience.stack">
                                 <ng-icon name="{{tech.icon}}"></ng-icon>
-                            </li>
-                        </ng-container>
-                    </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </ng-template>
         </ng-container>

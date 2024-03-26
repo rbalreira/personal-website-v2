@@ -29,8 +29,5 @@ $breakpoints: (
   ),
 );
 
-// Defined variables for day-night mode toggle element
-$day-night-mode-toggle-light-color: hsl(56, 100%, 50%);
-$day-night-mode-toggle-dark-color: hsl(360, 100%, 100%);
-$day-night-mode-toggle-light-ring-color: hsl(49, 100%, 50%);
-$day-night-mode-toggle-dark-ring-color: hsl(216, 31%, 20%);
+// Font sizes
+$font-size-regular-text: 1rem;

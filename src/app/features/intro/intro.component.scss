@@ -30,11 +30,13 @@
     }
 
     &-role {
-      font-size: clamp(1.5rem, 4.5vw, 2rem);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-family: "Poppins-Regular";
     }
 
     &-based-address {
       font-size: clamp(1rem, 3vw, 1.3rem);
+      font-family: "Poppins-Light";
     }
 
     &-pin-fill {
@@ -49,7 +51,8 @@
 
   .stack-title {
     border-bottom: 2px solid #5a7ffb;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-family: "Poppins-Regular";
   }
 
   .stack {

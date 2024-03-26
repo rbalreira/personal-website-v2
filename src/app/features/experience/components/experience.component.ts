@@ -10,6 +10,7 @@ export class ExperienceComponent {
     {
       id: 1,
       name: 'Critical Manufacturing',
+      website: 'https://www.criticalmanufacturing.com/',
       role: 'Software Engineer',
       duration: 'Feb 2022 - Present',
       activities: [
@@ -35,6 +36,7 @@ export class ExperienceComponent {
     {
       id: 2,
       name: 'Mafirol Group',
+      website: 'https://mafirol.pt/',
       role: 'Full Stack Developer',
       duration: 'Mar 2021 - Jan 2022',
       activities: [
@@ -75,6 +77,7 @@ export class ExperienceComponent {
     {
       id: 3,
       name: 'Wavecom',
+      website: 'https://wavecom.pt/',
       role: 'Backend Developer',
       duration: 'Mar 2020 - Jul 2020',
       activities: [
