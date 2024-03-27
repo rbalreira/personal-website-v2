@@ -1,16 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 
+import { FuncsService } from '@app/core/services/funcs/funcs.service';
+import { NavMenuToggleService } from '@app/core/services/nav-menu-toggle/nav-menu-toggle.service';
+
+import { navMenuContent } from '@app/features/models/nav-menu.model';
+
 @Component({
   selector: 'app-header',
   templateUrl: '../header.component.html',
   styleUrls: ['../header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  hamburgerToggle = false;
+  constructor(
+    private funcsService: FuncsService,
+    private navMenuToggleService: NavMenuToggleService
+  ) {}
 
-  getHamburgerToggle() {
-    this.hamburgerToggle = !this.hamburgerToggle;
+  content = navMenuContent;
+
+  getHamburgerCurrentMode() {
+    return this.funcsService.currentHamburgerToggleMode;
+  }
+
+  toggleHamburger() {
+    this.navMenuToggleService.toggleMode();
   }
 
   ngOnInit(): void {

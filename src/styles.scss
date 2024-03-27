@@ -23,6 +23,10 @@ body.light {
   @include i.light-mode();
 }
 
+body.is-active {
+  overflow: hidden;
+}
+
 body {
   font-family: "Open-Sans-Regular";
 

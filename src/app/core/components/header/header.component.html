@@ -3,17 +3,8 @@
         Balreira.dev
     </a>
     <ul class="navbar-nav align-items-center">
-        <li class="nav-item me-3 list-items p-1">
-            <a href="#experience">Experience</a>
-        </li>
-        <li class="nav-item me-3 list-items p-1">
-            <a href="#projects">Projects</a>
-        </li>
-        <li class="nav-item me-3 list-items p-1">
-            <a href="#about">About</a>
-        </li>
-        <li class="nav-item list-items p-1">
-            <a href="#contact">Contact</a>
+        <li class="nav-item list-items p-1" *ngFor="let c of content; last as isLast" [class.me-3]="!isLast">
+            <a href="#{{c.name.toLowerCase()}}">{{c.name}}</a>
         </li>
         <li class="nav-item dropdown-flags p-1">
             <app-dropdown-flags></app-dropdown-flags>
@@ -22,8 +13,8 @@
             <day-night-mode-toggle></day-night-mode-toggle>
         </li>
         <li class="nav-item hamburger-item ms-3 p-2">
-            <button class="hamburger hamburger--arrowturn p-0" type="button" appHamburgerToggle
-                (click)="getHamburgerToggle()">
+            <button class="hamburger hamburger--arrowturn p-0" type="button"
+                [ngClass]="getHamburgerCurrentMode() ? 'is-active' : ''" (click)="toggleHamburger()">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
@@ -31,4 +22,4 @@
         </li>
     </ul>
 </nav>
-<app-nav-menu [hamburgerToggle]="hamburgerToggle"></app-nav-menu>
+<app-nav-menu></app-nav-menu>

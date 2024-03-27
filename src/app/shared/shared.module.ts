@@ -8,18 +8,12 @@ import {
 } from '@ng-icons/bootstrap-icons';
 import { simpleCodepen } from '@ng-icons/simple-icons';
 
-import { HamburgerToggleDirective } from '../shared/directives/hamburger/hamburger-toggle.directive';
 import { SvgAvatarComponent } from '../shared/components/svg-avatar/svg-avatar.component';
 import { SvgLogoComponent } from '../shared/components/svg-logo/svg-logo.component';
 import { SocialMediaComponent } from './components/social-media/components/social-media.component';
 
 @NgModule({
-  declarations: [
-    SvgAvatarComponent,
-    SvgLogoComponent,
-    HamburgerToggleDirective,
-    SocialMediaComponent,
-  ],
+  declarations: [SvgAvatarComponent, SvgLogoComponent, SocialMediaComponent],
   imports: [
     CommonModule,
     NgIconsModule.withIcons({
@@ -29,11 +23,6 @@ import { SocialMediaComponent } from './components/social-media/components/socia
       simpleCodepen,
     }),
   ],
-  exports: [
-    SvgAvatarComponent,
-    SvgLogoComponent,
-    HamburgerToggleDirective,
-    SocialMediaComponent,
-  ],
+  exports: [SvgAvatarComponent, SvgLogoComponent, SocialMediaComponent],
 })
 export class SharedModule {}

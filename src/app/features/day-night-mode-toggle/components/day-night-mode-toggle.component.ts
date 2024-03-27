@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { DayNightModeToggleService } from '../services/day-night-mode-toggle.service';
 import { FuncsService } from '@app/core/services/funcs/funcs.service';
 

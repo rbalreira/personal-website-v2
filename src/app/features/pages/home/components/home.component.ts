@@ -10,7 +10,6 @@ import { Mode } from '@app/features/models/day-night-mode.enum';
   styleUrls: ['../home.component.scss'],
 })
 export class HomeComponent {
-  title = 'portfolio-website';
   /**
    * current active mode
    */
