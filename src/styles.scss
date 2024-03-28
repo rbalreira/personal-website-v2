@@ -2,7 +2,7 @@
 
 /* You can add global styles to this file, and also import other style files */
 
-/* Importing Bootstrap SCSS file. */
+/* Importing custom SCSS files. */
 @use "./assets/scss/index" as i;
 
 /* Importing Bootstrap SCSS file. */
@@ -15,22 +15,21 @@
 $hamburger-hover-opacity: 1;
 @import "hamburgers/_sass/hamburgers/hamburgers.scss";
 
-body.dark {
-  @include i.dark-mode();
-}
-
-body.light {
-  @include i.light-mode();
-}
-
-body.is-active {
-  overflow: hidden;
-}
-
 body {
   font-family: "Open-Sans-Regular";
-
   margin: 0px 20px 20px;
+
+  @include i.respond-to("small-medium") {
+    overflow-y: scroll !important;
+  }
+
+  &.dark {
+    @include i.dark-mode();
+  }
+
+  &.light {
+    @include i.light-mode();
+  }
 
   a {
     color: var(--text-color);
@@ -41,4 +40,33 @@ body {
   &.light {
     transition: all 0.5s;
   }
+
+  &.is-active {
+    overflow: hidden;
+  }
 }
+
+/* Scrollbar Styles */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
+
+/* Scrollbar Styles */

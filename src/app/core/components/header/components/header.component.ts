@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { gsap } from 'gsap';
 
 import { FuncsService } from '@app/core/services/funcs/funcs.service';
@@ -12,12 +12,26 @@ import { navMenuContent } from '@app/features/models/nav-menu.model';
   styleUrls: ['../header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  content = navMenuContent;
+
   constructor(
     private funcsService: FuncsService,
     private navMenuToggleService: NavMenuToggleService
   ) {}
 
-  content = navMenuContent;
+  /**
+   * HostListener event to capture window width in order to inactive Hamburger icon menu
+   * in case the window was resized having icon as active
+   */
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    if (
+      window.innerWidth >= 769 &&
+      this.funcsService.currentHamburgerToggleMode
+    ) {
+      this.toggleHamburger();
+    }
+  }
 
   getHamburgerCurrentMode() {
     return this.funcsService.currentHamburgerToggleMode;
