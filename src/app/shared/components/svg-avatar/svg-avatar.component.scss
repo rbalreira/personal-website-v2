@@ -1,3 +1,9 @@
+/**
+ * Helper class to filter avatar image effects
+ * 1. Add a border-radius to make a circle around the image 
+ * 2. Set a sepia filter to impart a mellow tone to the image
+ * 3. On hovering the image, sepia filter is set to 0 with a transform on Y axis
+ */
 .avatar {
   width: 100%;
   height: auto;

@@ -22,6 +22,9 @@
     }
   }
 
+  /**
+  * Add borders bottom/left to the buttons in left side of the main content
+  */
   button {
     color: var(--text-color);
     border-radius: 0%;
@@ -52,9 +55,12 @@
     }
   }
 
+  /**
+  * Set a max-width to the content to shrink it a bit more
+  */
   .content {
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     margin-top: 1.5rem;
 
     @include a.respond-to("small") {

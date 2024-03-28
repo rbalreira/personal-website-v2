@@ -34,7 +34,7 @@
 }
 
 /**
- * Helper class to set footer styles and flex-direction row for social media list items
+ * Helper class to set a footer social media for small screens
  */
 .is-footer {
   text-align: center;
@@ -51,13 +51,16 @@
     }
   }
 
+  /**
+   * Footer social media is displayed in small screens only
+   */
   @include a.respond-to("small-medium") {
     display: none;
   }
 }
 
 /**
- * Helper class to set fixed social media list items
+ * Helper class to set a left-side fixed social media for medium/large screens
  */
 .is-not-footer {
   position: fixed;
@@ -81,6 +84,9 @@
     }
   }
 
+  /**
+   * Left side fixed Social Media is displayed in medium/large screens only
+   */
   @include a.respond-to("small-medium") {
     display: block;
   }
