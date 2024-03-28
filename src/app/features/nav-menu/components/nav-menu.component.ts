@@ -11,6 +11,8 @@ import { NavMenuToggleService } from '@app/core/services/nav-menu-toggle/nav-men
   styleUrls: ['../nav-menu.component.scss'],
 })
 export class NavMenuComponent {
+  content = navMenuContent;
+
   constructor(
     private funcsService: FuncsService,
     private navMenuToggleService: NavMenuToggleService
@@ -23,6 +25,4 @@ export class NavMenuComponent {
   toggleHamburger() {
     this.navMenuToggleService.toggleMode();
   }
-
-  content = navMenuContent;
 }

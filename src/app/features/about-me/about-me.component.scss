@@ -6,7 +6,7 @@
  * 2. Moving image diagonally using the transform property and translate element
  */
 .about-me {
-  @include a.adjust-container();
+  @include a.adjust-grid-container();
 
   p {
     font-size: a.$font-size-about-me-text;

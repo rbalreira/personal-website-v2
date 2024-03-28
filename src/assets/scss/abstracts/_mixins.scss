@@ -43,9 +43,9 @@
   transform: translateY($value);
 }
 
-/// Adjust max-width of container
+/// Adjust max-width of grid container system
 /// @access public
-@mixin adjust-container() {
+@mixin adjust-grid-container() {
   @include respond-to("2-small-medium") {
     max-width: 550px;
   }

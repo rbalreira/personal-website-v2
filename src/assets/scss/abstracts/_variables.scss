@@ -1,8 +1,5 @@
 // Breakpoints to use for Responsive Web Design
 $breakpoints: (
-  "2-extra-small": (
-    min-width: 300px,
-  ),
   "extra-small": (
     min-width: 400px,
   ),
@@ -21,14 +18,8 @@ $breakpoints: (
   "large": (
     min-width: 1000px,
   ),
-  "large-extra-large": (
-    min-width: 1100px,
-  ),
   "extra-large": (
     min-width: 1200px,
-  ),
-  "2-extra-large": (
-    min-width: 1400px,
   ),
 );
 

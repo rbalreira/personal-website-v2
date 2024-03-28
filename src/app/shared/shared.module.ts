@@ -9,11 +9,10 @@ import {
 import { simpleCodepen } from '@ng-icons/simple-icons';
 
 import { SvgAvatarComponent } from '../shared/components/svg-avatar/svg-avatar.component';
-import { SvgLogoComponent } from '../shared/components/svg-logo/svg-logo.component';
 import { SocialMediaComponent } from './components/social-media/components/social-media.component';
 
 @NgModule({
-  declarations: [SvgAvatarComponent, SvgLogoComponent, SocialMediaComponent],
+  declarations: [SvgAvatarComponent, SocialMediaComponent],
   imports: [
     CommonModule,
     NgIconsModule.withIcons({
@@ -23,6 +22,6 @@ import { SocialMediaComponent } from './components/social-media/components/socia
       simpleCodepen,
     }),
   ],
-  exports: [SvgAvatarComponent, SvgLogoComponent, SocialMediaComponent],
+  exports: [SvgAvatarComponent, SocialMediaComponent],
 })
 export class SharedModule {}

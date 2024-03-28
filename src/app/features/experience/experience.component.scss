@@ -6,7 +6,7 @@
  */
 .experiences-nav {
   flex-direction: column;
-  @include a.adjust-container();
+  @include a.adjust-grid-container();
 
   & .nav-pills {
     flex-direction: row !important;

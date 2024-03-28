@@ -4,7 +4,7 @@
  * Helper class to create a card for each Project content and style the content within
  */
 .projects {
-  @include a.adjust-container();
+  @include a.adjust-grid-container();
 
   &-project {
     background-color: rgb(30, 70, 139);
