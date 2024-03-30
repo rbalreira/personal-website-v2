@@ -1,10 +1,12 @@
-<section>
-    <div class="container intro d-md-flex align-items-md-center justify-content-md-center">
+<section class="intro">
+    <div class="container intro-wrapper d-md-flex align-items-md-center justify-content-md-center">
         <div class="row mt-2 gy-3">
             <div class="col-12">
                 <div class="row d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center">
                     <div class="col-12 col-md-auto">
-                        <h1 class="main-title">Ricardo <span class="main-last-name">Balreira</span></h1>
+                        <h1 class="main-title">
+                            <span class="main-first-name">Ricardo</span> <span class="main-last-name">Balreira</span>
+                        </h1>
                         <p class="main-role">A Full-Stack Developer</p>
                         <p class="main-based-address mt-2">Based in Aveiro, Portugal
                             <span class="ms-2 main-pin-fill lh-base">
@@ -26,7 +28,7 @@
                         <div class="row justify-content-center">
                             <div class="col-auto stack" *ngFor="let stack of techStack">
                                 <ng-container *ngFor="let tech of stack.stack">
-                                    <ng-icon class="ms-2" name="{{tech.icon}}"></ng-icon>
+                                    <ng-icon class="ms-2 {{tech.class}}" name="{{tech.icon}}"></ng-icon>
                                 </ng-container>
                             </div>
                         </div>

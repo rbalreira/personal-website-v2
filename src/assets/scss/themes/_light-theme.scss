@@ -1,31 +1,255 @@
-$bg-color_light: #faf0d7;
-$navbar-bg-color_light: gray;
-$text-color_light: hsl(0, 0%, 0%);
-$section-title-color_light: rgb(194, 32, 133);
-$border-color_light: hsl(0, 0%, 0%);
-$logo-fill_light: hsl(202, 55%, 19%);
-$hamburger-color_light: rgb(187, 119, 67);
-$nav-menu-bg-color_light: hsl(360, 100%, 100%);
-$nav-menu-color_light: hsl(0, 0%, 0%);
-$nav-menu-hover-color_light: rgb(77, 42, 16);
-$hamburger-hover-color_light: rgb(77, 42, 16);
+/* background theme */
+$bg-color_light: #f0f0f0;
+$bg-secondary-color_light: hsl(360, 100%, 100%);
+/* end background theme */
+
+/* text theme */
+$text-font-family_light: "OpenSans-Medium";
+$text-color_light: rgb(97, 89, 120);
+$text-hover-color_light: #ff6868;
+/* end text theme */
+
+/* section theme */
+$section-title-color_light: hsl(0, 0%, 0%);
+$section-cosmetic-content-title-color_light: #00a9ff;
+/* end section theme */
+
+/* technology stack theme */
+$tech-stack-font-family_light: "OpenSans-Bold";
+$tech-stack-color_light: gray;
+/* end technology stack theme */
+
+/* social media theme */
+$social-media-color_light: hsl(0, 0%, 0%);
+$social-media-line-color_light: #a8b2d1;
+/* end social media theme */
+
+/* header theme */
+// background
+$navbar-bg-color_light: hsla(360, 100%, 100%, 1);
+$navbar-box-shadow_light: 0px 8px 24px -1px hsla(0, 0%, 50.2%, 1);
+// brand
+$navbar-brand-font-family_light: "InknutAntiqua-ExtraBold";
+$navbar-brand-color_light: hsla(240, 2.74%, 28.63%, 1);
+// items
+$navbar-items-color_light: hsl(0, 0%, 0%);
+$navbar-items-font-family_light: "Poppins-SemiBold";
+$navbar-dropdown-flags-color_light: $navbar-items-color_light;
+$navbar-theme-mode-bg-color_light: #ffd966;
+$navbar-theme-mode-label-box-shadow_light: 0px 0px 55px 14px
+  rgba(255, 217, 102, 1);
+$navbar-theme-mode-color_light: #fc9601;
+$navbar-theme-mode-hover-bg-color_light: #d14009;
+// hamburger
+$navbar-menu-hamburger-color_light: $navbar-brand-color_light;
+// menu
+$navbar-menu-text-color_light: $text-color_light;
+$navbar-menu-text-color_hover_light: $text-hover-color_light;
+$navbar-menu-bg-color_light: hsl(360, 100%, 100%);
+$navbar-menu-items-hover-bg-color_light: #ead2ac;
+/* end header theme */
+
+/* intro theme */
+$intro-first-name-color_light: $navbar-brand-color_light;
+$intro-last-name-color_light: $text-hover-color_light;
+$intro-role-color_light: $navbar-items-color_light;
+$intro-role-font-family_light: "Poppins-Regular";
+$intro-based-address-color_light: $navbar-items-color_light;
+$intro-based-address-font-family_light: "Poppins-Regular";
+$intro-pin-fill-icon-color_light: red;
+$intro-stack-title-font-family_light: "Poppins-Regular";
+$intro-stack-title-color_light: $navbar-items-color_light;
+// icons
+$intro-icons-dotnet-color_light: black;
+$intro-icons-csharp-color_light: #280068;
+$intro-icons-go-color_light: #29beb0;
+$intro-icons-react-color_light: #61dbfb;
+$intro-icons-angular-color_light: #dd1b16;
+$intro-icons-javascript-color_light: #f0db4f;
+$intro-icons-typescript-color_light: #007acc;
+$intro-icons-sass-color_light: #c69;
+$intro-icons-css3-color_light: #264de4;
+/* end intro theme */
+
+/* experience theme */
+$experience-nav-btn-color_light: $navbar-items-color_light;
+$experience-nav-btn-font-family_light: "OpenSans-SemiBold";
+$experience-nav-btn-border-color_light: $text-color_light;
+$experience-nav-btn-active-border-color_light: $text-hover-color_light;
+$experience-nav-btn-active-color_light: $text-hover-color_light;
+$experience-nav-btn-hover-color_light: $text-hover-color_light;
+$experience-nav-btn-hover-bg-color_light: $navbar-menu-items-hover-bg-color_light;
+$experience-nav-title-color_light: $navbar-items-color_light;
+$experience-nav-title-font-family_light: "OpenSans-SemiBold";
+$experience-nav-name-color_light: $text-hover-color_light;
+$experience-nav-name-hover-color_light: $text-hover-color_light;
+$experience-nav-duration-font-family_light: "OpenSans-Bold";
+$experience-nav-duration-color_light: $section-cosmetic-content-title-color_light;
+$experience-nav-list-marker-color_light: $section-cosmetic-content-title-color_light;
+/* end experience theme */
+
+/* projects theme */
+$projects-card-bg-color_light: #eae0da;
+$projects-card-box-shadow_light: 0px 0px 10px 2px $text-hover-color_light;
+$projects-card-icons-folder-color_light: $section-cosmetic-content-title-color_light;
+$projects-card-icons-github-color_light: hsl(0, 0%, 0%);
+$projects-card-icons-link-color_light: hsl(0, 0%, 0%);
+$projects-card-icons-hover-color_light: $text-hover-color_light;
+$projects-card-title-color_light: hsl(0, 0%, 0%);
+$projects-card-title-hover-color_light: $text-hover-color_light;
+$projects-card-title-font-family_light: "OpenSans-SemiBold";
+/* end projects theme */
+
+/* about theme */
+$about-me-subtitles-color_light: hsl(0, 0%, 0%);
+$about-me-subtitles-font-family_light: "OpenSans-Bold";
+/* end about theme */
+
+/* contact theme */
+$contact-title-color_light: hsl(0, 0%, 0%);
+$contact-title-font-family_light: "OpenSans-Medium";
+$contact-email-box-shadow_light: 0px 0px 10px 2px hsl(0, 0%, 0%);
+$contact-email-border-color_light: hsl(0, 0%, 0%);
+$contact-email-text-color_light: white;
+$contact-email-text-hover-color_light: hsl(0, 0%, 0%);
+$contact-email-text-font-family_light: "OpenSans-SemiBold";
+$contact-email-bg-color_light: $section-cosmetic-content-title-color_light;
+$contact-email-bg-hover-color_light: transparent;
+/* end contact theme */
+
+/* footer theme */
+$footer-text-color_light: $text-color_light;
+$footer-text-hover-color_light: $text-hover-color_light;
+/* end footer theme */
+
 $overlay-image-color_light: rgba(57, 57, 57, 0.5);
-$section-cosmetic-content-title-color_light: #5a7ffb;
 
 // mixin that enables css variables in light mode
 @mixin light-mode() {
+  /* background theme */
   background-color: #{$bg-color_light};
+  --bg-secondary-color: #{$bg-secondary-color_light};
+  /* end background theme */
+
   color: #{$text-color_light};
-  border-color: #{$border-color_light};
-  --navbar-bg-color: #{$navbar-bg-color_light};
+
+  /* text theme */
+  --text-font-family: #{$text-font_family_light};
   --text-color: #{$text-color_light};
+  --text-hover-color: #{$text-hover-color_light};
+  /* end text theme */
+
+  /* section theme */
   --section-title-color: #{$section-title-color_light};
-  --logo-fill: #{$logo-fill_light};
-  --hamburger-color: #{$hamburger-color_light};
-  --nav-menu-bg-color: #{$nav-menu-bg-color_light};
-  --nav-menu-color: #{$nav-menu-color_light};
-  --nav-menu-hover-color: #{$nav-menu-hover-color_light};
-  --hamburger-hover-color: #{$hamburger-hover-color_light};
-  --overlay-image-color: #{$overlay-image-color_light};
   --section-cosmetic-content-title-color: #{$section-cosmetic-content-title-color_light};
+  /* end section theme */
+
+  /* technology stack theme */
+  --tech-stack-font-family: #{$tech-stack-font-family_light};
+  --tech-stack-color: #{$tech-stack-color_light};
+  /* end technology stack theme */
+
+  /* social media theme */
+  --social-media-color: #{$social-media-color_light};
+  --social-media-line-color: #{$social-media-line-color_light};
+  /* end social media theme */
+
+  /* header theme */
+  // background
+  --navbar-bg-color: #{$navbar-bg-color_light};
+  --navbar-box-shadow: #{$navbar-box-shadow_light};
+  // brand
+  --navbar-brand-font-family: #{$navbar-brand-font-family_light};
+  --navbar-brand-color: #{$navbar-brand-color_light};
+  // items
+  --navbar-items-color: #{$navbar-items-color_light};
+  --navbar-items-font-family: #{$navbar-items-font-family_light};
+  --navbar-dropdown-flags-color: #{$navbar-dropdown-flags-color_light};
+  --navbar-theme-mode-bg-color: #{$navbar-theme-mode-bg-color_light};
+  --navbar-theme-mode-label-box-shadow: #{$navbar-theme-mode-label-box-shadow_light};
+  --navbar-theme-mode-color: #{$navbar-theme-mode-color_light};
+  --navbar-theme-mode-hover-bg-color: #{$navbar-theme-mode-hover-bg-color_light};
+  // hamburger
+  --navbar-menu-hamburger-color: #{$navbar-menu-hamburger-color_light};
+  // menu
+  --navbar-menu-text-color: #{$navbar-menu-text-color_light};
+  --navbar-menu-text-color-hover: #{$navbar-menu-text-color_hover_light};
+  --navbar-menu-bg-color: #{$navbar-menu-bg-color_light};
+  --navbar-menu-items-hover-bg-color: #{$navbar-menu-items-hover-bg-color_light};
+  /* end header theme */
+
+  /* intro theme */
+  --intro-first-name-color: #{$intro-first-name-color_light};
+  --intro-last-name-color: #{$intro-last-name-color_light};
+  --intro-role-color: #{$intro-role-color_light};
+  --intro-role-font-family: #{$intro-role-font-family_light};
+  --intro-based-address-color: #{$intro-based-address-color_light};
+  --intro-based-address-font-family: #{$intro-based-address-font-family_light};
+  --intro-pin-fill-icon-color: #{$intro-pin-fill-icon-color_light};
+  --intro-stack-title-font-family: #{$intro-stack-title-font-family_light};
+  --intro-stack-title-color: #{$intro-stack-title-color_light};
+  // icons
+  --intro-icons-dotnet-color: #{$intro-icons-dotnet-color_light};
+  --intro-icons-csharp-color: #{$intro-icons-csharp-color_light};
+  --intro-icons-go-color: #{$intro-icons-go-color_light};
+  --intro-icons-react-color: #{$intro-icons-react-color_light};
+  --intro-icons-angular-color: #{$intro-icons-angular-color_light};
+  --intro-icons-javascript-color: #{$intro-icons-javascript-color_light};
+  --intro-icons-typescript-color: #{$intro-icons-typescript-color_light};
+  --intro-icons-sass-color: #{$intro-icons-sass-color_light};
+  --intro-icons-css3-color: #{$intro-icons-css3-color_light};
+  /* end intro theme */
+
+  /* experience theme */
+  --experience-nav-btn-color: #{$experience-nav-btn-color_light};
+  --experience-nav-btn-font-family: #{$experience-nav-btn-font-family_light};
+  --experience-nav-btn-border-color: #{$experience-nav-btn-border-color_light};
+  --experience-nav-btn-active-border-color: #{$experience-nav-btn-active-border-color_light};
+  --experience-nav-btn-active-color: #{$experience-nav-btn-active-color_light};
+  --experience-nav-btn-hover-color: #{$experience-nav-btn-hover-color_light};
+  --experience-nav-btn-hover-bg-color: #{$experience-nav-btn-hover-bg-color_light};
+  --experience-nav-title-color: #{$experience-nav-title-color_light};
+  --experience-nav-title-font-family: #{$experience-nav-title-font-family_light};
+  --experience-nav-name-color: #{$experience-nav-name-color_light};
+  --experience-nav-name-hover-color: #{$experience-nav-name-hover-color_light};
+  --experience-nav-duration-font-family: #{$experience-nav-duration-font-family_light};
+  --experience-nav-duration-color: #{$experience-nav-duration-color_light};
+  --experience-nav-list-marker-color: #{$experience-nav-list-marker-color_light};
+  /* end experience theme */
+
+  /* projects theme */
+  --projects-card-bg-color: #{$projects-card-bg-color_light};
+  --projects-card-box-shadow: #{$projects-card-box-shadow_light};
+  --projects-card-icons-folder-color: #{$projects-card-icons-folder-color_light};
+  --projects-card-icons-github-color: #{$projects-card-icons-github-color_light};
+  --projects-card-icons-link-color: #{$projects-card-icons-link-color_light};
+  --projects-card-icons-hover-color: #{$projects-card-icons-hover-color_light};
+  --projects-card-title-color: #{$projects-card-title-color_light};
+  --projects-card-title-hover-color: #{$projects-card-title-hover-color_light};
+  --projects-card-title-font-family: #{$projects-card-title-font-family_light};
+  /* end projects theme */
+
+  /* about theme */
+  --about-me-subtitles-color: #{$about-me-subtitles-color_light};
+  --about-me-subtitles-font-family: #{$about-me-subtitles-font-family_light};
+  /* end about theme */
+
+  /* contact theme */
+  --contact-title-color: #{$contact-title-color_light};
+  --contact-title-font-family: #{$contact-title-font-family_light};
+  --contact-email-box-shadow: #{$contact-email-box-shadow_light};
+  --contact-email-border-color: #{$contact-email-border-color_light};
+  --contact-email-text-color: #{$contact-email-text-color_light};
+  --contact-email-text-hover-color: #{$contact-email-text-hover-color_light};
+  --contact-email-text-font-family: #{$contact-email-text-font-family_light};
+  --contact-email-bg-color: #{$contact-email-bg-color_light};
+  --contact-email-bg-hover-color: #{$contact-email-bg-hover-color_light};
+  /* end contact theme */
+
+  /* footer theme */
+  --footer-text-color: #{$footer-text-color_light};
+  --footer-text-hover-color: #{$text-hover-color_light};
+  /* end footer theme */
+
+  --overlay-image-color: #{$overlay-image-color_light};
 }

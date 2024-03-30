@@ -14,14 +14,17 @@ export class IntroComponent implements OnInit {
         {
           name: '.NET Core',
           icon: 'simpleDotnet',
+          class: 'dotnet',
         },
         {
           name: 'C#',
           icon: 'simpleCsharp',
+          class: 'csharp',
         },
         {
           name: 'Go',
           icon: 'simpleGo',
+          class: 'go',
         },
       ],
     },
@@ -31,10 +34,12 @@ export class IntroComponent implements OnInit {
         {
           name: 'React',
           icon: 'simpleReact',
+          class: 'react',
         },
         {
           name: 'Angular',
           icon: 'simpleAngular',
+          class: 'angular',
         },
       ],
     },
@@ -44,10 +49,12 @@ export class IntroComponent implements OnInit {
         {
           name: 'JavaScript',
           icon: 'simpleJavascript',
+          class: 'javascript',
         },
         {
           name: 'TypeScript',
           icon: 'simpleTypescript',
+          class: 'typescript',
         },
       ],
     },
@@ -57,10 +64,12 @@ export class IntroComponent implements OnInit {
         {
           name: 'Sass',
           icon: 'simpleSass',
+          class: 'sass',
         },
         {
           name: 'CSS',
           icon: 'simpleCss3',
+          class: 'css3',
         },
       ],
     },

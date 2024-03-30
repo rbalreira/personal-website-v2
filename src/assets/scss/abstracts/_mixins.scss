@@ -32,8 +32,8 @@
 /// Transition ease-in-out timing-function
 /// @access public
 /// @param {seconds} $duration - Duration
-@mixin transition-ease-in-out($duration: 0.2s) {
-  transition: $duration ease-in-out;
+@mixin transition-ease-in-out($duration: 0.2s, $property: "") {
+  transition: #{$property} $duration ease-in-out;
 }
 
 /// Translate Y axis for specific element
@@ -46,7 +46,7 @@
 /// Adjust max-width of grid container system
 /// @access public
 @mixin adjust-grid-container() {
-  @include respond-to("2-small-medium") {
+  @include respond-to("3-small-medium") {
     max-width: 550px;
   }
 
@@ -67,8 +67,8 @@
 /// @access public
 @mixin style-tech-stack() {
   font-size: 0.9rem;
-  font-family: "Open-Sans-Bold";
-  color: gray;
+  font-family: var(--tech-stack-font-family);
+  color: var(--tech-stack-color);
 
   p {
     line-height: 0.5rem;

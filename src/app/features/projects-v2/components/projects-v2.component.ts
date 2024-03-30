@@ -11,10 +11,10 @@ export class ProjectsV2Component {
       id: 1,
       name: 'Project 1',
       description:
-        'A platform for posting courses which are designed as per the Industry demand with full Career Assistance.',
+        'A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance.',
       img: 'project-1.png',
-      github: '#',
-      site: '#',
+      github: '/github2',
+      site: '/site',
       stack: ['PostgreSQL', 'Python', 'Redis', 'Flask', 'MQTT'],
     },
     {
@@ -25,7 +25,15 @@ export class ProjectsV2Component {
       img: 'project-2.png',
       github: '#',
       site: '#',
-      stack: ['PostgreSQL', 'Python', 'Redis', 'Flask', 'MQTT'],
+      stack: [
+        'PostgreSQL',
+        'Python',
+        'Redis',
+        'Flask',
+        'MQTT',
+        'PostgreSQL',
+        'Python',
+      ],
     },
     {
       id: 3,

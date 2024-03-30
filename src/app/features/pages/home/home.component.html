@@ -3,20 +3,20 @@
 </header>
 <main>
     <app-intro></app-intro>
-    <app-section sectionTitle="Experience" id="experience">
+    <app-section sectionTitle="Experience" id="experience" [hasSecondaryBgColor]="true">
         <app-experience class="d-flex justify-content-center"></app-experience>
     </app-section>
     <app-section sectionTitle="Projects" id="projects">
         <app-projects-v2></app-projects-v2>
     </app-section>
-    <app-section sectionTitle="About Me" id="about">
+    <app-section sectionTitle="About Me" id="about" [hasSecondaryBgColor]="true">
         <app-about-me></app-about-me>
     </app-section>
     <app-section sectionTitle="What's next?" id="contact">
         <app-contact></app-contact>
     </app-section>
 </main>
-<footer>
+<footer class="pb-4 pt-5 secondary-bg-color">
     <app-footer></app-footer>
 </footer>
 <div class="fixed-footer">

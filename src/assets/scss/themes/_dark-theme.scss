@@ -1,31 +1,255 @@
+/* background theme */
 $bg-color_dark: hsl(217, 35%, 20%);
-$navbar-bg-color_dark: hsl(216, 62%, 14%, 0.9);
+$bg-secondary-color_dark: hsl(217, 35%, 20%);
+/* end background theme */
+
+/* text theme */
+$text-font-family_dark: "OpenSans-Regular";
 $text-color_dark: hsl(360, 100%, 100%);
-$section-title-color_dark: #ffd700;
-$border-color_dark: hsl(360, 100%, 100%);
-$logo-fill_dark: hsl(15, 49%, 78%);
-$hamburger-color_dark: hsl(360, 100%, 100%);
-$nav-menu-bg-color_dark: hsl(0, 0%, 0%);
-$nav-menu-color_dark: hsl(360, 100%, 100%);
-$nav-menu-hover-color_dark: rgb(84, 18, 18);
-$hamburger-hover-color_dark: rgb(84, 18, 18);
-$overlay-image-color_dark: rgba(57, 57, 57, 0.5);
+$text-hover-color_dark: #ff6868;
+/* end text theme */
+
+/* section theme */
+$section-title-color_dark: hsl(360, 100%, 100%);
 $section-cosmetic-content-title-color_dark: #5a7ffb;
+/* end section theme */
+
+/* technology stack theme */
+$tech-stack-font-family_dark: "OpenSans-Bold";
+$tech-stack-color_dark: gray;
+/* end technology stack theme */
+
+/* social media theme */
+$social-media-color_dark: hsl(360, 100%, 100%);
+$social-media-line-color_dark: #a8b2d1;
+/* end social media theme */
+
+/* header theme */
+// background
+$navbar-bg-color_dark: hsl(216, 62%, 14%, 0.9);
+$navbar-box-shadow_dark: none;
+// brand
+$navbar-brand-font-family_dark: "InknutAntiqua-Bold";
+$navbar-brand-color_dark: white;
+// items
+$navbar-items-color_dark: $text-color_dark;
+$navbar-items-font-family_dark: "Poppins-Regular";
+$navbar-dropdown-flags-color_dark: $navbar-items-color_dark;
+$navbar-theme-mode-bg-color_dark: #464646;
+$navbar-theme-mode-label-box-shadow_dark: 0px 0px 10px 2px
+  rgba(128, 128, 128, 1);
+$navbar-theme-mode-color_dark: hsl(207, 75%, 5%);
+$navbar-theme-mode-hover-bg-color_dark: #d14009;
+// hamburger
+$navbar-menu-hamburger-color_dark: hsl(360, 100%, 100%);
+// menu
+$navbar-menu-text-color_dark: $text-color_dark;
+$navbar-menu-text-hover-color_dark: $text-hover-color_dark;
+$navbar-menu-bg-color_dark: hsl(360, 100%, 100%);
+$navbar-menu-items-hover-bg-color_dark: rgb(77, 42, 16);
+/* end header theme */
+
+/* intro theme */
+$intro-first-name-color_dark: $navbar-brand-color_dark;
+$intro-last-name-color_dark: $text-hover-color_dark;
+$intro-role-color_dark: $navbar-items-color_dark;
+$intro-role-font-family_dark: "Poppins-Regular";
+$intro-based-address-color_dark: $navbar-items-color_dark;
+$intro-based-address-font-family_dark: "Poppins-Light";
+$intro-pin-fill-icon-color_dark: rgb(194, 27, 27);
+$intro-stack-title-font-family_dark: "Poppins-Regular";
+$intro-stack-title-color_dark: $navbar-items-color_dark;
+// icons
+$intro-icons-dotnet-color_dark: white;
+$intro-icons-csharp-color_dark: #684d95;
+$intro-icons-go-color_dark: #29beb0;
+$intro-icons-react-color_dark: #61dbfb;
+$intro-icons-angular-color_dark: #dd1b16;
+$intro-icons-javascript-color_dark: #f0db4f;
+$intro-icons-typescript-color_dark: #007acc;
+$intro-icons-sass-color_dark: #c69;
+$intro-icons-css3-color_dark: #264de4;
+/* end intro theme */
+
+/* experience theme */
+$experience-nav-btn-color_dark: $navbar-brand-color_dark;
+$experience-nav-btn-font-family_dark: "OpenSans-Medium";
+$experience-nav-btn-border-color_dark: $text-color_dark;
+$experience-nav-btn-active-border-color_dark: $text-hover-color_dark;
+$experience-nav-btn-active-color_dark: $text-hover-color_dark;
+$experience-nav-btn-hover-color_dark: $text-hover-color_dark;
+$experience-nav-btn-hover-bg-color_dark: $navbar-menu-items-hover-bg-color_dark;
+$experience-nav-title-color_dark: $navbar-items-color_dark;
+$experience-nav-title-font-family_dark: "OpenSans-SemiBold";
+$experience-nav-name-color_dark: $text-hover-color_dark;
+$experience-nav-name-hover-color_dark: $navbar-menu-items-hover-bg-color_dark;
+$experience-nav-duration-font-family_dark: "OpenSans-Bold";
+$experience-nav-duration-color_dark: $section-cosmetic-content-title-color_dark;
+$experience-nav-list-marker-color_dark: $section-cosmetic-content-title-color_dark;
+/* end experience theme */
+
+/* projects theme */
+$projects-card-bg-color_dark: rgb(30, 70, 139);
+$projects-card-box-shadow_dark: 0px 0px 15px 3px hsla(240, 2.74%, 28.63%, 1);
+$projects-card-icons-folder-color_dark: white;
+$projects-card-icons-github-color_dark: white;
+$projects-card-icons-link-color_dark: white;
+$projects-card-icons-hover-color_dark: white;
+$projects-card-title-color_dark: white;
+$projects-card-title-hover-color_dark: white;
+$projects-card-title-font-family_dark: "OpenSans-Medium";
+/* end projects theme */
+
+/* about theme */
+$about-me-subtitles-color_dark: hsl(0, 0%, 0%);
+$about-me-subtitles-font-family_dark: "OpenSans-Bold";
+/* end about theme */
+
+/* contact theme */
+$contact-title-color_dark: $text-color_dark;
+$contact-title-font-family_dark: "OpenSans-Medium";
+$contact-email-box-shadow_dark: "OpenSans-Medium";
+$contact-email-border-color_dark: hsl(0, 0%, 0%);
+$contact-email-text-color_dark: "OpenSans-Medium";
+$contact-email-text-hover-color_dark: "OpenSans-Medium";
+$contact-email-text-font-family_dark: "OpenSans-Medium";
+$contact-email-bg-color_dark: "OpenSans-Medium";
+$contact-email-bg-hover-color_dark: "OpenSans-Medium";
+/* end contact theme */
+
+/* footer theme */
+$footer-text-color_dark: $text-color_dark;
+$footer-text-hover-color_dark: $text-hover-color_dark;
+/* end footer theme */
+
+$overlay-image-color_dark: rgba(57, 57, 57, 0.5);
 
 // mixin that enables css variables in dark mode
 @mixin dark-mode() {
+  /* background theme */
   background-color: #{$bg-color_dark};
+  --bg-secondary-color: #{$bg-secondary-color_dark};
+  /* end background theme */
+
   color: #{$text-color_dark};
-  border-color: #{$border-color_dark};
-  --navbar-bg-color: #{$navbar-bg-color_dark};
+
+  /* text theme */
+  --text-font-family: #{$text-font_family_dark};
   --text-color: #{$text-color_dark};
+  --text-hover-color: #{$text-hover-color_dark};
+  /* end text theme */
+
+  /* section theme */
   --section-title-color: #{$section-title-color_dark};
-  --logo-fill: #{$logo-fill_dark};
-  --hamburger-color: #{$hamburger-color_dark};
-  --nav-menu-bg-color: #{$nav-menu-bg-color_dark};
-  --nav-menu-color: #{$nav-menu-color_dark};
-  --nav-menu-hover-color: #{$nav-menu-hover-color_dark};
-  --hamburger-hover-color: #{$hamburger-hover-color_dark};
-  --overlay-image-color: #{$overlay-image-color_dark};
   --section-cosmetic-content-title-color: #{$section-cosmetic-content-title-color_dark};
+  /* end section theme */
+
+  /* technology stack theme */
+  --tech-stack-font-family: #{$tech-stack-font-family_dark};
+  --tech-stack-color: #{$tech-stack-color_dark};
+  /* end technology stack theme */
+
+  /* social media theme */
+  --section-title-color: #{$section-title-color_dark};
+  --social-media-line-color: #{$social-media-line-color_dark};
+  /* end social media theme */
+
+  /* header theme */
+  // background
+  --navbar-bg-color: #{$navbar-bg-color_dark};
+  --navbar-box-shadow: #{$navbar-box-shadow_dark};
+  // brand
+  --navbar-brand-font-family: #{$navbar-brand-font-family_dark};
+  --navbar-brand-color: #{$navbar-brand-color_dark};
+  // items
+  --navbar-items-color: #{$navbar-items-color_dark};
+  --navbar-items-font-family: #{$navbar-items-font-family_dark};
+  --navbar-dropdown-flags-color: #{$navbar-dropdown-flags-color_dark};
+  --navbar-theme-mode-bg-color: #{$navbar-theme-mode-bg-color_dark};
+  --navbar-theme-mode-label-box-shadow: #{$navbar-theme-mode-label-box-shadow_dark};
+  --navbar-theme-mode-color: #{$navbar-theme-mode-color_dark};
+  --navbar-theme-mode-hover-bg-color: #{$navbar-theme-mode-hover-bg-color_dark};
+  // hamburger
+  --navbar-menu-hamburger-color: #{$navbar-menu-hamburger-color_dark};
+  // menu
+  --navbar-menu-text-color: #{$navbar-menu-text-color_dark};
+  --navbar-menu-text-color-hover: #{$navbar-menu-text-hover-color_dark};
+  --navbar-menu-bg-color: #{$navbar-menu-bg-color_dark};
+  --navbar-menu-items-hover-bg-color: #{$navbar-menu-items-hover-bg-color_dark};
+  /* end header theme */
+
+  /* intro theme */
+  --intro-first-name-color: #{$intro-first-name-color_dark};
+  --intro-last-name-color: #{$intro-last-name-color_dark};
+  --intro-role-color: #{$intro-role-color_dark};
+  --intro-role-font-family: #{$intro-role-font-family_dark};
+  --intro-based-address-color: #{$intro-based-address-color_dark};
+  --intro-based-address-font-family: #{$intro-based-address-font-family_dark};
+  --intro-pin-fill-icon-color: #{$intro-pin-fill-icon-color_dark};
+  --intro-stack-title-font-family: #{$intro-stack-title-font-family_dark};
+  --intro-stack-title-color: #{$intro-stack-title-color_dark};
+  // intro
+  --intro-icons-dotnet-color: #{$intro-icons-dotnet-color_dark};
+  --intro-icons-csharp-color: #{$intro-icons-csharp-color_dark};
+  --intro-icons-go-color: #{$intro-icons-go-color_dark};
+  --intro-icons-react-color: #{$intro-icons-react-color_dark};
+  --intro-icons-angular-color: #{$intro-icons-angular-color_dark};
+  --intro-icons-javascript-color: #{$intro-icons-javascript-color_dark};
+  --intro-icons-typescript-color: #{$intro-icons-typescript-color_dark};
+  --intro-icons-sass-color: #{$intro-icons-sass-color_dark};
+  --intro-icons-css3-color: #{$intro-icons-css3-color_dark};
+  /* end intro theme */
+
+  /* experience theme */
+  --experience-nav-btn-color: #{$experience-nav-btn-color_dark};
+  --experience-nav-btn-font-family: #{$experience-nav-btn-font-family_dark};
+  --experience-nav-btn-border-color: #{$experience-nav-btn-border-color_dark};
+  --experience-nav-btn-active-border-color: #{$experience-nav-btn-active-border-color_dark};
+  --experience-nav-btn-active-color: #{$experience-nav-btn-active-color_dark};
+  --experience-nav-btn-hover-color: #{$experience-nav-btn-hover-color_dark};
+  --experience-nav-btn-hover-bg-color: #{$experience-nav-btn-hover-bg-color_dark};
+  --experience-nav-title-color: #{$experience-nav-title-color_dark};
+  --experience-nav-title-font-family: #{$experience-nav-title-font-family_dark};
+  --experience-nav-name-color: #{$experience-nav-name-color_dark};
+  --experience-nav-name-hover-color: #{$experience-nav-name-hover-color_dark};
+  --experience-nav-duration-font-family: #{$experience-nav-duration-font-family_dark};
+  --experience-nav-duration-color: #{$experience-nav-duration-color_dark};
+  --experience-nav-list-marker-color: #{$experience-nav-list-marker_color_dark};
+  /* end experience theme */
+
+  /* projects theme */
+  --projects-card-bg-color: #{$projects-card-bg-color_dark};
+  --projects-card-box-shadow: #{$projects-card-box-shadow_dark};
+  --projects-card-icons-folder-color: #{$projects-card-icons-folder-color_dark};
+  --projects-card-icons-github-color: #{$projects-card-icons-github-color_dark};
+  --projects-card-icons-link-color: #{$projects-card-icons-link-color_dark};
+  --projects-card-icons-hover-color: #{$projects-card-icons-hover-color_dark};
+  --projects-card-title-color: #{$projects-card-title-color_dark};
+  --projects-card-title-hover-color: #{$projects-card-title-hover-color_dark};
+  --projects-card-title-font-family: #{$projects-card-title-font-family_dark};
+  /* end projects theme */
+
+  /* about theme */
+  --about-me-subtitles-color: #{$about-me-subtitles-color_dark};
+  --about-me-subtitles-font-family: #{$about-me-subtitles-font-family_dark};
+  /* end about theme */
+
+  /* contact theme */
+  --contact-title-color: #{$contact-title-color_dark};
+  --contact-title-font-family: #{$contact-title-font-family_dark};
+  --contact-email-box-shadow: #{$contact-email-box-shadow_dark};
+  --contact-email-border-color: #{$contact-email-border-color_dark};
+  --contact-email-text-color: #{$contact-email-text-color_dark};
+  --contact-email-text-hover-color: #{$contact-email-text-hover-color_dark};
+  --contact-email-text-font-family: #{$contact-email-text-font-family_dark};
+  --contact-email-bg-color: #{$contact-email-bg-color_dark};
+  --contact-email-bg-hover-color: #{$contact-email-bg-hover-color_dark};
+  /* end contact theme */
+
+  /* footer theme */
+  --footer-text-color: #{$footer-text-color_dark};
+  --footer-text-hover-color: #{$text-hover-color_dark};
+  /* end footer theme */
+
+  --overlay-image-color: #{$overlay-image-color_dark};
 }

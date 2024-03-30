@@ -1,8 +1,11 @@
+/* FontSignature */
 @font-face {
   font-family: "FontSignature";
   src: url("../../fonts/HighSummit.ttf");
 }
+/* end FontSignature */
 
+/* Poppins */
 @font-face {
   font-family: "Poppins-Regular";
   src: url("../../fonts/Poppins/Poppins-Regular.ttf");
@@ -19,21 +22,46 @@
 }
 
 @font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+}
+/* end Poppins */
+
+/* InknutAntiqua */
+@font-face {
   font-family: "InknutAntiqua-Bold";
   src: url("../../fonts/Inknut_Antiqua/InknutAntiqua-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Open-Sans-Regular";
+  font-family: "InknutAntiqua-ExtraBold";
+  src: url("../../fonts/Inknut_Antiqua/InknutAntiqua-ExtraBold.ttf");
+}
+/* end InknutAntiqua */
+
+/* OpenSans */
+@font-face {
+  font-family: "OpenSans-Regular";
   src: url("../../fonts/Open_Sans/static/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Open-Sans-Medium";
+  font-family: "OpenSans-Medium";
   src: url("../../fonts/Open_Sans/static/OpenSans-Medium.ttf");
 }
 
 @font-face {
-  font-family: "Open-Sans-Bold";
+  font-family: "OpenSans-SemiBold";
+  src: url("../../fonts/Open_Sans/static/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
   src: url("../../fonts/Open_Sans/static/OpenSans-Bold.ttf");
 }
+/* end OpenSans */

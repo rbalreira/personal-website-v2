@@ -1,6 +1,31 @@
+@use "abstracts" as a;
+
 .contact {
   h3 {
-    font-family: "Open-Sans-Medium";
+    color: var(--contact-title-color);
+    font-family: var(--contact-title-font-family);
     font-size: 2.5rem;
+  }
+
+  p {
+    font-size: a.$font-size-regular-text;
+  }
+
+  &-email {
+    display: inline-block;
+    color: var(--contact-email-text-color);
+    font-family: var(--contact-email-text-font-family);
+    box-shadow: var(--contact-email-box-shadow);
+    border: 1px solid var(--contact-email-border-color);
+    background-color: var(--contact-email-bg-color);
+    border-radius: 5px;
+
+    @include a.transition-ease-in-out();
+
+    &:hover {
+      @include a.transform-translateY();
+      color: var(--contact-email-text-hover-color);
+      background-color: var(--contact-email-bg-hover-color);
+    }
   }
 }

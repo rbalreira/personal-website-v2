@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class SectionComponent {
   @Input() sectionTitle = '';
   @Input() id = '';
+  @Input() hasSecondaryBgColor = false;
 }

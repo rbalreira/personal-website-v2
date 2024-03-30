@@ -5,8 +5,10 @@
             <ng-template ngbNavContent>
                 <div class="content">
                     <h4 class="experience-title">{{experience.role}}
-                        <a href="{{experience.website}}" target="_blank">
-                            <span class="experience-name">&#64; {{experience.name}}</span>
+                        <a class="experience-name" href="{{experience.website}}" target="_blank">
+                            <span>
+                                &#64; <span class="experience-name-underline">{{experience.name}}</span>
+                            </span>
                         </a>
                     </h4>
                     <p class="experience-duration">{{experience.duration}}</p>

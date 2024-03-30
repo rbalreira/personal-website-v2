@@ -10,70 +10,68 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: var(--nav-menu-bg-color);
+  background-color: var(--navbar-menu-bg-color);
   overflow-x: hidden;
   transition: 0.5s;
   display: block;
+
+  &.is-active {
+    width: 100%;
+  }
+
+  @include a.respond-to("small-medium") {
+    display: none;
+  }
 
   /**
   * Helper class to position the content around the container menu.
   */
   &-content {
     position: relative;
-    top: 30%;
     left: 0;
-  }
+    top: 25%;
 
-  & .row {
-    @include a.justify-content-center();
-
-    @include a.respond-to("small") {
-      justify-content: start;
+    a {
+      color: var(--navbar-menu-text-color);
+      font-family: var(--navbar-items-font-family);
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      font-size: clamp(2rem, 5vw, 9rem);
+      transition: 0.3s;
     }
-  }
 
-  & a {
-    font-family: "Poppins-Regular";
-    display: block;
-    color: var(--nav-menu-color);
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    font-size: clamp(1.5rem, 4.5vw, 9rem);
-    transition: 0.3s;
-  }
+    /**
+     * Helper class to create an inner box-shadow using inset property
+     * 1. Add box-shadow with inset property and set pixels units in different breakpoints
+     * 1. Add transition for both color and box-shadow properties
+    */
+    .nav-menu-link {
+      box-shadow: inset 0 0 0 0 var(--navbar-menu-items-hover-bg-color);
+      transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
 
-  &.is-active {
-    width: 100%;
-  }
+      &:hover {
+        color: var(--navbar-menu-text-color-hover);
+        box-shadow: inset 300px 0 0 0 var(--navbar-menu-items-hover-bg-color);
 
-  @include a.respond-to("extra-small") {
-    & .dropdown-mobile-items {
-      display: none;
+        @include a.respond-to("extra-small") {
+          box-shadow: inset 400px 0 0 0 var(--navbar-menu-items-hover-bg-color);
+        }
+
+        @include a.respond-to("2-small") {
+          box-shadow: inset 500px 0 0 0 var(--navbar-menu-items-hover-bg-color);
+        }
+
+        @include a.respond-to("2-small-medium") {
+          box-shadow: inset 600px 0 0 0 var(--navbar-menu-items-hover-bg-color);
+        }
+      }
     }
-  }
 
-  /**
-  * Helper class to create a linear gradient as background and animate the background position
-  * in order to have a background color transition from left to right.
-  * 1. Background-size set as 300% to avoid color bugs in some breakpoints
-  */
-  &-link {
-    background: linear-gradient(
-        to left,
-        transparent 50%,
-        var(--nav-menu-hover-color) 50%
-      )
-      right;
-    background-size: 300%;
-    transition: 0.8s ease-out;
-
-    &:hover {
-      background-position: left;
+    .dropdown-mobile-items {
+      @include a.respond-to("extra-small") {
+        display: none !important;
+      }
     }
-  }
-
-  @include a.respond-to("small-medium") {
-    display: none;
   }
 }

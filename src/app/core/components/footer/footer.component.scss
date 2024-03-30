@@ -1,11 +1,13 @@
 @use "abstracts" as a;
 
 a {
+  display: inline-block;
+  width: auto;
+  color: var(--footer-text-color);
   @include a.transition-ease-in-out();
 
   &:hover,
   &:focus {
-    color: #64ffda;
-    @include a.transform-translateY(-3px);
+    color: var(--footer-text-hover-color);
   }
 }

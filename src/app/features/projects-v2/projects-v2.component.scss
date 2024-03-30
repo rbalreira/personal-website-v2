@@ -6,8 +6,17 @@
 .projects {
   @include a.adjust-grid-container();
 
-  &-project {
-    background-color: rgb(30, 70, 139);
+  .project-link {
+    @include a.transition-ease-in-out();
+
+    &:hover .project-title {
+      color: var(--projects-card-title-hover-color);
+    }
+  }
+
+  .project {
+    background-color: var(--projects-card-bg-color);
+    box-shadow: var(--projects-card-box-shadow);
     border-radius: 15px;
 
     @include a.transition-ease-in-out();
@@ -15,37 +24,50 @@
     &:hover {
       @include a.transform-translateY();
     }
-  }
 
-  &-folder ng-icon {
-    font-size: 1.2rem;
-  }
+    &-top {
+      .project-folder ng-icon {
+        color: var(--projects-card-icons-folder-color);
+        font-size: 1.2rem;
+      }
 
-  &-links {
-    ng-icon {
-      transition: all 0.3s linear;
-      font-size: 0.8rem;
+      .project-links {
+        ng-icon {
+          transition: transform 0.3s linear;
+          font-size: 0.8rem;
+        }
+
+        a:hover ng-icon,
+        a:hover ng-icon:focus,
+        a:hover ng-icon:active {
+          transform: scale(1.3);
+          color: var(--projects-card-icons-hover-color);
+        }
+
+        .project-github {
+          color: var(--projects-card-icons-github-color);
+        }
+
+        .project-link {
+          color: var(--projects-card-icons-link-color);
+        }
+      }
     }
 
-    &:hover ng-icon,
-    &:hover ng-icon:focus,
-    &:hover ng-icon:active {
-      transform: scale(1.3);
-      color: var(--hamburger-hover-color);
+    &-title {
+      color: var(--projects-card-title-color);
+      font-family: var(--projects-card-title-font-family);
+      font-size: a.$font-size-subtitle;
+
+      @include a.transition-ease-in-out();
     }
-  }
 
-  &-title {
-    font-family: "Open-Sans-Medium";
-    font-size: a.$font-size-subtitle;
-    @include a.transition-ease-in-out();
-  }
+    &-description {
+      font-size: a.$font-size-regular-text;
+    }
 
-  &-description {
-    font-size: a.$font-size-regular-text;
-  }
-
-  &-stack {
-    @include a.style-tech-stack();
+    &-footer {
+      @include a.style-tech-stack();
+    }
   }
 }

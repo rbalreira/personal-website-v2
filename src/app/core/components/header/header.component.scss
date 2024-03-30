@@ -6,17 +6,18 @@
  */
 .navbar {
   background-color: var(--navbar-bg-color);
+  box-shadow: var(--navbar-box-shadow);
 
   &-brand {
-    color: var(--text-color);
-    font-family: "InknutAntiqua-Bold";
+    color: var(--navbar-brand-color);
+    font-family: var(--navbar-brand-font-family);
     font-size: larger;
     display: inline-block;
     position: relative;
     @include a.transition-ease-in-out();
 
     &:hover {
-      color: #64ffda;
+      color: var(--text-hover-color);
       @include a.transform-translateY(-3px);
     }
   }
@@ -29,12 +30,14 @@
     }
 
     a {
-      font-family: "Poppins-Regular";
+      color: var(--navbar-items-color);
+      font-family: var(--navbar-items-font-family);
+
       @include a.transition-ease-in-out();
 
       &:hover,
       &:focus {
-        color: #64ffda;
+        color: var(--text-hover-color);
       }
     }
   }
@@ -64,18 +67,13 @@
   &-inner,
   &-inner::before,
   &-inner::after {
-    background-color: var(--hamburger-color) !important;
-
-    @include a.respond-to("small") {
-      transition: transform 0.15s ease, background-color 0.4s;
-    }
+    background-color: var(--navbar-menu-hamburger-color) !important;
+    transition: transform 0.15s ease, background-color 0.4s;
   }
 
-  @include a.respond-to("small") {
-    &:hover &-inner::before,
-    &:hover &-inner::after,
-    &:hover &-inner {
-      background-color: var(--hamburger-hover-color) !important;
-    }
+  &:hover &-inner::before,
+  &:hover &-inner::after,
+  &:hover &-inner {
+    background-color: var(--text-hover-color) !important;
   }
 }

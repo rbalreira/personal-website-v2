@@ -8,10 +8,15 @@ section {
   padding-top: 8rem;
   padding-bottom: 8rem;
 
+  &.secondary-bg-color {
+    background-color: var(--bg-secondary-color);
+  }
+
   h3 {
+    color: var(--section-title-color);
+    font-family: "Poppins-SemiBold";
     text-transform: uppercase;
     text-align: center;
-    font-family: "Poppins-Medium";
 
     &::before,
     &::after {
@@ -24,12 +29,12 @@ section {
     }
 
     &::before {
-      margin-right: 5px;
+      margin-right: 1rem;
       border-right-color: var(--section-cosmetic-content-title-color);
     }
 
     &::after {
-      margin-left: 5px;
+      margin-left: 1rem;
       border-left-color: var(--section-cosmetic-content-title-color);
     }
   }

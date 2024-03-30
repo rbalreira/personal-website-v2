@@ -3,10 +3,16 @@ $breakpoints: (
   "extra-small": (
     min-width: 400px,
   ),
+  "2-small": (
+    min-width: 500px,
+  ),
   "small": (
     min-width: 600px,
   ),
   "2-small-medium": (
+    min-width: 650px,
+  ),
+  "3-small-medium": (
     min-width: 768px,
   ),
   "small-medium": (

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import { DayNightModeToggleService } from '@app/features/day-night-mode-toggle/services/day-night-mode-toggle.service';
-import { FuncsService } from '@app/core/services/funcs/funcs.service';
 import { Mode } from '@app/features/models/day-night-mode.enum';
 
 @Component({
@@ -13,18 +12,15 @@ export class HomeComponent {
   /**
    * current active mode
    */
-  currentMode: Mode = Mode.LIGHT;
-  currentTheme = this.funcs.getCurrentThemeMode();
+  currentTheme: Mode = Mode.LIGHT;
+  lightTheme: Mode = Mode.LIGHT;
 
-  constructor(
-    private funcs: FuncsService,
-    private dayNightModeToggleService: DayNightModeToggleService
-  ) {
+  constructor(private dayNightModeToggleService: DayNightModeToggleService) {
     /**
      * Example code that demonstrates the modeChanged$ observable behavior and usage
      */
     this.dayNightModeToggleService.modeChanged$.subscribe((mode: Mode) => {
-      this.currentMode = mode;
+      this.currentTheme = mode;
     });
   }
 }

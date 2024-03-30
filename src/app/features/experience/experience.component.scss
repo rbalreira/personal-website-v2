@@ -26,31 +26,31 @@
   * Add borders bottom/left to the buttons in left side of the main content
   */
   button {
-    color: var(--text-color);
+    color: var(--experience-nav-btn-color);
     border-radius: 0%;
-    border-bottom: 1px solid #112240;
-    font-family: "Open-Sans-Medium";
+    border-bottom: 1px solid var(--experience-nav-btn-border-color);
+    font-family: var(--experience-nav-btn-font-family);
 
     @include a.respond-to("small") {
       border-bottom: none;
-      border-left: 1px solid #112240;
+      border-left: 1px solid var(--experience-nav-btn-border-color);
     }
 
     &.active {
       background-color: transparent;
-      color: #64ffda;
-      border-bottom-color: #64ffda;
+      color: var(--experience-nav-btn-active-color);
+      border-bottom-color: var(--experience-nav-btn-active-border-color);
 
       @include a.respond-to("small") {
         border-bottom-color: transparent;
-        border-left-color: #64ffda;
+        border-left-color: var(--experience-nav-btn-active-border-color);
       }
     }
 
     &:hover {
-      background-color: #112240;
-      color: #64ffda;
-      outline: 0px;
+      background-color: var(--experience-nav-btn-hover-bg-color);
+      color: var(--experience-nav-btn-hover-color);
+      outline: 0;
       @include a.transition-ease-in-out(0.5s);
     }
   }
@@ -68,32 +68,49 @@
     }
 
     .experience-title {
-      font-family: "Open-Sans-Medium";
+      color: var(--experience-nav-title-color);
+      font-family: var(--experience-nav-title-font-family);
       font-size: 1.4rem;
     }
 
     .experience-name {
-      color: #64ffda;
-      position: relative;
+      color: var(--experience-nav-name-color);
 
-      @include a.transition-ease-in-out();
+      &-underline {
+        display: inline-block;
+        position: relative;
+      }
 
-      &:hover {
-        color: #368572;
+      &-underline::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--experience-nav-name-hover-color);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      &:hover .experience-name-underline::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
       }
     }
 
     .experience-duration {
       font-size: v.$font-size-regular-text;
-      font-family: "Open-Sans-Medium";
-      color: rgb(168, 178, 209);
+      font-family: var(--experience-nav-duration-font-family);
+      color: var(--experience-nav-duration-color);
     }
 
     .experience-activities {
       font-size: v.$font-size-regular-text;
 
       li::marker {
-        color: #64ffda;
+        color: var(--experience-nav-list-marker-color);
       }
     }
 

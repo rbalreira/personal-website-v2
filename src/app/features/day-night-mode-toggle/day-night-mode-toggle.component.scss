@@ -1,62 +1,60 @@
 @use "abstracts" as a;
 
-$sun-color: #666;
-$moon-color: hsl(207, 75%, 5%);
-
 /**
  * Helper class to set a container to wrap the toggle and add animations
  * 1. Set container wrap with position relative
+ * 2. Scale to 0 and a full rotate on both icons so the icon can disappear while
+ * it is rotating at the same time
  */
 label {
   width: 2.5rem;
   height: 2.5rem;
+  position: relative;
   border-radius: 50%;
   cursor: pointer;
   align-items: center;
-  @include a.justify-content-center();
+  box-shadow: var(--navbar-theme-mode-label-box-shadow);
+
+  @include a.transition-ease-in-out();
+
+  &:hover {
+    background-color: var(--navbar-theme-mode-hover-bg-color);
+  }
 
   input {
+    cursor: pointer;
     position: absolute;
     opacity: 0;
 
-    &:checked ~ .toggle {
-      background: #f8f8f8;
-    }
-
     &:checked ~ .sun {
       transform: scale(1) rotate(360deg);
-      transition-delay: 0.8s;
+      transition: transform 1s ease;
     }
 
     &:checked ~ .moon {
-      transform: rotate(360deg) scale(0);
+      transform: scale(0) rotate(360deg);
       transition-delay: 0s;
     }
   }
 
   .sun {
     position: absolute;
-    color: $sun-color;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+    color: var(--navbar-theme-mode-color);
     transform: scale(0);
-    transition: 1s ease;
+    transition: transform 1s ease;
   }
 
   .moon {
-    color: $moon-color;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
-    transition: 1s ease;
+    color: var(--navbar-theme-mode-color);
+    transition: transform 1s ease;
   }
 
   .toggle {
     position: absolute;
-    display: block;
-    width: 2.5rem;
-    height: 2.5rem;
-    background: #464646;
+    width: 100%;
+    height: 100%;
+    background-color: var(--navbar-theme-mode-bg-color);
     border-radius: 50%;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-      rgba(17, 17, 26, 0.05) 0px 8px 32px;
     z-index: -1;
     transition: 1s;
   }
