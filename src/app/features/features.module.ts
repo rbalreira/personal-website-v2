@@ -36,7 +36,6 @@ import { NavMenuComponent } from './nav-menu/components/nav-menu.component';
 import { ProjectsComponent } from './projects/components/projects.component';
 import { ExperienceComponent } from './experience/components/experience.component';
 import { ContactComponent } from './contact/components/contact.component';
-import { ProjectsV2Component } from './projects-v2/components/projects-v2.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +47,6 @@ import { ProjectsV2Component } from './projects-v2/components/projects-v2.compon
     ProjectsComponent,
     AboutMeComponent,
     ContactComponent,
-    ProjectsV2Component,
   ],
   imports: [
     CommonModule,
@@ -79,7 +77,6 @@ import { ProjectsV2Component } from './projects-v2/components/projects-v2.compon
     NavMenuComponent,
     ExperienceComponent,
     ProjectsComponent,
-    ProjectsV2Component,
     AboutMeComponent,
     ContactComponent,
   ],

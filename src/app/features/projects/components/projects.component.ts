@@ -11,10 +11,11 @@ export class ProjectsComponent {
       id: 1,
       name: 'Project 1',
       description:
-        'A platform for posting courses which are designed as per the Industry demand with full Career Assistance.',
+        'A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance.',
       img: 'project-1.png',
-      github: '#',
-      site: '#',
+      github: '/github2',
+      site: '/site',
+      stack: ['PostgreSQL', 'Python', 'Redis', 'Flask', 'MQTT'],
     },
     {
       id: 2,
@@ -24,6 +25,25 @@ export class ProjectsComponent {
       img: 'project-2.png',
       github: '#',
       site: '#',
+      stack: [
+        'PostgreSQL',
+        'Python',
+        'Redis',
+        'Flask',
+        'MQTT',
+        'PostgreSQL',
+        'Python',
+      ],
+    },
+    {
+      id: 3,
+      name: 'Project 3',
+      description:
+        "Easy Staff allows you to manage your staff's attendance, salary and payments in few clicks.",
+      img: 'project-2.png',
+      github: '#',
+      site: '#',
+      stack: ['PostgreSQL', 'Python', 'Redis', 'Flask', 'MQTT'],
     },
   ];
 }

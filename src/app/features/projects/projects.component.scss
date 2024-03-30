@@ -1,78 +1,73 @@
 @use "abstracts" as a;
 
 /**
- * Helper class to set Projects section with image and description
- * 1. Set image overlay to have icons on image hover
- * 2. Display overlay only from small screens
- * 3. Add a transition transforming the scale to icons
+ * Helper class to create a card for each Project content and style the content within
  */
 .projects {
-  @include a.respond-to("small") {
-    .image-mobile {
-      display: none;
+  @include a.adjust-grid-container();
+
+  .project-link {
+    @include a.transition-ease-in-out();
+
+    &:hover .project-title {
+      color: var(--projects-card-title-hover-color);
     }
   }
 
-  @include a.respond-to("small-medium") {
-    .content-spacer {
-      height: 8rem;
-    }
-    .content-text div {
-      text-align: end;
-    }
-  }
+  .project {
+    background-color: var(--projects-card-bg-color);
+    box-shadow: var(--projects-card-box-shadow);
+    border-radius: 15px;
 
-  a {
-    color: inherit;
+    @include a.transition-ease-in-out();
 
     &:hover {
-      text-decoration: none;
+      @include a.transform-translateY();
     }
 
-    ng-icon {
-      transition: all 0.3s linear;
-    }
+    &-top {
+      .project-folder ng-icon {
+        color: var(--projects-card-icons-folder-color);
+        font-size: 1.2rem;
+      }
 
-    &:hover ng-icon,
-    &:hover ng-icon:focus,
-    &:hover ng-icon:active {
-      transform: scale(1.3);
-      color: var(--hamburger-hover-color);
-    }
-  }
+      .project-links {
+        ng-icon {
+          transition: transform 0.3s linear;
+          font-size: 0.8rem;
+        }
 
-  .image-wrapper {
-    display: none;
-    position: relative;
+        a:hover ng-icon,
+        a:hover ng-icon:focus,
+        a:hover ng-icon:active {
+          transform: scale(1.3);
+          color: var(--projects-card-icons-hover-color);
+        }
 
-    &:hover .overlay {
-      transform: scale(1);
-    }
+        .project-github {
+          color: var(--projects-card-icons-github-color);
+        }
 
-    @include a.respond-to("small") {
-      display: block;
-    }
-
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      inset: 0;
-      transform: scale(0);
-      transition: all 0.5s ease-in-out;
-      background: var(--overlay-image-color);
-
-      &-content {
-        text-align: center;
+        .project-link {
+          color: var(--projects-card-icons-link-color);
+        }
       }
     }
-  }
 
-  .content-spacer {
-    height: 4rem;
+    &-title {
+      color: var(--projects-card-title-color);
+      font-family: var(--projects-card-title-font-family);
+      font-size: a.$font-size-subtitle;
 
-    &:last-child {
-      display: none;
+      @include a.transition-ease-in-out();
+    }
+
+    &-description {
+      font-size: a.$font-size-regular-text;
+    }
+
+    &-footer {
+      @include a.style-tech-stack();
     }
   }
 }
