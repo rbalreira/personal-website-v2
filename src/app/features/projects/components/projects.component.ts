@@ -11,7 +11,7 @@ export class ProjectsComponent {
       id: 1,
       name: 'Project 1',
       description:
-        'A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance. A platform for posting courses which are designed as per the Industry demand with full Career Assistance.',
+        'A platform for posting courses which are designed as per the Industry demand with full Career Assistance.',
       img: 'project-1.png',
       github: '/github2',
       site: '/site',
@@ -20,8 +20,7 @@ export class ProjectsComponent {
     {
       id: 2,
       name: 'Project 2',
-      description:
-        "Easy Staff allows you to manage your staff's attendance, salary and payments in few clicks.",
+      description: 'Easy Staff allows you to manage your staff.',
       img: 'project-2.png',
       github: '#',
       site: '#',
@@ -38,8 +37,7 @@ export class ProjectsComponent {
     {
       id: 3,
       name: 'Project 3',
-      description:
-        "Easy Staff allows you to manage your staff's attendance, salary and payments in few clicks.",
+      description: 'Easy Staff allows you to manage your staff.',
       img: 'project-2.png',
       github: '#',
       site: '#',

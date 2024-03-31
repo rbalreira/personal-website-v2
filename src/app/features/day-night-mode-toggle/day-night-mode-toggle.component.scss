@@ -13,6 +13,7 @@ label {
   border-radius: 50%;
   cursor: pointer;
   align-items: center;
+  border: var(--navbar-theme-mode-label-border);
   box-shadow: var(--navbar-theme-mode-label-box-shadow);
 
   @include a.transition-ease-in-out();

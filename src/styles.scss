@@ -47,24 +47,39 @@ body {
 }
 
 /* Scrollbar Styles */
-// Works on Firefox
-* {
-  scrollbar-width: thin;
-  scrollbar-color: blue orange;
+html {
+  scroll-behavior: smooth;
+  scrollbar-face-color: var(--scrollbar-face-color);
+  scrollbar-base-color: var(--scrollbar-base-color);
+  scrollbar-3dlight-color: var(--scrollbar-3dlight-color);
+  scrollbar-highlight-color: var(--scrollbar-highlight-color);
+  scrollbar-track-color: var(--scrollbar-track-color);
+  scrollbar-arrow-color: var(--scrollbar-arrow-color);
+  scrollbar-shadow-color: var(--scrollbar-shadow-color);
 }
 
-// Works on Chrome, Edge, and Safari
-*::-webkit-scrollbar {
-  width: 12px;
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-height);
 }
-
-*::-webkit-scrollbar-track {
-  background: none;
+::-webkit-scrollbar-button {
+  background-color: var(--scrollbar-thumb-bg-color);
 }
-
-*::-webkit-scrollbar-thumb {
-  background-color: blue;
-  border-radius: 20px;
-  border: 3px solid orange;
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-base-color);
+}
+::-webkit-scrollbar-track-piece {
+  background-color: var(--scrollbar-track-color);
+}
+::-webkit-scrollbar-thumb {
+  height: var(--scrollbar-thumb-height);
+  background-color: var(--scrollbar-thumb-bg-color);
+  border-radius: var(--scrollbar-thumb-border-radius);
+}
+::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-base-color);
+}
+::-webkit-resizer {
+  background-color: var(--scrollbar-thumb-bg-color);
 }
 /* end Scrollbar Styles */

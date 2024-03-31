@@ -1,27 +1,27 @@
 /* background theme */
 $bg-color_dark: hsl(217, 35%, 20%);
-$bg-secondary-color_dark: hsl(217, 35%, 20%);
+$bg-secondary-color_dark: $bg-color_dark;
 /* end background theme */
 
 /* text theme */
 $text-font-family_dark: "OpenSans-Regular";
-$text-color_dark: hsl(360, 100%, 100%);
-$text-hover-color_dark: #ff6868;
+$text-color_dark: rgb(162, 174, 211);
+$text-hover-color_dark: #fa7070;
 /* end text theme */
 
 /* section theme */
-$section-title-color_dark: hsl(360, 100%, 100%);
-$section-cosmetic-content-title-color_dark: #5a7ffb;
+$section-title-color_dark: rgb(204, 214, 246);
+$section-cosmetic-content-title-color_dark: #00a9ff;
 /* end section theme */
 
 /* technology stack theme */
-$tech-stack-font-family_dark: "OpenSans-Bold";
-$tech-stack-color_dark: gray;
+$tech-stack-font-family_dark: "OpenSans-SemiBold";
+$tech-stack-color_dark: hsl(360, 100%, 100%);
 /* end technology stack theme */
 
 /* social media theme */
 $social-media-color_dark: hsl(360, 100%, 100%);
-$social-media-line-color_dark: #a8b2d1;
+$social-media-line-color_dark: hsl(0, 0%, 79%);
 /* end social media theme */
 
 /* header theme */
@@ -30,23 +30,26 @@ $navbar-bg-color_dark: hsl(216, 62%, 14%, 0.9);
 $navbar-box-shadow_dark: none;
 // brand
 $navbar-brand-font-family_dark: "InknutAntiqua-Bold";
-$navbar-brand-color_dark: white;
+$navbar-brand-color_dark: hsl(360, 100%, 100%);
 // items
 $navbar-items-color_dark: $text-color_dark;
 $navbar-items-font-family_dark: "Poppins-Regular";
 $navbar-dropdown-flags-color_dark: $navbar-items-color_dark;
+$navbar-dropdown-flags-menu-box-shadow_dark: 0px 0px 10px 2px black;
+$navbar-dropdown-flags-menu-bg-color_dark: hsl(216, 62%, 14%);
 $navbar-theme-mode-bg-color_dark: #464646;
 $navbar-theme-mode-label-box-shadow_dark: 0px 0px 10px 2px
   rgba(128, 128, 128, 1);
+$navbar-theme-mode-label-border_dark: none;
 $navbar-theme-mode-color_dark: hsl(207, 75%, 5%);
-$navbar-theme-mode-hover-bg-color_dark: #d14009;
+$navbar-theme-mode-hover-bg-color_dark: hsl(217, 35%, 20%);
 // hamburger
 $navbar-menu-hamburger-color_dark: hsl(360, 100%, 100%);
 // menu
 $navbar-menu-text-color_dark: $text-color_dark;
-$navbar-menu-text-hover-color_dark: $text-hover-color_dark;
-$navbar-menu-bg-color_dark: hsl(360, 100%, 100%);
-$navbar-menu-items-hover-bg-color_dark: rgb(77, 42, 16);
+$navbar-menu-text-hover-color_dark: hsl(360, 100%, 100%);
+$navbar-menu-bg-color_dark: $bg-color_dark;
+$navbar-menu-items-hover-bg-color_dark: #b25068;
 /* end header theme */
 
 /* intro theme */
@@ -54,11 +57,11 @@ $intro-first-name-color_dark: $navbar-brand-color_dark;
 $intro-last-name-color_dark: $text-hover-color_dark;
 $intro-role-color_dark: $navbar-items-color_dark;
 $intro-role-font-family_dark: "Poppins-Regular";
-$intro-based-address-color_dark: $navbar-items-color_dark;
+$intro-based-address-color_dark: hsl(360, 100%, 100%);
 $intro-based-address-font-family_dark: "Poppins-Light";
-$intro-pin-fill-icon-color_dark: rgb(194, 27, 27);
+$intro-pin-fill-icon-color_dark: #dd1b16;
 $intro-stack-title-font-family_dark: "Poppins-Regular";
-$intro-stack-title-color_dark: $navbar-items-color_dark;
+$intro-stack-title-color_dark: hsl(360, 100%, 100%);
 // icons
 $intro-icons-dotnet-color_dark: white;
 $intro-icons-csharp-color_dark: #684d95;
@@ -74,55 +77,69 @@ $intro-icons-css3-color_dark: #264de4;
 /* experience theme */
 $experience-nav-btn-color_dark: $navbar-brand-color_dark;
 $experience-nav-btn-font-family_dark: "OpenSans-Medium";
-$experience-nav-btn-border-color_dark: $text-color_dark;
+$experience-nav-btn-border-color_dark: $navbar-brand-color_dark;
 $experience-nav-btn-active-border-color_dark: $text-hover-color_dark;
 $experience-nav-btn-active-color_dark: $text-hover-color_dark;
 $experience-nav-btn-hover-color_dark: $text-hover-color_dark;
-$experience-nav-btn-hover-bg-color_dark: $navbar-menu-items-hover-bg-color_dark;
-$experience-nav-title-color_dark: $navbar-items-color_dark;
+$experience-nav-btn-hover-bg-color_dark: $navbar-bg-color_dark;
+$experience-nav-title-color_dark: $navbar-brand-color_dark;
 $experience-nav-title-font-family_dark: "OpenSans-SemiBold";
 $experience-nav-name-color_dark: $text-hover-color_dark;
 $experience-nav-name-hover-color_dark: $navbar-menu-items-hover-bg-color_dark;
-$experience-nav-duration-font-family_dark: "OpenSans-Bold";
+$experience-nav-duration-font-family_dark: "OpenSans-SemiBold";
 $experience-nav-duration-color_dark: $section-cosmetic-content-title-color_dark;
 $experience-nav-list-marker-color_dark: $section-cosmetic-content-title-color_dark;
 /* end experience theme */
 
 /* projects theme */
-$projects-card-bg-color_dark: rgb(30, 70, 139);
-$projects-card-box-shadow_dark: 0px 0px 15px 3px hsla(240, 2.74%, 28.63%, 1);
-$projects-card-icons-folder-color_dark: white;
-$projects-card-icons-github-color_dark: white;
-$projects-card-icons-link-color_dark: white;
-$projects-card-icons-hover-color_dark: white;
-$projects-card-title-color_dark: white;
-$projects-card-title-hover-color_dark: white;
-$projects-card-title-font-family_dark: "OpenSans-Medium";
+$projects-card-bg-color_dark: rgb(22, 44, 82);
+$projects-card-box-shadow_dark: 0px 0px 10px 2px rgba(128, 128, 128, 1);
+$projects-card-icons-folder-color_dark: $section-cosmetic-content-title-color_dark;
+$projects-card-icons-github-color_dark: hsl(360, 100%, 100%);
+$projects-card-icons-link-color_dark: hsl(360, 100%, 100%);
+$projects-card-icons-hover-color_dark: $text-hover-color_dark;
+$projects-card-title-color_dark: hsl(360, 100%, 100%);
+$projects-card-title-hover-color_dark: $text-hover-color_dark;
+$projects-card-title-font-family_dark: "OpenSans-SemiBold";
 /* end projects theme */
 
 /* about theme */
-$about-me-subtitles-color_dark: hsl(0, 0%, 0%);
+$about-me-subtitles-color_dark: hsl(360, 100%, 100%);
 $about-me-subtitles-font-family_dark: "OpenSans-Bold";
 /* end about theme */
 
 /* contact theme */
-$contact-title-color_dark: $text-color_dark;
+$contact-title-color_dark: hsl(360, 100%, 100%);
 $contact-title-font-family_dark: "OpenSans-Medium";
-$contact-email-box-shadow_dark: "OpenSans-Medium";
-$contact-email-border-color_dark: hsl(0, 0%, 0%);
-$contact-email-text-color_dark: "OpenSans-Medium";
-$contact-email-text-hover-color_dark: "OpenSans-Medium";
-$contact-email-text-font-family_dark: "OpenSans-Medium";
-$contact-email-bg-color_dark: "OpenSans-Medium";
-$contact-email-bg-hover-color_dark: "OpenSans-Medium";
+$contact-email-box-shadow_dark: 0px 0px 10px 2px
+  $section-cosmetic-content-title-color_dark;
+$contact-email-border-color_dark: $section-cosmetic-content-title-color_dark;
+$contact-email-text-color_dark: $section-cosmetic-content-title-color_dark;
+$contact-email-text-hover-color_dark: hsl(360, 100%, 100%);
+$contact-email-text-font-family_dark: "OpenSans-SemiBold";
+$contact-email-bg-color_dark: $projects-card-bg-color_dark;
+$contact-email-bg-hover-color_dark: $projects-card-bg-color_dark;
 /* end contact theme */
 
 /* footer theme */
-$footer-text-color_dark: $text-color_dark;
+$footer-text-color_dark: hsl(360, 100%, 100%);
 $footer-text-hover-color_dark: $text-hover-color_dark;
 /* end footer theme */
 
-$overlay-image-color_dark: rgba(57, 57, 57, 0.5);
+/* scroll bar */
+$scrollbar-face-color_dark: #646464;
+$scrollbar-base-color_dark: $scrollbar-face-color_dark;
+$scrollbar-3dlight-color_dark: $scrollbar-face-color_dark;
+$scrollbar-highlight-color_dark: $scrollbar-face-color_dark;
+$scrollbar-track-color_dark: #1a1919;
+$scrollbar-arrow-color_dark: $scrollbar-track-color_dark;
+$scrollbar-shadow-color_dark: $scrollbar-face-color_dark;
+$scrollbar-width_dark: 8px;
+$scrollbar-height_dark: 3px;
+$scrollbar-thumb-height_dark: 50px;
+$scrollbar-thumb-bg-color_dark: #666;
+$scrollbar-thumb-border-radius_dark: 3px;
+/* end scroll bar */
 
 // mixin that enables css variables in dark mode
 @mixin dark-mode() {
@@ -150,7 +167,7 @@ $overlay-image-color_dark: rgba(57, 57, 57, 0.5);
   /* end technology stack theme */
 
   /* social media theme */
-  --section-title-color: #{$section-title-color_dark};
+  --social-media-color: #{$social-media-color_dark};
   --social-media-line-color: #{$social-media-line-color_dark};
   /* end social media theme */
 
@@ -165,8 +182,11 @@ $overlay-image-color_dark: rgba(57, 57, 57, 0.5);
   --navbar-items-color: #{$navbar-items-color_dark};
   --navbar-items-font-family: #{$navbar-items-font-family_dark};
   --navbar-dropdown-flags-color: #{$navbar-dropdown-flags-color_dark};
+  --navbar-dropdown-flags-menu-box-shadow: #{$navbar-dropdown-flags-menu-box-shadow_dark};
+  --navbar-dropdown-flags-menu-bg-color: #{$navbar-dropdown-flags-menu-bg-color_dark};
   --navbar-theme-mode-bg-color: #{$navbar-theme-mode-bg-color_dark};
   --navbar-theme-mode-label-box-shadow: #{$navbar-theme-mode-label-box-shadow_dark};
+  --navbar-theme-mode-label-border: #{$navbar-theme-mode-label-border_dark};
   --navbar-theme-mode-color: #{$navbar-theme-mode-color_dark};
   --navbar-theme-mode-hover-bg-color: #{$navbar-theme-mode-hover-bg-color_dark};
   // hamburger
@@ -251,5 +271,18 @@ $overlay-image-color_dark: rgba(57, 57, 57, 0.5);
   --footer-text-hover-color: #{$text-hover-color_dark};
   /* end footer theme */
 
-  --overlay-image-color: #{$overlay-image-color_dark};
+  /* scroll bar */
+  --scrollbar-face-color: #{$scrollbar-face-color_dark};
+  --scrollbar-base-color: #{$scrollbar-base-color_dark};
+  --scrollbar-3dlight-color: #{$scrollbar-3dlight-color_dark};
+  --scrollbar-highlight-color: #{$scrollbar-highlight-color_dark};
+  --scrollbar-track-color: #{$scrollbar-track-color_dark};
+  --scrollbar-arrow-color: #{$scrollbar-arrow-color_dark};
+  --scrollbar-shadow-color: #{$scrollbar-shadow-color_dark};
+  --scrollbar-width: #{$scrollbar-width_dark};
+  --scrollbar-height: #{$scrollbar-height_dark};
+  --scrollbar-thumb-height: #{$scrollbar-thumb-height_dark};
+  --scrollbar-thumb-bg-color: #{$scrollbar-thumb-bg-color_dark};
+  --scrollbar-thumb-border-radius: #{$scrollbar-thumb-border-radius_dark};
+  /* end scroll bar */
 }

@@ -26,7 +26,7 @@ $social-media-line-color_light: #a8b2d1;
 
 /* header theme */
 // background
-$navbar-bg-color_light: hsla(360, 100%, 100%, 1);
+$navbar-bg-color_light: hsla(360, 100%, 100%, 0.9);
 $navbar-box-shadow_light: 0px 8px 24px -1px hsla(0, 0%, 50.2%, 1);
 // brand
 $navbar-brand-font-family_light: "InknutAntiqua-ExtraBold";
@@ -35,11 +35,15 @@ $navbar-brand-color_light: hsla(240, 2.74%, 28.63%, 1);
 $navbar-items-color_light: hsl(0, 0%, 0%);
 $navbar-items-font-family_light: "Poppins-SemiBold";
 $navbar-dropdown-flags-color_light: $navbar-items-color_light;
+$navbar-dropdown-flags-menu-box-shadow_light: 0px 0px 6px 2px
+  hsla(0, 0%, 50.2%, 1);
+$navbar-dropdown-flags-menu-bg-color_light: hsl(360, 100%, 100%);
 $navbar-theme-mode-bg-color_light: #ffd966;
 $navbar-theme-mode-label-box-shadow_light: 0px 0px 55px 14px
   rgba(255, 217, 102, 1);
+$navbar-theme-mode-label-border_light: 2px solid rgba(255, 217, 102, 1);
 $navbar-theme-mode-color_light: #fc9601;
-$navbar-theme-mode-hover-bg-color_light: #d14009;
+$navbar-theme-mode-hover-bg-color_light: #f0f0f0;
 // hamburger
 $navbar-menu-hamburger-color_light: $navbar-brand-color_light;
 // menu
@@ -110,7 +114,7 @@ $contact-title-color_light: hsl(0, 0%, 0%);
 $contact-title-font-family_light: "OpenSans-Medium";
 $contact-email-box-shadow_light: 0px 0px 10px 2px hsl(0, 0%, 0%);
 $contact-email-border-color_light: hsl(0, 0%, 0%);
-$contact-email-text-color_light: white;
+$contact-email-text-color_light: hsl(360, 100%, 100%);
 $contact-email-text-hover-color_light: hsl(0, 0%, 0%);
 $contact-email-text-font-family_light: "OpenSans-SemiBold";
 $contact-email-bg-color_light: $section-cosmetic-content-title-color_light;
@@ -122,7 +126,20 @@ $footer-text-color_light: $text-color_light;
 $footer-text-hover-color_light: $text-hover-color_light;
 /* end footer theme */
 
-$overlay-image-color_light: rgba(57, 57, 57, 0.5);
+/* scroll bar */
+$scrollbar-face-color_light: $section-cosmetic-content-title-color_light;
+$scrollbar-base-color_light: $section-cosmetic-content-title-color_light;
+$scrollbar-3dlight-color_light: $section-cosmetic-content-title-color_light;
+$scrollbar-highlight-color_light: $section-cosmetic-content-title-color_light;
+$scrollbar-track-color_light: $projects-card-bg-color_light;
+$scrollbar-arrow-color_light: $projects-card-bg-color_light;
+$scrollbar-shadow-color_light: $section-cosmetic-content-title-color_light;
+$scrollbar-width_light: 8px;
+$scrollbar-height_light: 3px;
+$scrollbar-thumb-height_light: 50px;
+$scrollbar-thumb-bg-color_light: $section-cosmetic-content-title-color_light;
+$scrollbar-thumb-border-radius_light: 3px;
+/* end scroll bar */
 
 // mixin that enables css variables in light mode
 @mixin light-mode() {
@@ -165,8 +182,11 @@ $overlay-image-color_light: rgba(57, 57, 57, 0.5);
   --navbar-items-color: #{$navbar-items-color_light};
   --navbar-items-font-family: #{$navbar-items-font-family_light};
   --navbar-dropdown-flags-color: #{$navbar-dropdown-flags-color_light};
+  --navbar-dropdown-flags-menu-box-shadow: #{$navbar-dropdown-flags-menu-box-shadow_light};
+  --navbar-dropdown-flags-menu-bg-color: #{$navbar-dropdown-flags-menu-bg-color_light};
   --navbar-theme-mode-bg-color: #{$navbar-theme-mode-bg-color_light};
   --navbar-theme-mode-label-box-shadow: #{$navbar-theme-mode-label-box-shadow_light};
+  --navbar-theme-mode-label-border: #{$navbar-theme-mode-label-border_light};
   --navbar-theme-mode-color: #{$navbar-theme-mode-color_light};
   --navbar-theme-mode-hover-bg-color: #{$navbar-theme-mode-hover-bg-color_light};
   // hamburger
@@ -251,5 +271,18 @@ $overlay-image-color_light: rgba(57, 57, 57, 0.5);
   --footer-text-hover-color: #{$text-hover-color_light};
   /* end footer theme */
 
-  --overlay-image-color: #{$overlay-image-color_light};
+  /* scroll bar */
+  --scrollbar-face-color: #{$scrollbar-face-color_light};
+  --scrollbar-base-color: #{$scrollbar-base-color_light};
+  --scrollbar-3dlight-color: #{$scrollbar-3dlight-color_light};
+  --scrollbar-highlight-color: #{$scrollbar-highlight-color_light};
+  --scrollbar-track-color: #{$scrollbar-track-color_light};
+  --scrollbar-arrow-color: #{$scrollbar-arrow-color_light};
+  --scrollbar-shadow-color: #{$scrollbar-shadow-color_light};
+  --scrollbar-width: #{$scrollbar-width_light};
+  --scrollbar-height: #{$scrollbar-height_light};
+  --scrollbar-thumb-height: #{$scrollbar-thumb-height_light};
+  --scrollbar-thumb-bg-color: #{$scrollbar-thumb-bg-color_light};
+  --scrollbar-thumb-border-radius: #{$scrollbar-thumb-border-radius_light};
+  /* end scroll bar */
 }
