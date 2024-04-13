@@ -34,10 +34,14 @@ $navbar-brand-color_light: hsla(240, 2.74%, 28.63%, 1);
 // items
 $navbar-items-color_light: hsl(0, 0%, 0%);
 $navbar-items-font-family_light: "Poppins-SemiBold";
-$navbar-dropdown-flags-color_light: $navbar-items-color_light;
-$navbar-dropdown-flags-menu-box-shadow_light: 0px 0px 6px 2px
+$navbar-dropdown-langs-text-color_light: $navbar-brand-color_light;
+$navbar-dropdown-langs-text-font-family_light: "Poppins-SemiBold";
+$navbar-dropdown-langs-toggle-color_light: $navbar-items-color_light;
+$navbar-dropdown-langs-menu-box-shadow_light: 0px 0px 6px 2px
   hsla(0, 0%, 50.2%, 1);
-$navbar-dropdown-flags-menu-bg-color_light: hsl(360, 100%, 100%);
+$navbar-dropdown-langs-menu-item-hover-bg-color_light: #ead2ac;
+$navbar-dropdown-langs-menu-item-focus-bg-color_light: #ead2ac;
+$navbar-dropdown-langs-menu-bg-color_light: hsl(360, 100%, 100%);
 $navbar-theme-mode-bg-color_light: #ffd966;
 $navbar-theme-mode-label-box-shadow_light: 0px 0px 55px 14px
   rgba(255, 217, 102, 1);
@@ -63,6 +67,7 @@ $intro-based-address-font-family_light: "Poppins-Regular";
 $intro-pin-fill-icon-color_light: red;
 $intro-stack-title-font-family_light: "Poppins-Regular";
 $intro-stack-title-color_light: $navbar-items-color_light;
+$intro-stack-border-bottom-color_light: $section-cosmetic-content-title-color_light;
 // icons
 $intro-icons-dotnet-color_light: black;
 $intro-icons-csharp-color_light: #280068;
@@ -181,9 +186,13 @@ $scrollbar-thumb-border-radius_light: 3px;
   // items
   --navbar-items-color: #{$navbar-items-color_light};
   --navbar-items-font-family: #{$navbar-items-font-family_light};
-  --navbar-dropdown-flags-color: #{$navbar-dropdown-flags-color_light};
-  --navbar-dropdown-flags-menu-box-shadow: #{$navbar-dropdown-flags-menu-box-shadow_light};
-  --navbar-dropdown-flags-menu-bg-color: #{$navbar-dropdown-flags-menu-bg-color_light};
+  --navbar-dropdown-langs-text-color: #{$navbar-dropdown-langs-text-color_light};
+  --navbar-dropdown-langs-text-font-family: #{$navbar-dropdown-langs-text-font-family_light};
+  --navbar-dropdown-langs-toggle-color: #{$navbar-dropdown-langs-toggle-color_light};
+  --navbar-dropdown-langs-menu-box-shadow: #{$navbar-dropdown-langs-menu-box-shadow_light};
+  --navbar-dropdown-langs-menu-item-hover-bg-color: #{$navbar-dropdown-langs-menu-item-hover-bg-color_light};
+  --navbar-dropdown-langs-menu-item-focus-bg-color: #{$navbar-dropdown-langs-menu-item-focus-bg-color_light};
+  --navbar-dropdown-langs-menu-bg-color: #{$navbar-dropdown-langs-menu-bg-color_light};
   --navbar-theme-mode-bg-color: #{$navbar-theme-mode-bg-color_light};
   --navbar-theme-mode-label-box-shadow: #{$navbar-theme-mode-label-box-shadow_light};
   --navbar-theme-mode-label-border: #{$navbar-theme-mode-label-border_light};
@@ -208,6 +217,7 @@ $scrollbar-thumb-border-radius_light: 3px;
   --intro-pin-fill-icon-color: #{$intro-pin-fill-icon-color_light};
   --intro-stack-title-font-family: #{$intro-stack-title-font-family_light};
   --intro-stack-title-color: #{$intro-stack-title-color_light};
+  --intro-stack-border-bottom-color: #{$intro-stack-border-bottom-color_light};
   // icons
   --intro-icons-dotnet-color: #{$intro-icons-dotnet-color_light};
   --intro-icons-csharp-color: #{$intro-icons-csharp-color_light};

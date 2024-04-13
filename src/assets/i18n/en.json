@@ -1,0 +1,96 @@
+{
+    "NAVBAR": [
+        {
+            "NAME": "Experience",
+            "SECTION": "Experience"
+        },
+        {
+            "NAME": "Projects",
+            "SECTION": "Projects"
+        },
+        {
+            "NAME": "About",
+            "SECTION": "About me"
+        },
+        {
+            "NAME": "Contact",
+            "SECTION": "What's next?"
+        }
+    ],
+    "INTRO": {
+        "ROLE": "A Full-Stack Developer",
+        "ADDRESS": "Based in Aveiro, Portugal",
+        "TECH_STACK": "Tech Stack"
+    },
+    "EXPERIENCE": [
+        {
+            "NAME": "Critical Manufacturing",
+            "ROLE": "Software Engineer",
+            "DURATION": "Feb 2022 - Present",
+            "ACTIVITIES": [
+                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance.",
+                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance.",
+                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance."
+            ]
+        },
+        {
+            "NAME": "Mafirol Group",
+            "ROLE": "Full Stack Developer",
+            "DURATION": "Mar 2021 - Jan 2022",
+            "ACTIVITIES": [
+                "Maintenance and enhancement of internal .NET Framework C# Web applications.",
+                "Maintenance of external Web application developed in .NET Core C#, Vue.js and MySQL",
+                "Renewal of the company website creating Web application using .NET Core C# and React framework",
+                "Database modeling and implementation in SQL Server",
+                "Development of RESTFul API in order to send and store information in Database",
+                "Implementation of translation management framework (i18next) in web application"
+            ]
+        },
+        {
+            "NAME": "Wavecom",
+            "ROLE": "Backend Developer",
+            "DURATION": "Mar 2020 - Jul 2020",
+            "ACTIVITIES": [
+                "Python course on web application development using Flask framework",
+                "Study of Python's unittest, pytest and Mock libraries",
+                "Study of Git's workflow and methodologies",
+                "Analysis of the structure of a Flask application in production (microservice)",
+                "Implementation of unit tests in Python",
+                "Localization algorithm in Python that calculates the position of a tag accordingly to the incoming signal by different gateway"
+            ]
+        }
+    ],
+    "PROJECTS": [
+        {
+            "NAME": "Project 1",
+            "DESCRIPTION": "A platform for posting courses which are designed as per the Industry demand with full Career Assistance."
+        },
+        {
+            "NAME": "Project 2",
+            "DESCRIPTION": "Easy Staff allows you to manage your staff."
+        },
+        {
+            "NAME": "Project 3",
+            "DESCRIPTION": "Easy Staff allows you to manage your staff."
+        }
+    ],
+    "ABOUT": {
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "ROLE": {
+            "TITLE": "Role",
+            "DESCRIPTION": "Full-Stack Developer"
+        },
+        "EMPLOYMENT": {
+            "TITLE": "Employment",
+            "DESCRIPTION": "Employee"
+        }
+    },
+    "CONTACT": {
+        "SUBTITLE": "Hit me up!",
+        "DESCRIPTION": "Lorem ipsum dolor sit am asdcasfas maSKDMAKDFMAK",
+        "BUTTON": "Say Hello"
+    },
+    "FOOTER": {
+        "DISCLAIMER": "Designed & Built by Ricardo Balreira"
+    }
+}

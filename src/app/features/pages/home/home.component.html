@@ -3,16 +3,16 @@
 </header>
 <main>
     <app-intro></app-intro>
-    <app-section sectionTitle="Experience" id="experience" [hasSecondaryBgColor]="true">
+    <app-section sectionTitle="{{navContent[0].section}}" id="{{navContent[0].href}}" [hasSecondaryBgColor]="true">
         <app-experience class="d-flex justify-content-center"></app-experience>
     </app-section>
-    <app-section sectionTitle="Projects" id="projects">
+    <app-section sectionTitle="{{navContent[1].section}}" id="{{navContent[1].href}}">
         <app-projects></app-projects>
     </app-section>
-    <app-section sectionTitle="About Me" id="about" [hasSecondaryBgColor]="true">
+    <app-section sectionTitle="{{navContent[2].section}}" id="{{navContent[2].href}}" [hasSecondaryBgColor]="true">
         <app-about-me></app-about-me>
     </app-section>
-    <app-section sectionTitle="What's next?" id="contact">
+    <app-section sectionTitle="{{navContent[3].section}}" id="{{navContent[3].href}}">
         <app-contact></app-contact>
     </app-section>
 </main>

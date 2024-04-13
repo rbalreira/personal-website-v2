@@ -1,10 +1,12 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { gsap } from 'gsap';
 
+import { INavContent } from '@app/shared/models/nav-content.interface';
+
 import { FuncsService } from '@app/core/services/funcs/funcs.service';
 import { NavMenuToggleService } from '@app/core/services/nav-menu-toggle/nav-menu-toggle.service';
-
-import { navMenuContent } from '@app/features/models/nav-menu.model';
+import { NavContentFactoryService } from '@app/shared/services/nav-content/nav-content-factory.service';
+import { SocialMediaFactoryService } from '@app/shared/services/social-media/social-media-factory.service';
 
 @Component({
   selector: 'app-header',
@@ -12,12 +14,15 @@ import { navMenuContent } from '@app/features/models/nav-menu.model';
   styleUrls: ['../header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  content = navMenuContent;
-
   constructor(
     private funcsService: FuncsService,
-    private navMenuToggleService: NavMenuToggleService
+    private navMenuToggleService: NavMenuToggleService,
+    private navContentFactoryService: NavContentFactoryService,
+    private socialMediaFactoryService: SocialMediaFactoryService
   ) {}
+
+  navContent: INavContent[] = this.navContentFactoryService.getNavContent();
+  lastName: string = this.socialMediaFactoryService.getLastName();
 
   /**
    * HostListener event to capture window width in order to inactive Hamburger icon menu
@@ -33,11 +38,11 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  getHamburgerCurrentMode() {
+  getHamburgerCurrentMode(): boolean {
     return this.funcsService.currentHamburgerToggleMode;
   }
 
-  toggleHamburger() {
+  toggleHamburger(): void {
     this.navMenuToggleService.toggleMode();
   }
 

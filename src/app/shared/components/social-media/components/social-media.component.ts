@@ -1,5 +1,7 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 
+import { SocialMediaFactoryService } from '@app/shared/services/social-media/social-media-factory.service';
+
 @Component({
   selector: 'app-social-media',
   templateUrl: '../social-media.component.html',
@@ -7,32 +9,9 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class SocialMediaComponent {
+  constructor(private socialMediaFactoryService: SocialMediaFactoryService) {}
+
   @Input() footer = true;
 
-  socialMedia = [
-    {
-      id: 1,
-      name: 'GitHub',
-      icon: 'bootstrapGithub',
-      href: 'https://github.com/rbalreira',
-    },
-    {
-      id: 2,
-      name: 'Instagram',
-      icon: 'bootstrapInstagram',
-      href: 'https://www.instagram.com/rbalreira/',
-    },
-    {
-      id: 3,
-      name: 'LinkedIn',
-      icon: 'bootstrapLinkedin',
-      href: 'https://www.linkedin.com/in/rbalreira/',
-    },
-    {
-      id: 4,
-      name: 'CodePen',
-      icon: 'simpleCodepen',
-      href: 'https://codepen.io/rbalreira',
-    },
-  ];
+  socialMedia = this.socialMediaFactoryService.getSocialMediaContent();
 }

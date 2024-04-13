@@ -8,9 +8,6 @@
 /* Importing Bootstrap SCSS file. */
 @use "bootstrap/scss/bootstrap";
 
-/* Importing flag-icon CSS file */
-@use "flag-icon-css/sass/flag-icons.scss";
-
 /* Importing Hamburgers SCSS file */
 $hamburger-hover-opacity: 1;
 @import "hamburgers/_sass/hamburgers/hamburgers.scss";

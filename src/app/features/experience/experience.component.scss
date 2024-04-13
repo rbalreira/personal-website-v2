@@ -77,6 +77,7 @@
       color: var(--experience-nav-name-color);
 
       &-underline {
+        color: var(--experience-nav-name-color);
         display: inline-block;
         position: relative;
       }
@@ -94,7 +95,7 @@
         transition: transform 0.25s ease-out;
       }
 
-      &:hover .experience-name-underline::after {
+      &-underline:hover::after {
         transform: scaleX(1);
         transform-origin: bottom left;
       }

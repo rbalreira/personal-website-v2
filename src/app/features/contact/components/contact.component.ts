@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
+import { SocialMediaFactoryService } from '@app/shared/services/social-media/social-media-factory.service';
+
 @Component({
   selector: 'app-contact',
   templateUrl: '../contact.component.html',
   styleUrls: ['../contact.component.scss'],
 })
 export class ContactComponent {
-  email = 'rbalreira@outlook.com';
+  constructor(private socialMediaFactoryService: SocialMediaFactoryService) {}
+
+  email = this.socialMediaFactoryService.getEmailSocialMedia();
 }

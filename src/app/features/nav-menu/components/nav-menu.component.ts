@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
-import { navMenuContent } from '@app/features/models/nav-menu.model';
+import { INavContent } from '@app/shared/models/nav-content.interface';
 
 import { FuncsService } from '@app/core/services/funcs/funcs.service';
 import { NavMenuToggleService } from '@app/core/services/nav-menu-toggle/nav-menu-toggle.service';
+import { NavContentFactoryService } from '@app/shared/services/nav-content/nav-content-factory.service';
 
 @Component({
   selector: 'app-nav-menu',
@@ -11,18 +12,19 @@ import { NavMenuToggleService } from '@app/core/services/nav-menu-toggle/nav-men
   styleUrls: ['../nav-menu.component.scss'],
 })
 export class NavMenuComponent {
-  content = navMenuContent;
-
   constructor(
     private funcsService: FuncsService,
-    private navMenuToggleService: NavMenuToggleService
+    private navMenuToggleService: NavMenuToggleService,
+    private navContentFactoryService: NavContentFactoryService
   ) {}
 
-  getHamburgerCurrentMode() {
+  navContent: INavContent[] = this.navContentFactoryService.getNavContent();
+
+  getHamburgerCurrentMode(): boolean {
     return this.funcsService.currentHamburgerToggleMode;
   }
 
-  toggleHamburger() {
+  toggleHamburger(): void {
     this.navMenuToggleService.toggleMode();
   }
 }

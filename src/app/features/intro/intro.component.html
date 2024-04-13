@@ -5,10 +5,11 @@
                 <div class="row d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center">
                     <div class="col-12 col-md-auto">
                         <h1 class="main-title">
-                            <span class="main-first-name">Ricardo</span> <span class="main-last-name">Balreira</span>
+                            <span class="main-first-name">{{firstName}}</span> <span
+                                class="main-last-name">{{lastName}}</span>
                         </h1>
-                        <p class="main-role">A Full-Stack Developer</p>
-                        <p class="main-based-address mt-2">Based in Aveiro, Portugal
+                        <p class="main-role">{{'INTRO.ROLE' | translate}}</p>
+                        <p class="main-based-address mt-2">{{'INTRO.ADDRESS' | translate}}
                             <span class="ms-2 main-pin-fill lh-base">
                                 <ng-icon name="bootstrapPinFill"></ng-icon>
                             </span>
@@ -22,7 +23,7 @@
             <div class="col-12">
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="col-auto">
-                        <p class="stack-title">Tech Stack</p>
+                        <p class="stack-title">{{'INTRO.TECH_STACK' | translate}}</p>
                     </div>
                     <div class="col-12">
                         <div class="row justify-content-center">

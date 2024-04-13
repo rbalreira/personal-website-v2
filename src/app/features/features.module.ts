@@ -31,7 +31,7 @@ import { DayNightModeToggleService } from './day-night-mode-toggle/services/day-
 import { AboutMeComponent } from './about-me/components/about-me.component';
 import { DayNightModeToggleComponent } from './day-night-mode-toggle/components/day-night-mode-toggle.component';
 import { IntroComponent } from './intro/components/intro.component';
-import { DropdownFlagsComponent } from './dropdown-flags/components/dropdown-flags.component';
+import { DropdownLangsComponent } from './dropdown-langs/components/dropdown-langs.component';
 import { NavMenuComponent } from './nav-menu/components/nav-menu.component';
 import { ProjectsComponent } from './projects/components/projects.component';
 import { ExperienceComponent } from './experience/components/experience.component';
@@ -41,7 +41,7 @@ import { ContactComponent } from './contact/components/contact.component';
   declarations: [
     DayNightModeToggleComponent,
     IntroComponent,
-    DropdownFlagsComponent,
+    DropdownLangsComponent,
     NavMenuComponent,
     ExperienceComponent,
     ProjectsComponent,
@@ -73,7 +73,7 @@ import { ContactComponent } from './contact/components/contact.component';
   exports: [
     DayNightModeToggleComponent,
     IntroComponent,
-    DropdownFlagsComponent,
+    DropdownLangsComponent,
     NavMenuComponent,
     ExperienceComponent,
     ProjectsComponent,

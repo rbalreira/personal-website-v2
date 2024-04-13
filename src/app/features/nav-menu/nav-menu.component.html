@@ -2,13 +2,14 @@
   <div class="nav-menu-content">
     <div class="container">
       <div class="row mt-2 gy-3 d-flex justify-content-center">
-        <ng-container *ngFor="let c of content">
+        <ng-container *ngFor="let c of navContent">
           <div class="col-10 col-sm-11 p-0">
-            <a class="nav-menu-link" href="#{{c.name.toLowerCase()}}" (click)="toggleHamburger()">{{c.name}}</a>
+            <a class="nav-menu-link" href="#{{c.href.toLowerCase() | translate}}" (click)="toggleHamburger()">{{c.name |
+              translate}}</a>
           </div>
         </ng-container>
         <div class="col-10 col-sm-11 text-center dropdown-mobile-items">
-          <app-dropdown-flags></app-dropdown-flags>
+          <app-dropdown-langs></app-dropdown-langs>
         </div>
         <div class="col-10 col-sm-11 d-flex justify-content-center dropdown-mobile-items">
           <day-night-mode-toggle></day-night-mode-toggle>

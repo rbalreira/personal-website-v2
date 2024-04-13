@@ -2,7 +2,7 @@
 
 /**
  * Helper class to set Navbar and list items
- * 1. Alternate display property for both day-night toggle and dropdown-flags elements based on breakpoints
+ * 1. Alternate display property for both day-night toggle and dropdown-langs elements based on breakpoints
  */
 .navbar {
   background-color: var(--navbar-bg-color);
@@ -43,7 +43,7 @@
   }
 
   & .day-night-mode-toggle,
-  & .dropdown-flags {
+  & .dropdown-langs {
     display: none;
 
     @include a.respond-to("extra-small") {

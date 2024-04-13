@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand justify-content-between fixed-top ps-4 pe-4">
     <a class="navbar-brand p-0" href="/">
-        Balreira.dev
+        {{lastName}}.dev
     </a>
     <ul class="navbar-nav align-items-center">
-        <li class="nav-item list-items p-1" *ngFor="let c of content; last as isLast" [class.me-3]="!isLast">
-            <a href="#{{c.name.toLowerCase()}}">{{c.name}}</a>
+        <li class="nav-item list-items p-1" *ngFor="let c of navContent; last as isLast" [class.me-3]="!isLast">
+            <a href="#{{c.href.toLowerCase() | translate}}">{{c.name | translate}}</a>
         </li>
-        <li class="nav-item dropdown-flags p-1">
-            <app-dropdown-flags></app-dropdown-flags>
+        <li class="nav-item dropdown-langs p-1">
+            <app-dropdown-langs></app-dropdown-langs>
         </li>
         <li class="nav-item day-night-mode-toggle p-1">
             <day-night-mode-toggle></day-night-mode-toggle>

@@ -1,11 +1,13 @@
 import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+
+import { Mode } from '@app/shared/models/day-night-mode.enum';
+
 import {
   ModeStorage,
   MODE_STORAGE_SERVICE,
 } from './day-night-mode-storage.service';
-import { Mode } from '../../models/day-night-mode.enum';
 
 /**
  * Angular service that provides the mode toggle feature.

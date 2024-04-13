@@ -7,8 +7,15 @@ import {
   bootstrapLinkedin,
 } from '@ng-icons/bootstrap-icons';
 import { simpleCodepen } from '@ng-icons/simple-icons';
+import { TranslateModule } from '@ngx-translate/core';
 
-import { SvgAvatarComponent } from '../shared/components/svg-avatar/svg-avatar.component';
+import { NavContentFactoryService } from '@app/shared/services/nav-content/nav-content-factory.service';
+import { TechStackFactoryService } from '@app/shared/services/tech-stack/tech-stack-factory.service';
+import { SocialMediaFactoryService } from './services/social-media/social-media-factory.service';
+import { ExperienceFactoryService } from './services/experience/experience-factory.service';
+import { ProjectsFactoryService } from './services/projects/projects-factory.service';
+
+import { SvgAvatarComponent } from './components/svg-avatar/components/svg-avatar.component';
 import { SocialMediaComponent } from './components/social-media/components/social-media.component';
 
 @NgModule({
@@ -22,6 +29,13 @@ import { SocialMediaComponent } from './components/social-media/components/socia
       simpleCodepen,
     }),
   ],
-  exports: [SvgAvatarComponent, SocialMediaComponent],
+  providers: [
+    ExperienceFactoryService,
+    NavContentFactoryService,
+    ProjectsFactoryService,
+    SocialMediaFactoryService,
+    TechStackFactoryService,
+  ],
+  exports: [SvgAvatarComponent, SocialMediaComponent, TranslateModule],
 })
 export class SharedModule {}

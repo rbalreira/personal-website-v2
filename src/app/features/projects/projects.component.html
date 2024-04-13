@@ -40,8 +40,8 @@
                 </a>
             </div>
         </div>
-        <h4 class="mb-2 project-title">{{project.name}}</h4>
-        <p class="project-description">{{project.description}}</p>
+        <h4 class="mb-2 project-title">{{project.name | translate}}</h4>
+        <p class="project-description">{{project.description | translate}}</p>
         <div class="row project-footer mt-auto">
             <div class="col-auto pe-0" *ngFor="let tech of project.stack">
                 <p>{{tech}}</p>

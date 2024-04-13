@@ -1,7 +1,7 @@
 <div class="social-media" [ngClass]="footer ? 'is-footer' : 'is-not-footer'">
     <ul class="social-media-list">
         <li *ngFor="let social of socialMedia">
-            <a href="{{social.href}}" target="_blank">
+            <a href="{{social.link}}" target="_blank">
                 <ng-icon name="{{social.icon}}"></ng-icon>
             </a>
         </li>

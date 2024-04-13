@@ -21,7 +21,7 @@ export class NavMenuToggleService {
    * Function that toggles the mode
    * Exposed publicly
    */
-  toggleMode() {
+  toggleMode(): void {
     this.document.body.classList.toggle('is-active');
     this.funcsService.getCurrentHamburgerToggleMode();
   }

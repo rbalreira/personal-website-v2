@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { DayNightModeToggleService } from '@app/features/day-night-mode-toggle/services/day-night-mode-toggle.service';
+import { Mode } from '@app/shared/models/day-night-mode.enum';
 
-import { Mode } from '@app/features/models/day-night-mode.enum';
+import { DayNightModeToggleService } from '@app/features/day-night-mode-toggle/services/day-night-mode-toggle.service';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +12,7 @@ export class FuncsService {
 
   currentHamburgerToggleMode: boolean = false;
 
-  getCurrentThemeMode() {
+  getCurrentThemeMode(): boolean {
     var toggle = '';
     this.dayNightModeToggleService.modeChanged$.subscribe((value) => {
       toggle = value;
@@ -21,7 +21,7 @@ export class FuncsService {
     return toggle === Mode.LIGHT;
   }
 
-  getCurrentHamburgerToggleMode() {
+  getCurrentHamburgerToggleMode(): void {
     this.currentHamburgerToggleMode = !this.currentHamburgerToggleMode;
   }
 }
