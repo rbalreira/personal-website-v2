@@ -1,82 +1,89 @@
+@use "functions" as f;
+
 /* background theme */
-$bg-color_dark: hsl(217, 35%, 20%);
+$bg-color_dark: f.dark-color(blue, darker);
 $bg-secondary-color_dark: $bg-color_dark;
 /* end background theme */
 
 /* text theme */
 $text-font-family_dark: "OpenSans-Regular";
-$text-color_dark: rgb(162, 174, 211);
-$text-hover-color_dark: #fa7070;
+$text-color_dark: f.dark-color(blue, 3lighter);
+$text-hover-color_dark: f.dark-color(red, light);
 /* end text theme */
 
 /* section theme */
-$section-title-color_dark: rgb(204, 214, 246);
-$section-cosmetic-content-title-color_dark: #00a9ff;
+$section-title-color_dark: f.dark-color(blue, lightest);
+$section-cosmetic-content-title-color_dark: f.dark-color(blue, lighter);
 /* end section theme */
 
 /* technology stack theme */
 $tech-stack-font-family_dark: "OpenSans-SemiBold";
-$tech-stack-color_dark: hsl(360, 100%, 100%);
+$tech-stack-color_dark: f.dark-color(white, base);
 /* end technology stack theme */
 
 /* social media theme */
-$social-media-color_dark: hsl(360, 100%, 100%);
-$social-media-line-color_dark: hsl(0, 0%, 79%);
+$social-media-color_dark: $tech-stack-color_dark;
+$social-media-line-color_dark: $section-cosmetic-content-title-color_dark;
 /* end social media theme */
 
 /* header theme */
 // background
-$navbar-bg-color_dark: hsl(216, 62%, 14%, 0.9);
+$navbar-bg-color_dark: f.dark-color(blue, 3darker);
 $navbar-box-shadow_dark: none;
 // brand
 $navbar-brand-font-family_dark: "InknutAntiqua-Bold";
-$navbar-brand-color_dark: hsl(360, 100%, 100%);
+$navbar-brand-color_dark: $tech-stack-color_dark;
 // items
 $navbar-items-color_dark: $text-color_dark;
 $navbar-items-font-family_dark: "Poppins-Regular";
 $navbar-dropdown-langs-text-color_dark: $navbar-brand-color_dark;
 $navbar-dropdown-langs-text-font-family_dark: "Poppins-Medium";
 $navbar-dropdown-langs-toggle-color_dark: $navbar-items-color_dark;
-$navbar-dropdown-langs-menu-box-shadow_dark: 0px 0px 10px 2px black;
-$navbar-dropdown-langs-menu-item-hover-bg-color_dark: #b25068;
-$navbar-dropdown-langs-menu-item-focus-bg-color_dark: #b25068;
-$navbar-dropdown-langs-menu-bg-color_dark: hsl(216, 62%, 14%);
-$navbar-theme-mode-bg-color_dark: #464646;
+$navbar-dropdown-langs-menu-box-shadow_dark: 0px 0px 10px 2px
+  f.dark-color(gray, darkest);
+$navbar-dropdown-langs-menu-item-hover-bg-color_dark: f.dark-color(
+  purple,
+  base
+);
+$navbar-dropdown-langs-menu-item-focus-bg-color_dark: $navbar-dropdown-langs-menu-item-hover-bg-color_dark;
+$navbar-dropdown-langs-menu-bg-color_dark: f.dark-color(blue, 2darker);
+$navbar-theme-mode-bg-color_dark: f.dark-color(gray, darker);
 $navbar-theme-mode-label-box-shadow_dark: 0px 0px 10px 2px
-  rgba(128, 128, 128, 1);
+  f.dark-color(gray, base);
 $navbar-theme-mode-label-border_dark: none;
-$navbar-theme-mode-color_dark: hsl(207, 75%, 5%);
-$navbar-theme-mode-hover-bg-color_dark: hsl(217, 35%, 20%);
+$navbar-theme-mode-color_dark: f.dark-color(blue, darkest);
+$navbar-theme-mode-hover-bg-color_dark: $bg-color_dark;
 // hamburger
-$navbar-menu-hamburger-color_dark: hsl(360, 100%, 100%);
+$navbar-menu-hamburger-color_dark: $tech-stack-color_dark;
 // menu
 $navbar-menu-text-color_dark: $text-color_dark;
-$navbar-menu-text-hover-color_dark: hsl(360, 100%, 100%);
+$navbar-menu-text-hover-color_dark: $tech-stack-color_dark;
 $navbar-menu-bg-color_dark: $bg-color_dark;
-$navbar-menu-items-hover-bg-color_dark: #b25068;
+$navbar-menu-items-hover-bg-color_dark: $navbar-dropdown-langs-menu-item-hover-bg-color_dark;
 /* end header theme */
 
 /* intro theme */
+// content
 $intro-first-name-color_dark: $navbar-brand-color_dark;
 $intro-last-name-color_dark: $text-hover-color_dark;
 $intro-role-color_dark: $navbar-items-color_dark;
 $intro-role-font-family_dark: "Poppins-Regular";
-$intro-based-address-color_dark: hsl(360, 100%, 100%);
+$intro-based-address-color_dark: $tech-stack-color_dark;
 $intro-based-address-font-family_dark: "Poppins-Light";
-$intro-pin-fill-icon-color_dark: #dd1b16;
+$intro-pin-fill-icon-color_dark: f.dark-color(red, base);
 $intro-stack-title-font-family_dark: "Poppins-Regular";
-$intro-stack-title-color_dark: hsl(360, 100%, 100%);
+$intro-stack-title-color_dark: $tech-stack-color_dark;
 $intro-stack-border-bottom-color_dark: $section-cosmetic-content-title-color_dark;
 // icons
-$intro-icons-dotnet-color_dark: white;
-$intro-icons-csharp-color_dark: #684d95;
-$intro-icons-go-color_dark: #29beb0;
-$intro-icons-react-color_dark: #61dbfb;
-$intro-icons-angular-color_dark: #dd1b16;
-$intro-icons-javascript-color_dark: #f0db4f;
-$intro-icons-typescript-color_dark: #007acc;
-$intro-icons-sass-color_dark: #c69;
-$intro-icons-css3-color_dark: #264de4;
+$intro-icons-dotnet-color_dark: $tech-stack-color_dark;
+$intro-icons-csharp-color_dark: f.dark-color(purple, dark);
+$intro-icons-go-color_dark: f.dark-color(blue, 2lighter);
+$intro-icons-react-color_dark: f.dark-color(blue, 4lighter);
+$intro-icons-angular-color_dark: $intro-pin-fill-icon-color_dark;
+$intro-icons-javascript-color_dark: f.dark-color(yellow, base);
+$intro-icons-typescript-color_dark: f.dark-color(blue, light);
+$intro-icons-sass-color_dark: f.dark-color(purple, light);
+$intro-icons-css3-color_dark: f.dark-color(blue, base);
 /* end intro theme */
 
 /* experience theme */
@@ -97,52 +104,52 @@ $experience-nav-list-marker-color_dark: $section-cosmetic-content-title-color_da
 /* end experience theme */
 
 /* projects theme */
-$projects-card-bg-color_dark: rgb(22, 44, 82);
-$projects-card-box-shadow_dark: 0px 0px 10px 2px rgba(128, 128, 128, 1);
+$projects-card-bg-color_dark: f.dark-color(blue, dark);
+$projects-card-box-shadow_dark: 0px 0px 10px 2px f.dark-color(gray, base);
 $projects-card-icons-folder-color_dark: $section-cosmetic-content-title-color_dark;
-$projects-card-icons-github-color_dark: hsl(360, 100%, 100%);
-$projects-card-icons-link-color_dark: hsl(360, 100%, 100%);
+$projects-card-icons-github-color_dark: $tech-stack-color_dark;
+$projects-card-icons-link-color_dark: $tech-stack-color_dark;
 $projects-card-icons-hover-color_dark: $text-hover-color_dark;
-$projects-card-title-color_dark: hsl(360, 100%, 100%);
+$projects-card-title-color_dark: $tech-stack-color_dark;
 $projects-card-title-hover-color_dark: $text-hover-color_dark;
 $projects-card-title-font-family_dark: "OpenSans-SemiBold";
 /* end projects theme */
 
 /* about theme */
-$about-me-subtitles-color_dark: hsl(360, 100%, 100%);
+$about-me-subtitles-color_dark: $tech-stack-color_dark;
 $about-me-subtitles-font-family_dark: "OpenSans-Bold";
 /* end about theme */
 
 /* contact theme */
-$contact-title-color_dark: hsl(360, 100%, 100%);
+$contact-title-color_dark: $tech-stack-color_dark;
 $contact-title-font-family_dark: "OpenSans-Medium";
 $contact-email-box-shadow_dark: 0px 0px 10px 2px
   $section-cosmetic-content-title-color_dark;
 $contact-email-border-color_dark: $section-cosmetic-content-title-color_dark;
 $contact-email-text-color_dark: $section-cosmetic-content-title-color_dark;
-$contact-email-text-hover-color_dark: hsl(360, 100%, 100%);
+$contact-email-text-hover-color_dark: $tech-stack-color_dark;
 $contact-email-text-font-family_dark: "OpenSans-SemiBold";
 $contact-email-bg-color_dark: $projects-card-bg-color_dark;
 $contact-email-bg-hover-color_dark: $projects-card-bg-color_dark;
 /* end contact theme */
 
 /* footer theme */
-$footer-text-color_dark: hsl(360, 100%, 100%);
+$footer-text-color_dark: $tech-stack-color_dark;
 $footer-text-hover-color_dark: $text-hover-color_dark;
 /* end footer theme */
 
 /* scroll bar */
-$scrollbar-face-color_dark: #646464;
+$scrollbar-face-color_dark: f.dark-color(gray, dark);
 $scrollbar-base-color_dark: $scrollbar-face-color_dark;
 $scrollbar-3dlight-color_dark: $scrollbar-face-color_dark;
 $scrollbar-highlight-color_dark: $scrollbar-face-color_dark;
-$scrollbar-track-color_dark: #1a1919;
+$scrollbar-track-color_dark: f.dark-color(gray, 2darker);
 $scrollbar-arrow-color_dark: $scrollbar-track-color_dark;
 $scrollbar-shadow-color_dark: $scrollbar-face-color_dark;
 $scrollbar-width_dark: 8px;
 $scrollbar-height_dark: 3px;
 $scrollbar-thumb-height_dark: 50px;
-$scrollbar-thumb-bg-color_dark: #666;
+$scrollbar-thumb-bg-color_dark: $scrollbar-face-color_dark;
 $scrollbar-thumb-border-radius_dark: 3px;
 /* end scroll bar */
 

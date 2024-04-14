@@ -1,4 +1,4 @@
-// Breakpoints to use for Responsive Web Design
+/* Breakpoints to use for Responsive Web Design */
 $breakpoints: (
   "extra-small": (
     min-width: 400px,
@@ -28,8 +28,102 @@ $breakpoints: (
     min-width: 1200px,
   ),
 );
+/* end Breakpoints to use for Responsive Web Design */
 
-// Font sizes
+/* Font sizes */
 $font-size-regular-text: 1rem;
 $font-size-subtitle: 1.3rem;
 $font-size-about-me-text: 1rem;
+/* end Font sizes */
+
+/* Light Theme Color palette */
+$light-palettes: (
+  white: (
+    darkest: hsl(23, 28%, 89%),
+    darker: hsl(0, 0%, 94%),
+    dark: hsla(360, 100%, 100%, 0.9),
+    base: hsl(360, 100%, 100%),
+  ),
+
+  gray: (
+    darkest: hsl(0, 0%, 0%),
+    darker: hsla(240, 2.74%, 28.63%, 1),
+    dark: hsla(0, 0%, 50.2%, 1),
+    base: hsl(0, 0%, 50%),
+    light: hsla(0, 0%, 50.2%, 1),
+  ),
+
+  blue: (
+    dark: hsl(228, 78%, 52%),
+    base: hsl(204, 100%, 40%),
+    light: hsl(200, 100%, 50%),
+    lighter: hsl(174, 65%, 45%),
+    lightest: hsl(192, 95%, 68%),
+  ),
+
+  red: (
+    dark: hsl(2, 82%, 48%),
+    base: hsl(0, 100%, 50%),
+    light: hsl(0, 100%, 70%),
+  ),
+
+  yellow: (
+    darker: hsl(36, 99%, 50%),
+    dark: hsl(45, 100%, 70%),
+    base: hsl(52, 84%, 63%),
+    light: hsl(37, 60%, 80%),
+  ),
+
+  purple: (
+    darker: hsl(263, 100%, 20%),
+    dark: hsl(255, 15%, 41%),
+    base: hsl(330, 50%, 60%),
+  ),
+);
+/* end Light Theme Color palette */
+
+/* Dark Theme Color palette */
+$dark-palettes: (
+  white: (
+    base: hsl(360, 100%, 100%),
+  ),
+
+  gray: (
+    darkest: hsl(0, 0%, 0%),
+    2darker: hsl(0, 2%, 10%),
+    darker: hsl(0, 0%, 27%),
+    dark: hsl(0, 0%, 40%),
+    base: hsl(0, 0%, 50%),
+  ),
+
+  blue: (
+    darkest: hsl(207, 75%, 5%),
+    3darker: hsl(216, 62%, 14%, 0.9),
+    2darker: hsl(216, 62%, 14%),
+    darker: hsl(217, 35%, 20%),
+    dark: hsl(218, 58%, 20%),
+    base: hsl(228, 78%, 52%),
+    light: hsl(204, 100%, 40%),
+    lighter: hsl(200, 100%, 50%),
+    2lighter: hsl(174, 65%, 45%),
+    3lighter: hsl(225, 36%, 73%),
+    4lighter: hsl(192, 95%, 68%),
+    lightest: hsl(226, 70%, 88%),
+  ),
+
+  red: (
+    base: hsl(2, 82%, 48%),
+    light: hsl(0, 93%, 71%),
+  ),
+
+  yellow: (
+    base: hsl(52, 84%, 63%),
+  ),
+
+  purple: (
+    dark: hsl(263, 32%, 44%),
+    base: hsl(345, 39%, 51%),
+    light: rgb(204, 102, 153),
+  ),
+);
+/* end Dark Theme Color palette */

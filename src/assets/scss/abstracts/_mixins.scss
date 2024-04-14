@@ -32,6 +32,7 @@
 /// Transition ease-in-out timing-function
 /// @access public
 /// @param {seconds} $duration - Duration
+/// @param {transition-property} $property - Transition property
 @mixin transition-ease-in-out($duration: 0.2s, $property: "") {
   transition: #{$property} $duration ease-in-out;
 }

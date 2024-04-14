@@ -1,0 +1,38 @@
+@use "variables" as v;
+
+/// Color palette manager by a given color palette (Dark/Light Theme)
+/// @param {variable function} $palettes - Palettes
+/// @param {string} $color - Color
+/// @param {string} $tone - Tone
+@function color($palettes, $color, $tone) {
+  @if map-has-key($palettes, $color) {
+    $color: map-get($palettes, $color);
+
+    @if map-has-key($color, $tone) {
+      $tone: map-get($color, $tone);
+      @return $tone;
+    }
+
+    @warn "unknown tone `#{$tone}` in color";
+    @return null;
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+}
+
+/// Color palette manager for Light Theme
+/// @param {string} $color - Color
+/// @param {string} $tone - Tone
+/// @requires $light-palettes
+@function light-color($color, $tone) {
+  @return color(v.$light-palettes, $color, $tone);
+}
+
+/// Color palette manager for Dark Theme
+/// @param {string} $color - Color
+/// @param {string} $tone - Tone
+/// @requires $dark-palettes
+@function dark-color($color, $tone) {
+  @return color(v.$dark-palettes, $color, $tone);
+}
