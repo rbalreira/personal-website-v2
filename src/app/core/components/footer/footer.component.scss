@@ -6,8 +6,7 @@ a {
   color: var(--footer-text-color);
   @include a.transition-ease-in-out();
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: var(--footer-text-hover-color);
   }
 }

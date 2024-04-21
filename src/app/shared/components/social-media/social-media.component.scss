@@ -20,8 +20,7 @@
         text-decoration: none;
         @include a.transition-ease-in-out();
 
-        &:hover,
-        &:focus {
+        &:hover {
           color: var(--text-hover-color);
           @include a.transform-translateY(-3px);
         }
