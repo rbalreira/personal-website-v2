@@ -3,12 +3,13 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+import { throwIfAlreadyLoaded } from './guards/module-import.guard';
+
 import { FuncsService } from './services/funcs/funcs.service';
 import { NavMenuToggleService } from './services/nav-menu-toggle/nav-menu-toggle.service';
 
 import { SharedModule } from '@app/shared/shared.module';
 import { FeaturesModule } from '@app/features/features.module';
-import { throwIfAlreadyLoaded } from './guards/module-import-guard';
 
 import { HeaderComponent } from './components/header/components/header.component';
 import { SectionComponent } from './components/section/components/section.component';

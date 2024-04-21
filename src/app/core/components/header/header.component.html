@@ -4,7 +4,7 @@
     </a>
     <ul class="navbar-nav align-items-center">
         <li class="nav-item list-items p-1" *ngFor="let c of navContent; last as isLast" [class.me-3]="!isLast">
-            <a href="#{{c.href.toLowerCase() | translate}}">{{c.name | translate}}</a>
+            <a [routerLink]='"."' [fragment]="c.href.toLowerCase() | translate">{{c.name | translate}}</a>
         </li>
         <li class="nav-item dropdown-langs p-1">
             <app-dropdown-langs></app-dropdown-langs>

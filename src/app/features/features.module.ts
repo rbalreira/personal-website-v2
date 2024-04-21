@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@app/shared/shared.module';
+import { RouterModule } from '@angular/router';
 import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgIconsModule, provideNgIconsConfig } from '@ng-icons/core';
 import {
@@ -49,6 +50,7 @@ import { ContactComponent } from './contact/components/contact.component';
     ContactComponent,
   ],
   imports: [
+    RouterModule,
     CommonModule,
     SharedModule,
     NgbDropdownModule,

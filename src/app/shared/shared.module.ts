@@ -14,6 +14,7 @@ import { TechStackFactoryService } from '@app/shared/services/tech-stack/tech-st
 import { SocialMediaFactoryService } from './services/social-media/social-media-factory.service';
 import { ExperienceFactoryService } from './services/experience/experience-factory.service';
 import { ProjectsFactoryService } from './services/projects/projects-factory.service';
+import { LangsFactoryService } from './services/langs/langs-factory.service';
 
 import { SvgAvatarComponent } from './components/svg-avatar/components/svg-avatar.component';
 import { SocialMediaComponent } from './components/social-media/components/social-media.component';
@@ -35,6 +36,7 @@ import { SocialMediaComponent } from './components/social-media/components/socia
     ProjectsFactoryService,
     SocialMediaFactoryService,
     TechStackFactoryService,
+    LangsFactoryService,
   ],
   exports: [SvgAvatarComponent, SocialMediaComponent, TranslateModule],
 })

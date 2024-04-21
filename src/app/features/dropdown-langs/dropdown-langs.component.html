@@ -1,10 +1,10 @@
 <div ngbDropdown class="d-inline-block dropdown-langs">
     <button type="button" class="dropdown-langs-toggle btn" ngbDropdownToggle>
-        <span class="dropdown-lang">{{selectedFlag}}</span>
+        <span class="dropdown-lang">{{selectedLang}}</span>
     </button>
     <div ngbDropdownMenu class="dropdown-langs-menu">
-        <button ngbDropdownItem *ngFor="let lang of translateService.getLangs()"
-            (click)="changeDropdownToggleValue(lang)">
+        <button [routerLink]="['/', lang]" ngbDropdownItem *ngFor="let lang of translateService.getLangs()"
+            (click)="setLanguage(lang)">
             <span class="dropdown-lang">{{lang}}</span>
         </button>
     </div>

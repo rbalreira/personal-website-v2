@@ -4,7 +4,8 @@
       <div class="row mt-2 gy-3 d-flex justify-content-center">
         <ng-container *ngFor="let c of navContent">
           <div class="col-10 col-sm-11 p-0">
-            <a class="nav-menu-link" href="#{{c.href.toLowerCase() | translate}}" (click)="toggleHamburger()">{{c.name |
+            <a class="nav-menu-link" [routerLink]='"."' [fragment]="c.href.toLowerCase() | translate"
+              (click)="toggleHamburger()">{{c.name |
               translate}}</a>
           </div>
         </ng-container>

@@ -1,44 +1,41 @@
-import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { Mode } from '@app/shared/models/day-night-mode.enum';
 
-import { DayNightModeToggleService } from '@app/features/day-night-mode-toggle/services/day-night-mode-toggle.service';
 import { NavContentFactoryService } from '@app/shared/services/nav-content/nav-content-factory.service';
+import { LangsFactoryService } from '@app/shared/services/langs/langs-factory.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-home',
   templateUrl: '../home.component.html',
   styleUrls: ['../home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   /**
    * current active mode
    */
   currentTheme: Mode = Mode.LIGHT;
-  lightTheme: Mode = Mode.LIGHT;
+
+  /**
+   * Get Nav Content from factory service
+   */
+  navContent = this.navContentFactoryService.getNavContent();
 
   constructor(
-    private dayNightModeToggleService: DayNightModeToggleService,
     private navContentFactoryService: NavContentFactoryService,
-    translateService: TranslateService
-  ) {
-    /**
-     * Example code that demonstrates the modeChanged$ observable behavior and usage
-     */
-    this.dayNightModeToggleService.modeChanged$.subscribe((mode: Mode) => {
-      this.currentTheme = mode;
-    });
+    private langsFactoryService: LangsFactoryService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
-    // this language will be used as a fallback when a translation isn't found in the current language
-    translateService.setDefaultLang('en');
+  ngOnInit(): void {
+    let langInfo = this.langsFactoryService.setLanguageFromRoute(
+      this.route.snapshot.paramMap.get('lang')
+    );
 
-    // add languages to list
-    translateService.addLangs(['en', 'de', 'pt']);
-
-    const browserLang = translateService.getBrowserLang();
-    translateService.use(browserLang?.match('en|de|pt') ? browserLang : 'en');
+    if (!langInfo.hasParam || !langInfo.hasLang) {
+      this.router.navigate(['/', langInfo.lang]);
+    }
   }
-
-  navContent = this.navContentFactoryService.getNavContent();
 }
