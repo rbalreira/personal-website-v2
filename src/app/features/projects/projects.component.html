@@ -1,4 +1,5 @@
-<div class="container projects">
+<div appAnimateFromToAnimation [fromY]="100" [toOpacity]="1" [hasScrollTrigger]="true" [stStart]="'top center'"
+    class="container projects">
     <div class="row gx-4 gy-4">
         <ng-container *ngFor="let project of projects">
             <div class="col-12 col-sm-6 col-lg-4">

@@ -9,4 +9,5 @@ export class SectionComponent {
   @Input() sectionTitle = '';
   @Input() id = '';
   @Input() hasSecondaryBgColor = false;
+  @Input() animationClass = '';
 }

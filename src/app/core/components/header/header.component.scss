@@ -14,11 +14,15 @@
     font-size: larger;
     display: inline-block;
     position: relative;
-    @include a.transition-ease-in-out();
 
-    &:hover {
-      color: var(--text-hover-color);
-      @include a.transform-translateY(-3px);
+    span {
+      display: inline-block;
+      @include a.transition-ease-in-out();
+
+      &:hover {
+        color: var(--text-hover-color);
+        @include a.transform-translateY(-3px);
+      }
     }
   }
 

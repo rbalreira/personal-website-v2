@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand justify-content-between fixed-top ps-4 pe-4">
+<nav #navbar appAnimateFromAnimation [fromY]="'-100%'" [fromDelay]="1"
+    class="navbar navbar-expand justify-content-between fixed-top ps-4 pe-4">
     <a class="navbar-brand p-0" href="/">
-        {{lastName}}.dev
+        <span>{{lastName}}.dev</span>
     </a>
     <ul class="navbar-nav align-items-center">
         <li class="nav-item list-items p-1" *ngFor="let c of navContent; last as isLast" [class.me-3]="!isLast">

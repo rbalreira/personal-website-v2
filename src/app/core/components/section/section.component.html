@@ -1,6 +1,8 @@
 <section id="{{id}}" [class.secondary-bg-color]="hasSecondaryBgColor">
     <div class="container">
-        <h3 *ngIf="sectionTitle">{{sectionTitle | translate}}</h3>
+        <h3 appAnimateFromToAnimation [fromX]="-100" [fromDuration]="'1.5'" [toOpacity]="1" [toDuration]="'1.5'"
+            [hasScrollTrigger]="true" [stStart]="'top center'" class="section-title {{animationClass}}">{{sectionTitle |
+            translate}}</h3>
         <div class="mt-5 mb-5">
             <ng-content></ng-content>
         </div>

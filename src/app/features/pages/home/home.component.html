@@ -3,18 +3,20 @@
 </header>
 <main>
     <app-intro></app-intro>
-    <app-section sectionTitle="{{navContent[0].section | translate}}" id="{{navContent[0].href}}"
-        [hasSecondaryBgColor]="true">
+    <app-section animationClass="experience-animation-title" sectionTitle="{{navContent[0].section | translate}}"
+        id="{{navContent[0].href}}" [hasSecondaryBgColor]="true">
         <app-experience class="d-flex justify-content-center"></app-experience>
     </app-section>
-    <app-section sectionTitle="{{navContent[1].section | translate}}" id="{{navContent[1].href}}">
+    <app-section animationClass="projects-animation-title" sectionTitle="{{navContent[1].section | translate}}"
+        id="{{navContent[1].href}}">
         <app-projects></app-projects>
     </app-section>
-    <app-section sectionTitle="{{navContent[2].section | translate}}" id="{{navContent[2].href}}"
-        [hasSecondaryBgColor]="true">
+    <app-section animationClass="about-me-animation-title" sectionTitle="{{navContent[2].section | translate}}"
+        id="{{navContent[2].href}}" [hasSecondaryBgColor]="true">
         <app-about-me></app-about-me>
     </app-section>
-    <app-section sectionTitle="{{navContent[3].section | translate}}" id="{{navContent[3].href}}">
+    <app-section animationClass="contact-animation-title" sectionTitle="{{navContent[3].section | translate}}"
+        id="{{navContent[3].href}}">
         <app-contact></app-contact>
     </app-section>
 </main>
@@ -22,5 +24,5 @@
     <app-footer></app-footer>
 </footer>
 <div class="fixed-footer">
-    <app-social-media [footer]="false"></app-social-media>
+    <app-social-media></app-social-media>
 </div>

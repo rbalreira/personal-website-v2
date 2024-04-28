@@ -4,16 +4,15 @@
  * Helper class to adjust colors and dimensions.
  */
 .dropdown-langs {
-  &-toggle:first-child:active {
-    border-color: transparent;
-  }
-
   /**
   * Min-width override of dropdown menu to fit the content.
   */
   &-menu {
     min-width: 1rem;
     margin: 0;
+    animation-duration: 0.5s;
+    animation-name: slideIn;
+
     box-shadow: var(--navbar-dropdown-langs-menu-box-shadow);
     background-color: var(--navbar-dropdown-langs-menu-bg-color);
 
@@ -30,6 +29,10 @@
     }
   }
 
+  &-toggle:first-child:active {
+    border-color: transparent;
+  }
+
   &-toggle::after {
     border-top-color: var(--navbar-dropdown-langs-toggle-color);
     @include a.transition-ease-in-out(0.2s);
@@ -43,5 +46,23 @@
     color: var(--navbar-dropdown-langs-text-color);
     text-transform: uppercase;
     font-family: var(--navbar-dropdown-langs-text-font-family);
+  }
+}
+
+/**
+ * keyframe to create an animation when dropdown menu is opened
+*/
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
   }
 }

@@ -1,5 +1,12 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  HostListener,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 import { gsap } from 'gsap';
+import { Observer } from 'gsap/all';
 
 import { INavContent } from '@app/shared/models/nav-content.interface';
 
@@ -23,6 +30,8 @@ export class HeaderComponent implements OnInit {
 
   navContent: INavContent[] = this.navContentFactoryService.getNavContent();
   lastName: string = this.socialMediaFactoryService.getLastName();
+  @ViewChild('navbar', { static: false }) navbarElement: ElementRef =
+    {} as ElementRef;
 
   /**
    * HostListener event to capture window width in order to inactive Hamburger icon menu
@@ -47,7 +56,20 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //gsap.from('.navbar-brand', { duration: 1, x: '-150%', delay: 1.5 });
-    //gsap.from('.navbar-nav', { duration: 1, x: '150%', delay: 1.5 });
+    Observer.create({
+      type: 'scroll',
+      onDown: () =>
+        gsap.to(this.navbarElement.nativeElement, {
+          duration: 0.3,
+          ease: 'power2.out',
+          y: '-100%',
+        }),
+      onUp: () =>
+        gsap.to(this.navbarElement.nativeElement, {
+          duration: 0.3,
+          ease: 'power2.out',
+          y: '0',
+        }),
+    });
   }
 }

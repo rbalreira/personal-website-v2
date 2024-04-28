@@ -4,24 +4,29 @@
             <div class="col-12">
                 <div class="row d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center">
                     <div class="col-12 col-md-auto">
-                        <h1 class="main-title">
-                            <span class="main-first-name">{{firstName}}</span> <span
-                                class="main-last-name">{{lastName}}</span>
+                        <h1 appAnimateFromToAnimation [fromX]="-100" [fromDelay]="2" [toOpacity]="1" [toDelay]="2"
+                            [toEase]="'power4.out'" class="main-title">
+                            <span class="main-first-name">{{firstName}}</span>
+                            <span class="main-last-name">{{lastName}}</span>
                         </h1>
-                        <p class="main-role">{{'INTRO.ROLE' | translate}}</p>
-                        <p class="main-based-address mt-2">{{'INTRO.ADDRESS' | translate}}
+                        <p appAnimateFromToAnimation [fromX]="-100" [fromDelay]="2" [toOpacity]="1" [toDelay]="2"
+                            [toEase]="'power4.out'" class="main-role">{{'INTRO.ROLE' | translate}}</p>
+                        <p appAnimateFromToAnimation [fromX]="-100" [fromDelay]="2" [toOpacity]="1" [toDelay]="2"
+                            [toEase]="'power4.out'" class="main-based-address mt-2">{{'INTRO.ADDRESS' | translate}}
                             <span class="ms-2 main-pin-fill lh-base">
                                 <ng-icon name="bootstrapPinFill"></ng-icon>
                             </span>
                         </p>
                     </div>
-                    <div class="col-8 col-md-5 col-lg-4">
+                    <div appAnimateFromToAnimation [fromX]="100" [fromDelay]="2" [toOpacity]="1" [toDelay]="2"
+                        [toEase]="'power4.out'" class="col-8 col-md-5 col-lg-4">
                         <app-svg-avatar></app-svg-avatar>
                     </div>
                 </div>
             </div>
             <div class="col-12">
-                <div class="row d-flex align-items-center justify-content-center">
+                <div appAnimateFromToAnimation [fromY]="100" [fromDelay]="3" [toOpacity]="1" [toDelay]="3"
+                    [toEase]="'power4.out'" class="row d-flex align-items-center justify-content-center">
                     <div class="col-auto">
                         <p class="stack-title">{{'INTRO.TECH_STACK' | translate}}</p>
                     </div>
