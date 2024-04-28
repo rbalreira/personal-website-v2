@@ -6,8 +6,8 @@
                     <div class="col-12 col-md-auto">
                         <h1 appAnimateFromToAnimation [fromX]="-100" [fromDelay]="2" [toOpacity]="1" [toDelay]="2"
                             [toEase]="'power4.out'" class="main-title">
-                            <span class="main-first-name">{{firstName}}</span>
-                            <span class="main-last-name">{{lastName}}</span>
+                            <span class="main-first-name">{{firstName}}</span>&nbsp;<span
+                                class="main-last-name">{{lastName}}</span>
                         </h1>
                         <p appAnimateFromToAnimation [fromX]="-100" [fromDelay]="2" [toOpacity]="1" [toDelay]="2"
                             [toEase]="'power4.out'" class="main-role">{{'INTRO.ROLE' | translate}}</p>
@@ -20,7 +20,7 @@
                     </div>
                     <div appAnimateFromToAnimation [fromX]="100" [fromDelay]="2" [toOpacity]="1" [toDelay]="2"
                         [toEase]="'power4.out'" class="col-8 col-md-5 col-lg-4">
-                        <app-svg-avatar></app-svg-avatar>
+                        <app-avatar></app-avatar>
                     </div>
                 </div>
             </div>

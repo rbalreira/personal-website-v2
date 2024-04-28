@@ -14,7 +14,7 @@ section {
 
   .section-title {
     color: var(--section-title-color);
-    font-family: "Poppins-SemiBold";
+    font-family: var(--section-title-font-family);
     text-transform: uppercase;
     text-align: center;
 

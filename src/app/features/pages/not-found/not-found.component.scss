@@ -1,0 +1,39 @@
+@use "abstracts" as a;
+
+.not-found {
+  &-title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: var(--not-found-title-font-family);
+
+    &-404 {
+      color: var(--not-found-404-color);
+    }
+    &-error {
+      color: var(--not-found-error-color);
+    }
+  }
+
+  &-message {
+    font-size: 1.2rem;
+  }
+
+  &-btn {
+    text-transform: uppercase;
+    display: inline-block;
+    color: var(--contact-email-text-color);
+    font-family: var(--contact-email-text-font-family);
+    box-shadow: var(--contact-email-box-shadow);
+    border: 1px solid var(--contact-email-border-color);
+    background-color: var(--contact-email-bg-color);
+    border-radius: 5px;
+
+    @include a.transition-ease-in-out();
+
+    &:hover {
+      @include a.transform-translateY();
+      color: var(--contact-email-text-hover-color);
+      background-color: var(--contact-email-bg-hover-color);
+    }
+  }
+}

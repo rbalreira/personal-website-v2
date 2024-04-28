@@ -92,5 +92,10 @@
     },
     "FOOTER": {
         "DISCLAIMER": "Designed & Built by Ricardo Balreira"
+    },
+    "NOTFOUND": {
+        "ERROR": "Erro",
+        "MESSAGE": "Subestimaste o poder do átomo das trevas",
+        "BUTTON": "Voltar"
     }
 }

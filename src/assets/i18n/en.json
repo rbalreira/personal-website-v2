@@ -92,5 +92,10 @@
     },
     "FOOTER": {
         "DISCLAIMER": "Designed & Built by Ricardo Balreira"
+    },
+    "NOTFOUND": {
+        "ERROR": "Error",
+        "MESSAGE": "You underestimate the power of the dark atom",
+        "BUTTON": "Go Back"
     }
 }

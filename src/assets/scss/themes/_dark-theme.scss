@@ -13,6 +13,7 @@ $text-hover-color_dark: f.dark-color(red, light);
 
 /* section theme */
 $section-title-color_dark: f.dark-color(blue, lightest);
+$section-title-font-family_dark: "Poppins-SemiBold";
 $section-cosmetic-content-title-color_dark: f.dark-color(blue, lighter);
 /* end section theme */
 
@@ -153,6 +154,12 @@ $scrollbar-thumb-bg-color_dark: $scrollbar-face-color_dark;
 $scrollbar-thumb-border-radius_dark: 3px;
 /* end scroll bar */
 
+/* not found theme */
+$not-found-404-color_dark: $text-hover-color_dark;
+$not-found-error-color_dark: $navbar-brand-color_dark;
+$not-found-title-font-family_dark: "Poppins-SemiBold";
+/* end not found theme */
+
 // mixin that enables css variables in dark mode
 @mixin dark-mode() {
   /* background theme */
@@ -170,6 +177,7 @@ $scrollbar-thumb-border-radius_dark: 3px;
 
   /* section theme */
   --section-title-color: #{$section-title-color_dark};
+  --section-title-font-family: #{$section-title-font-family_dark};
   --section-cosmetic-content-title-color: #{$section-cosmetic-content-title-color_dark};
   /* end section theme */
 
@@ -302,4 +310,10 @@ $scrollbar-thumb-border-radius_dark: 3px;
   --scrollbar-thumb-bg-color: #{$scrollbar-thumb-bg-color_dark};
   --scrollbar-thumb-border-radius: #{$scrollbar-thumb-border-radius_dark};
   /* end scroll bar */
+
+  /* not found theme */
+  --not-found-404-color: #{$not-found-404-color_dark};
+  --not-found-error-color: #{$not-found-error-color_dark};
+  --not-found-title-font-family: #{$not-found-title-font-family_dark};
+  /* end not found theme */
 }

@@ -13,6 +13,7 @@ $text-hover-color_light: f.light-color(red, light);
 
 /* section theme */
 $section-title-color_light: f.light-color(gray, darkest);
+$section-title-font-family_light: "Poppins-SemiBold";
 $section-cosmetic-content-title-color_light: f.light-color(blue, light);
 /* end section theme */
 
@@ -153,6 +154,12 @@ $scrollbar-thumb-bg-color_light: $section-cosmetic-content-title-color_light;
 $scrollbar-thumb-border-radius_light: 3px;
 /* end scroll bar */
 
+/* not found theme */
+$not-found-404-color_light: $navbar-brand-color_light;
+$not-found-error-color_light: $text-hover-color_light;
+$not-found-title-font-family_light: "Poppins-SemiBold";
+/* end not found theme */
+
 // mixin that enables css variables in light mode
 @mixin light-mode() {
   /* background theme */
@@ -170,6 +177,7 @@ $scrollbar-thumb-border-radius_light: 3px;
 
   /* section theme */
   --section-title-color: #{$section-title-color_light};
+  --section-title-font-family: #{$section-title-font-family_light};
   --section-cosmetic-content-title-color: #{$section-cosmetic-content-title-color_light};
   /* end section theme */
 
@@ -302,4 +310,10 @@ $scrollbar-thumb-border-radius_light: 3px;
   --scrollbar-thumb-bg-color: #{$scrollbar-thumb-bg-color_light};
   --scrollbar-thumb-border-radius: #{$scrollbar-thumb-border-radius_light};
   /* end scroll bar */
+
+  /* not found theme */
+  --not-found-404-color: #{$not-found-404-color_light};
+  --not-found-error-color: #{$not-found-error-color_light};
+  --not-found-title-font-family: #{$not-found-title-font-family_light};
+  /* end not found theme */
 }

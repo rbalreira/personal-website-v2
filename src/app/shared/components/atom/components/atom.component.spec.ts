@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SvgIconComponent } from './svg-avatar.component';
+import { AtomComponent } from './atom.component';
 
-describe('SvgIconComponent', () => {
-  let component: SvgIconComponent;
-  let fixture: ComponentFixture<SvgIconComponent>;
+describe('AtomComponent', () => {
+  let component: AtomComponent;
+  let fixture: ComponentFixture<AtomComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SvgIconComponent],
+      declarations: [AtomComponent]
     });
-    fixture = TestBed.createComponent(SvgIconComponent);
+    fixture = TestBed.createComponent(AtomComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
