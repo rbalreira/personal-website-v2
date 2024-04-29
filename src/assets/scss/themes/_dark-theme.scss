@@ -124,20 +124,23 @@ $about-me-subtitles-font-family_dark: "OpenSans-Bold";
 /* contact theme */
 $contact-title-color_dark: $tech-stack-color_dark;
 $contact-title-font-family_dark: "OpenSans-Medium";
-$contact-email-box-shadow_dark: 0px 0px 10px 2px
-  $section-cosmetic-content-title-color_dark;
-$contact-email-border-color_dark: $section-cosmetic-content-title-color_dark;
-$contact-email-text-color_dark: $section-cosmetic-content-title-color_dark;
-$contact-email-text-hover-color_dark: $tech-stack-color_dark;
-$contact-email-text-font-family_dark: "OpenSans-SemiBold";
-$contact-email-bg-color_dark: $projects-card-bg-color_dark;
-$contact-email-bg-hover-color_dark: $projects-card-bg-color_dark;
 /* end contact theme */
 
 /* footer theme */
 $footer-text-color_dark: $tech-stack-color_dark;
 $footer-text-hover-color_dark: $text-hover-color_dark;
 /* end footer theme */
+
+/* button theme */
+$button-box-shadow_dark: 0px 0px 10px 2px
+  $section-cosmetic-content-title-color_dark;
+$button-border-color_dark: $section-cosmetic-content-title-color_dark;
+$button-text-color_dark: $section-cosmetic-content-title-color_dark;
+$button-text-hover-color_dark: $tech-stack-color_dark;
+$button-text-font-family_dark: "OpenSans-SemiBold";
+$button-bg-color_dark: $projects-card-bg-color_dark;
+$button-bg-hover-color_dark: $projects-card-bg-color_dark;
+/* end button theme */
 
 /* scroll bar */
 $scrollbar-face-color_dark: f.dark-color(gray, dark);
@@ -282,19 +285,22 @@ $not-found-title-font-family_dark: "Poppins-SemiBold";
   /* contact theme */
   --contact-title-color: #{$contact-title-color_dark};
   --contact-title-font-family: #{$contact-title-font-family_dark};
-  --contact-email-box-shadow: #{$contact-email-box-shadow_dark};
-  --contact-email-border-color: #{$contact-email-border-color_dark};
-  --contact-email-text-color: #{$contact-email-text-color_dark};
-  --contact-email-text-hover-color: #{$contact-email-text-hover-color_dark};
-  --contact-email-text-font-family: #{$contact-email-text-font-family_dark};
-  --contact-email-bg-color: #{$contact-email-bg-color_dark};
-  --contact-email-bg-hover-color: #{$contact-email-bg-hover-color_dark};
   /* end contact theme */
 
   /* footer theme */
   --footer-text-color: #{$footer-text-color_dark};
   --footer-text-hover-color: #{$text-hover-color_dark};
   /* end footer theme */
+
+  /* button theme */
+  --button-box-shadow: #{$button-box-shadow_dark};
+  --button-border-color: #{$button-border-color_dark};
+  --button-text-color: #{$button-text-color_dark};
+  --button-text-hover-color: #{$button-text-hover-color_dark};
+  --button-text-font-family: #{$button-text-font-family_dark};
+  --button-bg-color: #{$button-bg-color_dark};
+  --button-bg-hover-color: #{$button-bg-hover-color_dark};
+  /* end button theme */
 
   /* scroll bar */
   --scrollbar-face-color: #{$scrollbar-face-color_dark};

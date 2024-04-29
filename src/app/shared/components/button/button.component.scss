@@ -1,0 +1,20 @@
+@use "abstracts" as a;
+
+.button {
+  text-transform: uppercase;
+  display: inline-block;
+  color: var(--button-text-color);
+  font-family: var(--button-text-font-family);
+  box-shadow: var(--button-box-shadow);
+  border: 1px solid var(--button-border-color);
+  background-color: var(--button-bg-color);
+  border-radius: 5px;
+
+  @include a.transition-ease-in-out();
+
+  &:hover {
+    @include a.transform-translateY();
+    color: var(--button-text-hover-color);
+    background-color: var(--button-bg-hover-color);
+  }
+}

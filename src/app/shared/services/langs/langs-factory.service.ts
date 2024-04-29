@@ -22,8 +22,18 @@ export class LangsFactoryService {
     return this.defaultLang;
   }
 
+  hasLanguage(lang: string): boolean {
+    return this.getLanguages().includes(lang);
+  }
+
   prepareTranslateService(): void {
-    this.translateService.setDefaultLang(this.getDefaultLanguage());
+    const browserLang = this.translateService.getBrowserLang();
+    let defaultLang = this.getDefaultLanguage();
+
+    if (browserLang !== undefined && this.hasLanguage(browserLang))
+      defaultLang = browserLang;
+
+    this.translateService.setDefaultLang(defaultLang);
     this.translateService.addLangs(this.getLanguages());
   }
 

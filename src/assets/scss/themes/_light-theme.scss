@@ -125,19 +125,22 @@ $about-me-subtitles-font-family_light: "OpenSans-Bold";
 /* contact theme */
 $contact-title-color_light: $section-title-color_light;
 $contact-title-font-family_light: "OpenSans-Medium";
-$contact-email-box-shadow_light: 0px 0px 10px 2px $section-title-color_light;
-$contact-email-border-color_light: $section-title-color_light;
-$contact-email-text-color_light: $bg-secondary-color_light;
-$contact-email-text-hover-color_light: $section-title-color_light;
-$contact-email-text-font-family_light: "OpenSans-SemiBold";
-$contact-email-bg-color_light: $section-cosmetic-content-title-color_light;
-$contact-email-bg-hover-color_light: transparent;
 /* end contact theme */
 
 /* footer theme */
 $footer-text-color_light: $text-color_light;
 $footer-text-hover-color_light: $text-hover-color_light;
 /* end footer theme */
+
+/* button theme */
+$button-box-shadow_light: 0px 0px 10px 2px $section-title-color_light;
+$button-border-color_light: $section-title-color_light;
+$button-text-color_light: $bg-secondary-color_light;
+$button-text-hover-color_light: $section-title-color_light;
+$button-text-font-family_light: "OpenSans-SemiBold";
+$button-bg-color_light: $section-cosmetic-content-title-color_light;
+$button-bg-hover-color_light: transparent;
+/* end button theme */
 
 /* scroll bar */
 $scrollbar-face-color_light: $section-cosmetic-content-title-color_light;
@@ -282,19 +285,22 @@ $not-found-title-font-family_light: "Poppins-SemiBold";
   /* contact theme */
   --contact-title-color: #{$contact-title-color_light};
   --contact-title-font-family: #{$contact-title-font-family_light};
-  --contact-email-box-shadow: #{$contact-email-box-shadow_light};
-  --contact-email-border-color: #{$contact-email-border-color_light};
-  --contact-email-text-color: #{$contact-email-text-color_light};
-  --contact-email-text-hover-color: #{$contact-email-text-hover-color_light};
-  --contact-email-text-font-family: #{$contact-email-text-font-family_light};
-  --contact-email-bg-color: #{$contact-email-bg-color_light};
-  --contact-email-bg-hover-color: #{$contact-email-bg-hover-color_light};
   /* end contact theme */
 
   /* footer theme */
   --footer-text-color: #{$footer-text-color_light};
   --footer-text-hover-color: #{$text-hover-color_light};
   /* end footer theme */
+
+  /* button theme */
+  --button-box-shadow: #{$button-box-shadow_light};
+  --button-border-color: #{$button-border-color_light};
+  --button-text-color: #{$button-text-color_light};
+  --button-text-hover-color: #{$button-text-hover-color_light};
+  --button-text-font-family: #{$button-text-font-family_light};
+  --button-bg-color: #{$button-bg-color_light};
+  --button-bg-hover-color: #{$button-bg-hover-color_light};
+  /* end button theme */
 
   /* scroll bar */
   --scrollbar-face-color: #{$scrollbar-face-color_light};

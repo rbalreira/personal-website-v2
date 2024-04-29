@@ -24,6 +24,7 @@ import { AvatarComponent } from './components/avatar/components/avatar.component
 import { AtomComponent } from './components/atom/components/atom.component';
 import { SocialMediaComponent } from './components/social-media/components/social-media.component';
 import { SocialMediaFooterComponent } from './components/social-media/components/social-media-footer.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +35,10 @@ import { SocialMediaFooterComponent } from './components/social-media/components
     CoreAnimationDirective,
     AnimateFromDirective,
     AnimateFromToDirective,
+    ButtonComponent,
   ],
   imports: [
+    TranslateModule,
     CommonModule,
     NgIconsModule.withIcons({
       bootstrapGithub,
@@ -53,11 +56,12 @@ import { SocialMediaFooterComponent } from './components/social-media/components
     LangsFactoryService,
   ],
   exports: [
+    TranslateModule,
     AvatarComponent,
     AtomComponent,
     SocialMediaComponent,
     SocialMediaFooterComponent,
-    TranslateModule,
+    ButtonComponent,
     AnimateFromDirective,
     AnimateFromToDirective,
   ],

@@ -1,8 +1,6 @@
-<div appAnimateFromToAnimation [fromY]="100" [toOpacity]="1" [hasScrollTrigger]="true" [stStart]="'top center'"
+<div appAnimateFromToAnimation [fromY]="100" [toOpacity]="1" [hasScrollTrigger]="true" [stStart]="'top bottom'"
     class="text-center contact">
     <h3>{{'CONTACT.SUBTITLE' | translate}}</h3>
     <p class="mt-4 mb-5">{{'CONTACT.DESCRIPTION' | translate}}</p>
-    <a class="contact-email pt-3 pb-3 ps-4 pe-4" href="mailto:{{email}}">
-        {{'CONTACT.BUTTON' | translate}}
-    </a>
+    <app-button text="CONTACT.BUTTON" href="mailto:{{email}}"></app-button>
 </div>
