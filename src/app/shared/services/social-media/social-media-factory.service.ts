@@ -8,6 +8,8 @@ export class SocialMediaFactoryService {
   constructor() {}
 
   private github: string = 'https://github.com/rbalreira';
+  private portfolioWebsite: string =
+    'https://github.com/rbalreira/portfolio-website';
   private email: string = 'rbalreira@outlook.com';
   private firstName: string = 'Ricardo';
   private lastName: string = 'Balreira';
@@ -17,7 +19,7 @@ export class SocialMediaFactoryService {
       {
         name: 'GitHub',
         icon: 'bootstrapGithub',
-        link: this.github,
+        link: this.getGithubSocialMedia(),
       },
       {
         name: 'Instagram',
@@ -43,6 +45,10 @@ export class SocialMediaFactoryService {
 
   getEmailSocialMedia(): string {
     return this.email;
+  }
+
+  getPortfolioWebsite(): string {
+    return this.portfolioWebsite;
   }
 
   getFirstName() {

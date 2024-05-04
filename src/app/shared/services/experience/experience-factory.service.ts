@@ -20,8 +20,12 @@ export class ExperienceFactoryService {
           'EXPERIENCE.0.ACTIVITIES.0',
           'EXPERIENCE.0.ACTIVITIES.1',
           'EXPERIENCE.0.ACTIVITIES.2',
+          'EXPERIENCE.0.ACTIVITIES.3',
+          'EXPERIENCE.0.ACTIVITIES.4',
+          'EXPERIENCE.0.ACTIVITIES.5',
+          'EXPERIENCE.0.ACTIVITIES.6',
         ],
-        stack: ['.NET', 'C#', 'Angular'],
+        stack: ['.NET Core', 'C#', 'Angular', 'Azure DevOps Server'],
       },
       {
         name: 'EXPERIENCE.1.NAME',
@@ -44,6 +48,7 @@ export class ExperienceFactoryService {
           'Microsoft SQL Server',
           'Nginx',
           'Docker',
+          'GitLab',
         ],
       },
       {

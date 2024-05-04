@@ -1,6 +1,6 @@
 <div appAnimateFromToAnimation [fromY]="100" [toOpacity]="1" [hasScrollTrigger]="true" [stStart]="'top bottom'"
     class="container projects">
-    <div class="row gx-4 gy-4">
+    <div class="row gx-4 gy-4 justify-content-center">
         <ng-container *ngFor="let project of projects">
             <div class="col-12 col-sm-6 col-lg-4">
                 <a *ngIf="project.site; else projectGithub" href="{{project.site}}" class="project-link">
@@ -42,7 +42,7 @@
             </div>
         </div>
         <h4 class="mb-2 project-title">{{project.name | translate}}</h4>
-        <p class="project-description">{{project.description | translate}}</p>
+        <p class="project-description" [innerHTML]="project.description | translate"></p>
         <div class="row project-footer mt-auto">
             <div class="col-auto pe-0" *ngFor="let tech of project.stack">
                 <p>{{tech}}</p>

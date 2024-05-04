@@ -22,11 +22,6 @@ export class TechStackFactoryService {
             icon: 'simpleCsharp',
             class: 'csharp',
           },
-          {
-            name: 'Go',
-            icon: 'simpleGo',
-            class: 'go',
-          },
         ],
       },
       {

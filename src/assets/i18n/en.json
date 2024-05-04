@@ -28,9 +28,13 @@
             "ROLE": "Software Engineer",
             "DURATION": "Feb 2022 - Present",
             "ACTIVITIES": [
-                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance.",
-                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance.",
-                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance."
+                "Deliver robust production code of projects for clients including IQE PLC and Lam Research on Semiconductor Industry, using .NET Core C# and Angular.",
+                "Software testing – integration, unit, browser-based and manual tests – using .NET Core C# and Selenium WebDriver.",
+                "Fixing bugs and refactoring code to improve sustainability and spaghetti code.",
+                "Created and developed more than 10 Work Items focused on code improvements.",
+                "Collaborate in a multi-project development process with a team of almost 20 people composed by developers, team and project manager, functional analysts, technical leaders and solution architect.",
+                "Supported more than 2 new teammates in their onboarding phase setting up their local environment and helping them out in development process.",
+                "Collaborate with solution architect and technical leaders on doing the technical design approach of User Stories."
             ]
         },
         {
@@ -62,32 +66,28 @@
     ],
     "PROJECTS": [
         {
-            "NAME": "Project 1",
-            "DESCRIPTION": "A platform for posting courses which are designed as per the Industry demand with full Career Assistance."
+            "NAME": "Mafirol",
+            "DESCRIPTION": "A responsive Web application with internationalization built in one of my job experiences. <u>The application may change or be down.</u>"
         },
         {
-            "NAME": "Project 2",
-            "DESCRIPTION": "Easy Staff allows you to manage your staff."
-        },
-        {
-            "NAME": "Project 3",
-            "DESCRIPTION": "Easy Staff allows you to manage your staff."
+            "NAME": "Personal Website",
+            "DESCRIPTION": "A responsive website single page with internationalization and Dark/Light Mode."
         }
     ],
     "ABOUT": {
-        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "DESCRIPTION": "I can say that I started out in the programming field in 2017 with no clear direction, but I quickly got a taste for the possibilities it offers.\n\nI am a dynamic developer from Portugal that likes to build things that can add value to the end user. Whenever I am working on something, my goal is to bring my knowledge and experience to the table, learning new stuff and looking for sustainability and maintainability.\n\nMy focus these days is working as a Software Engineer at Critical Manufacturing, building specific-designed and custom products to clients.",
         "ROLE": {
             "TITLE": "Role",
             "DESCRIPTION": "Full-Stack Developer"
         },
         "EMPLOYMENT": {
             "TITLE": "Employment",
-            "DESCRIPTION": "Employee"
+            "DESCRIPTION": "Employed"
         }
     },
     "CONTACT": {
         "SUBTITLE": "Hit me up!",
-        "DESCRIPTION": "Lorem ipsum dolor sit am asdcasfas maSKDMAKDFMAK",
+        "DESCRIPTION": "In case you have a question, comments or suggestions, I'll try my best to get back to you!",
         "BUTTON": "Say Hello"
     },
     "FOOTER": {

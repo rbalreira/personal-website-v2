@@ -25,25 +25,29 @@
     "EXPERIENCE": [
         {
             "NAME": "Critical Manufacturing",
-            "ROLE": "Software Engineer",
-            "DURATION": "Feb 2022 - Present",
+            "ROLE": "Engenheiro de Software",
+            "DURATION": "Fev 2022 - Atualmente",
             "ACTIVITIES": [
-                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance.",
-                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance.",
-                "A platform for posting courses which are designed as per the Industry demand with full Career Assistance."
+                "Entrega de código robusto para produção em projetos para clientes, tais como IQE PLC e Lam Research na Industria de Semicondutores, usando .NET Core C# e Angular.",
+                "Teste de software – integração, unitários e browser-based – usando .NET Core C# e Selenium WebDriver.",
+                "Resolução de bugs e refatoração de código para melhorar sustentabilidade e spaghetti code.",
+                "Criação e implementação de mais de 10 Work Items focados na melhoria de código.",
+                "Colaboração num processo de desenvolvimento multi-projeto com uma equipa de quase 20 pessoas constituída por programadores, gestor de equipa e de projeto, analistas funcionais, líderes técnicos e arquitetos de solução.",
+                "Suporte a mais de 2 colegas de equipa no seu processo onboarding a configurar o ambiente local e a ajudar no desenvolvimento de código.",
+                "Colaboração com o arquiteto de solução e líderes técnicos a conceber o design técnico de User Stories."
             ]
         },
         {
             "NAME": "Mafirol Group",
-            "ROLE": "Full Stack Developer",
+            "ROLE": "Full-Stack Developer",
             "DURATION": "Mar 2021 - Jan 2022",
             "ACTIVITIES": [
-                "Maintenance and enhancement of internal .NET Framework C# Web applications.",
-                "Maintenance of external Web application developed in .NET Core C#, Vue.js and MySQL",
-                "Renewal of the company website creating Web application using .NET Core C# and React framework",
-                "Database modeling and implementation in SQL Server",
-                "Development of RESTFul API in order to send and store information in Database",
-                "Implementation of translation management framework (i18next) in web application"
+                "Manutenção e melhoria de aplicações Web internas desenvolvidas em .NET Framework C#.",
+                "Manutenção de aplicação Web externa desenvolvida em .NET Core C#, Vue.js e MySQL.",
+                "Renovação do website da empresa criando aplicação Web em .NET Core C# e framework React.",
+                "Implementação e modelação de Base de Dados em SQL Server.",
+                "Desenvolvimento de API RESTFul de forma a enviar e guardar informações em Base de Dados.",
+                "Implementação de framework de gestão de traduções (i18next) em aplicação Web."
             ]
         },
         {
@@ -51,47 +55,43 @@
             "ROLE": "Backend Developer",
             "DURATION": "Mar 2020 - Jul 2020",
             "ACTIVITIES": [
-                "Python course on web application development using Flask framework",
-                "Study of Python's unittest, pytest and Mock libraries",
-                "Study of Git's workflow and methodologies",
-                "Analysis of the structure of a Flask application in production (microservice)",
-                "Implementation of unit tests in Python",
-                "Localization algorithm in Python that calculates the position of a tag accordingly to the incoming signal by different gateway"
+                "Curso de Python na vertente do desenvolvimento de aplicações web utilizando a framework Flask.",
+                "Estudo das bibliotecas unittest, pytest e Mock do Python.",
+                "Estudo do fluxo e metodologias Git.",
+                "Análise da estrutura de uma aplicação Flask em produção (micro-serviço).",
+                "Implementação de testes unitários em Python",
+                "Algoritmo de localização em Python que calcule a posição de uma tag em função do sinal recebido por diferentes gateways."
             ]
         }
     ],
     "PROJECTS": [
         {
-            "NAME": "Project 1",
-            "DESCRIPTION": "A platform for posting courses which are designed as per the Industry demand with full Career Assistance."
+            "NAME": "Mafirol",
+            "DESCRIPTION": "Uma aplicação Web responsiva com internacionalização desenvolvida numa das minhas experiências profissionais. <u>Poderá ocorrer uma mudança na aplicação ou esta ficar em baixo.</u>"
         },
         {
-            "NAME": "Project 2",
-            "DESCRIPTION": "Easy Staff allows you to manage your staff."
-        },
-        {
-            "NAME": "Project 3",
-            "DESCRIPTION": "Easy Staff allows you to manage your staff."
+            "NAME": "Website Pessoal",
+            "DESCRIPTION": "Um website single page responsivo com internacionalização e temas de cores escuro/claro."
         }
     ],
     "ABOUT": {
-        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "DESCRIPTION": "Posso dizer que enveredei na área da programação em 2017 sem rumo definido, mas rapidamente ganhei gosto pelas possibilidades que proporciona.\n\nSou um developer dinâmico de Portugal que gosta de desenvolver coisas que consigam acrescentar valor para o utilizador final. Sempre que estou a trabalhar em algo, meu objetivo é colocar em prática o conhecimento e experiência adquirido, aprender e procurar sustentabilidade e manutenção.\n\nAtualmente, sou Engenheiro de Software na Critical Manufacturing, em que colaboro no desenvolvimento de produtos específicos e personalizados para clientes.",
         "ROLE": {
-            "TITLE": "Role",
+            "TITLE": "Função",
             "DESCRIPTION": "Full-Stack Developer"
         },
         "EMPLOYMENT": {
-            "TITLE": "Employment",
-            "DESCRIPTION": "Employee"
+            "TITLE": "Situação",
+            "DESCRIPTION": "Empregado"
         }
     },
     "CONTACT": {
-        "SUBTITLE": "Hit me up!",
-        "DESCRIPTION": "Lorem ipsum dolor sit am asdcasfas maSKDMAKDFMAK",
-        "BUTTON": "Say Hello"
+        "SUBTITLE": "Dá-me um toque!",
+        "DESCRIPTION": "Se surgir alguma questão, comentários ou sugestões, farei o possível para responder de volta!",
+        "BUTTON": "Diz olá"
     },
     "FOOTER": {
-        "DISCLAIMER": "Designed & Built by Ricardo Balreira"
+        "DISCLAIMER": "Desenhado e desenvolvido por Ricardo Balreira"
     },
     "NOTFOUND": {
         "ERROR": "Erro",

@@ -4,7 +4,7 @@
         <div class="col-12 col-md-6">
             <div class="row">
                 <div class="col-12">
-                    <p>{{'ABOUT.DESCRIPTION' | translate}}</p>
+                    <p [innerHTML]="'ABOUT.DESCRIPTION' | translate"></p>
                 </div>
                 <div class="col-6 mt-4">
                     <h4>{{'ABOUT.ROLE.TITLE' | translate}}</h4>
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-9 col-md-4">
+        <div class="col-9 col-md-6 col-lg-6 col-xl-5">
             <img src="/assets/imgs/about-me.jpg" class="img-fluid rounded" alt="{{'NAVBAR.2.SECTION' | translate}}" />
         </div>
     </div>

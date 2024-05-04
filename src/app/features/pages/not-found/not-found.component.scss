@@ -7,9 +7,11 @@
     font-family: var(--not-found-title-font-family);
 
     &-404 {
+      display: inline-block;
       color: var(--not-found-404-color);
     }
     &-error {
+      display: inline-block;
       color: var(--not-found-error-color);
     }
   }

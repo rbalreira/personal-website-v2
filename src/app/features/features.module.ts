@@ -14,7 +14,6 @@ import {
 import {
   simpleDotnet,
   simpleCsharp,
-  simpleGo,
   simpleReact,
   simpleAngular,
   simpleJavascript,
@@ -63,7 +62,6 @@ import { ContactComponent } from './contact/components/contact.component';
       bootstrapFolder2Open,
       simpleDotnet,
       simpleCsharp,
-      simpleGo,
       simpleReact,
       simpleAngular,
       simpleJavascript,
