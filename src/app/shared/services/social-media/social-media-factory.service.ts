@@ -31,11 +31,6 @@ export class SocialMediaFactoryService {
         icon: 'bootstrapLinkedin',
         link: 'https://www.linkedin.com/in/rbalreira/',
       },
-      {
-        name: 'CodePen',
-        icon: 'simpleCodepen',
-        link: 'https://codepen.io/rbalreira',
-      },
     ];
   }
 

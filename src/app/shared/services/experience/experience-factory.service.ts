@@ -25,7 +25,7 @@ export class ExperienceFactoryService {
           'EXPERIENCE.0.ACTIVITIES.5',
           'EXPERIENCE.0.ACTIVITIES.6',
         ],
-        stack: ['.NET Core', 'C#', 'Angular', 'Azure DevOps Server'],
+        stack: ['.NET Core', 'C#', 'Angular', 'CSS', 'Azure DevOps Server'],
       },
       {
         name: 'EXPERIENCE.1.NAME',
@@ -45,6 +45,7 @@ export class ExperienceFactoryService {
           '.NET',
           'C#',
           'React',
+          'SCSS',
           'Microsoft SQL Server',
           'Nginx',
           'Docker',

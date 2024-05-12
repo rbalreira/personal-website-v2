@@ -3,13 +3,14 @@
     <div class="row gx-4 gy-4 justify-content-center">
         <ng-container *ngFor="let project of projects">
             <div class="col-12 col-sm-6 col-lg-4">
-                <a *ngIf="project.site; else projectGithub" href="{{project.site}}" class="project-link">
+                <a *ngIf="project.site; else projectGithub" href="{{project.site}}" class="project-link"
+                    target="_blank">
                     <ng-container [ngTemplateOutlet]="projectCard"
                         [ngTemplateOutletContext]="{project:project}"></ng-container>
                 </a>
                 <ng-template #projectGithub>
                     <ng-container *ngIf="project.github; else projectNoLink">
-                        <a href="{{project.github}}" class="project-link">
+                        <a href="{{project.github}}" class="project-link" target="_blank">
                             <ng-container [ngTemplateOutlet]="projectCard"
                                 [ngTemplateOutletContext]="{project:project}"></ng-container>
                         </a>
