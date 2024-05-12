@@ -15,7 +15,7 @@ export class LangsFactoryService {
   }
 
   getLanguages(): string[] {
-    return [this.defaultLang, 'de', 'pt'];
+    return [this.defaultLang, 'pt'];
   }
 
   getDefaultLanguage(): string {

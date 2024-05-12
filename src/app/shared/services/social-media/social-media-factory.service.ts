@@ -22,11 +22,6 @@ export class SocialMediaFactoryService {
         link: this.getGithubSocialMedia(),
       },
       {
-        name: 'Instagram',
-        icon: 'bootstrapInstagram',
-        link: 'https://www.instagram.com/rbalreira/',
-      },
-      {
         name: 'LinkedIn',
         icon: 'bootstrapLinkedin',
         link: 'https://www.linkedin.com/in/rbalreira/',

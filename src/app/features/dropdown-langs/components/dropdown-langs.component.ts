@@ -56,6 +56,11 @@ export class DropdownLangsComponent implements OnInit {
           this.dropdownLangsMenu.close();
         }
       },
+      onUp: () => {
+        if (this.dropdownLangsMenu !== undefined) {
+          this.dropdownLangsMenu.close();
+        }
+      },
     });
   }
 }

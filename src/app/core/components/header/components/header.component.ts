@@ -1,12 +1,4 @@
-import {
-  Component,
-  OnInit,
-  HostListener,
-  ViewChild,
-  ElementRef,
-} from '@angular/core';
-import { gsap } from 'gsap';
-import { Observer } from 'gsap/all';
+import { Component, HostListener } from '@angular/core';
 
 import { INavContent } from '@app/shared/models/nav-content.interface';
 
@@ -20,7 +12,7 @@ import { SocialMediaFactoryService } from '@app/shared/services/social-media/soc
   templateUrl: '../header.component.html',
   styleUrls: ['../header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   constructor(
     private funcsService: FuncsService,
     private navMenuToggleService: NavMenuToggleService,
@@ -30,8 +22,6 @@ export class HeaderComponent implements OnInit {
 
   navContent: INavContent[] = this.navContentFactoryService.getNavContent();
   lastName: string = this.socialMediaFactoryService.getLastName();
-  @ViewChild('navbar', { static: false }) navbarElement: ElementRef =
-    {} as ElementRef;
 
   /**
    * HostListener event to capture window width in order to inactive Hamburger icon menu
@@ -53,23 +43,5 @@ export class HeaderComponent implements OnInit {
 
   toggleHamburger(): void {
     this.navMenuToggleService.toggleMode();
-  }
-
-  ngOnInit(): void {
-    Observer.create({
-      type: 'scroll',
-      onDown: () =>
-        gsap.to(this.navbarElement.nativeElement, {
-          duration: 0.3,
-          ease: 'power2.out',
-          y: '-100%',
-        }),
-      onUp: () =>
-        gsap.to(this.navbarElement.nativeElement, {
-          duration: 0.3,
-          ease: 'power2.out',
-          y: '0',
-        }),
-    });
   }
 }
