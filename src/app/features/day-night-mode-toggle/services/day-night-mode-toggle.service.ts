@@ -49,7 +49,7 @@ export class DayNightModeToggleService {
    * Function to mutate the currentMode
    * @param mode Mode
    */
-  private updateCurrentMode(mode: Mode) {
+  private updateCurrentMode(mode: Mode): void {
     this.currentMode = mode;
     this.modeChangedSubject.next(this.currentMode);
     this.modeStorage.save(this.currentMode);
@@ -63,7 +63,7 @@ export class DayNightModeToggleService {
    * 3 - If device theme is dark, set the init value to `dark`
    * 4 - Else set the default value to `light`
    */
-  private init() {
+  private init(): void {
     const deviceMode = window.matchMedia('(prefers-color-scheme: dark)');
     let initMode = this.modeStorage.get();
     if (!initMode) {
@@ -77,7 +77,7 @@ export class DayNightModeToggleService {
    * Function that toggles the mode
    * Exposed publicly
    */
-  toggleMode() {
+  toggleMode(): void {
     this.document.body.classList.toggle(Mode.LIGHT);
     this.document.body.classList.toggle(Mode.DARK);
     if (this.currentMode === Mode.LIGHT) {

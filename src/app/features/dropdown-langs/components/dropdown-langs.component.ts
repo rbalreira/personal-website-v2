@@ -1,11 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { gsap } from 'gsap';
+import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
 import { Observer } from 'gsap/all';
 
 import { LangsFactoryService } from '@app/shared/services/langs/langs-factory.service';
-import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
+import { DropdownLangsService } from './dropdown-langs.service';
 
 @Component({
   selector: 'app-dropdown-langs',
@@ -16,7 +16,7 @@ export class DropdownLangsComponent implements OnInit {
   /**
    * Selected Language shown in Dropdown Langs
    */
-  selectedLang?: string = '';
+  selectedLang: string = '';
   /**
    * Retrieves Dropdown Langs Menu from DOM
    */
@@ -26,12 +26,13 @@ export class DropdownLangsComponent implements OnInit {
   constructor(
     public translateService: TranslateService,
     private langsFactoryService: LangsFactoryService,
+    private dropdownLangsService: DropdownLangsService,
     private route: ActivatedRoute
   ) {}
 
   setLanguage(lang: string): void {
     this.translateService.use(lang);
-    this.selectedLang = lang;
+    this.dropdownLangsService.changeLang(lang);
   }
 
   ngOnInit(): void {
@@ -39,7 +40,11 @@ export class DropdownLangsComponent implements OnInit {
       this.route.snapshot.paramMap.get('lang')
     );
 
-    this.selectedLang = langRoute.lang;
+    this.dropdownLangsService.changeLang(langRoute.lang);
+
+    this.dropdownLangsService.langChanged$.subscribe((value) => {
+      this.selectedLang = value;
+    });
 
     /**
      * A GSAP Observer to close Dropdown Langs Menu when user scrolls in down direction

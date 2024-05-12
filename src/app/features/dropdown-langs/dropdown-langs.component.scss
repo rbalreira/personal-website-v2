@@ -10,11 +10,13 @@
   &-menu {
     min-width: 1rem;
     margin: 0;
-    animation-duration: 0.5s;
-    animation-name: slideIn;
-
     box-shadow: var(--navbar-dropdown-langs-menu-box-shadow);
     background-color: var(--navbar-dropdown-langs-menu-bg-color);
+
+    @include a.respond-to("extra-small") {
+      animation-duration: 0.5s;
+      animation-name: slideIn;
+    }
 
     .dropdown-item {
       @include a.transition-ease-in-out();

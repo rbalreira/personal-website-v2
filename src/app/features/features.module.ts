@@ -27,6 +27,7 @@ import {
   MODE_STORAGE_SERVICE,
 } from './day-night-mode-toggle/services/day-night-mode-storage.service';
 import { DayNightModeToggleService } from './day-night-mode-toggle/services/day-night-mode-toggle.service';
+import { DropdownLangsService } from './dropdown-langs/components/dropdown-langs.service';
 
 import { AboutMeComponent } from './about-me/components/about-me.component';
 import { DayNightModeToggleComponent } from './day-night-mode-toggle/components/day-night-mode-toggle.component';
@@ -89,6 +90,7 @@ import { ContactComponent } from './contact/components/contact.component';
     provideNgIconsConfig({
       size: '2em',
     }),
+    DropdownLangsService,
   ],
 })
 export class FeaturesModule {}
