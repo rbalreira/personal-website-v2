@@ -29,7 +29,11 @@
   &-content {
     position: relative;
     left: 0;
-    top: 25%;
+    top: 17%;
+
+    @include a.respond-to("extra-small") {
+      top: 25%;
+    }
 
     a {
       color: var(--navbar-menu-text-color);
