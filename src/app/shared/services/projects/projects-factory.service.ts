@@ -14,14 +14,27 @@ export class ProjectsFactoryService {
         name: 'PROJECTS.0.NAME',
         description: 'PROJECTS.0.DESCRIPTION',
         site: 'https://mafirol.pt/',
-        stack: ['.NET Core', 'C#', 'React', 'SCSS', 'Microsoft SQL Server'],
+        stack: [
+          '.NET Core',
+          'C#',
+          'React',
+          'SCSS',
+          'Bootstrap',
+          'Microsoft SQL Server',
+        ],
       },
       {
         name: 'PROJECTS.1.NAME',
         description: 'PROJECTS.1.DESCRIPTION',
-        github: this.socialMediaFactoryService.getPortfolioWebsite(),
-        site: '/',
-        stack: ['Angular', 'SCSS', 'GSAP'],
+        github: this.socialMediaFactoryService.getPersonalWebsite(),
+        stack: ['Angular', 'SCSS', 'Bootstrap', 'GSAP'],
+      },
+      {
+        name: 'PROJECTS.2.NAME',
+        description: 'PROJECTS.2.DESCRIPTION',
+        github: 'https://github.com/rbalreira/personal-website-v1',
+        site: 'https://rbalreira.github.io/personal-website-v1/',
+        stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript'],
       },
     ];
   }

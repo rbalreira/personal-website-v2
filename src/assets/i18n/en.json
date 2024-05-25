@@ -70,8 +70,12 @@
             "DESCRIPTION": "A responsive Web application with internationalization built in one of my job experiences. <u>The application may change or be down.</u>"
         },
         {
-            "NAME": "Personal Website",
-            "DESCRIPTION": "A responsive website single page with internationalization and Dark/Light Mode."
+            "NAME": "Personal Website v2",
+            "DESCRIPTION": "Second responsive personal website single page with internationalization and Dark/Light Mode."
+        },
+        {
+            "NAME": "Personal Website v1",
+            "DESCRIPTION": "First responsive personal website single page."
         }
     ],
     "ABOUT": {
@@ -87,7 +91,7 @@
     },
     "CONTACT": {
         "SUBTITLE": "Hit me up!",
-        "DESCRIPTION": "In case you have questions, comments or suggestions, I'll try my best to get back to you!",
+        "DESCRIPTION": "In case you have questions, comments or suggestions, feel free to reach me!",
         "BUTTON": "Say Hello"
     },
     "FOOTER": {

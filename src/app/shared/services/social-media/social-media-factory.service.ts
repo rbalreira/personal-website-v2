@@ -8,8 +8,8 @@ export class SocialMediaFactoryService {
   constructor() {}
 
   private github: string = 'https://github.com/rbalreira';
-  private portfolioWebsite: string =
-    'https://github.com/rbalreira/portfolio-website';
+  private personalWebsite: string =
+    'https://github.com/rbalreira/personal-website-v2';
   private email: string = 'rbalreira@outlook.com';
   private firstName: string = 'Ricardo';
   private lastName: string = 'Balreira';
@@ -37,8 +37,8 @@ export class SocialMediaFactoryService {
     return this.email;
   }
 
-  getPortfolioWebsite(): string {
-    return this.portfolioWebsite;
+  getPersonalWebsite(): string {
+    return this.personalWebsite;
   }
 
   getFirstName() {

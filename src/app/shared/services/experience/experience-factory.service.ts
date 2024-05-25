@@ -46,6 +46,7 @@ export class ExperienceFactoryService {
           'C#',
           'React',
           'SCSS',
+          'Bootstrap',
           'Microsoft SQL Server',
           'Nginx',
           'Docker',

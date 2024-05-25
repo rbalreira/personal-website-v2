@@ -70,8 +70,12 @@
             "DESCRIPTION": "Uma aplicação Web responsiva com internacionalização desenvolvida numa das minhas experiências profissionais. <u>Poderá ocorrer uma mudança na aplicação ou esta ficar em baixo.</u>"
         },
         {
-            "NAME": "Website Pessoal",
-            "DESCRIPTION": "Um website single page responsivo com internacionalização e temas de cores escuro/claro."
+            "NAME": "Website Pessoal v2",
+            "DESCRIPTION": "Segundo website pessoal single page responsivo com internacionalização e temas de cores escuro/claro."
+        },
+        {
+            "NAME": "Website Pessoal v1",
+            "DESCRIPTION": "Primeiro website pessoal single page responsivo."
         }
     ],
     "ABOUT": {
@@ -87,7 +91,7 @@
     },
     "CONTACT": {
         "SUBTITLE": "Dá-me um toque!",
-        "DESCRIPTION": "Se surgirem questões, comentários ou sugestões, farei o possível para responder de volta!",
+        "DESCRIPTION": "Se surgirem questões, comentários ou sugestões, não hesite em me contactar!",
         "BUTTON": "Diz olá"
     },
     "FOOTER": {

@@ -13,12 +13,10 @@ export class TechStackFactoryService {
       {
         stack: [
           {
-            name: '.NET Core',
             icon: 'simpleDotnet',
             class: 'dotnet',
           },
           {
-            name: 'C#',
             icon: 'simpleCsharp',
             class: 'csharp',
           },
@@ -27,12 +25,10 @@ export class TechStackFactoryService {
       {
         stack: [
           {
-            name: 'React',
             icon: 'simpleReact',
             class: 'react',
           },
           {
-            name: 'Angular',
             icon: 'simpleAngular',
             class: 'angular',
           },
@@ -41,12 +37,10 @@ export class TechStackFactoryService {
       {
         stack: [
           {
-            name: 'JavaScript',
             icon: 'simpleJavascript',
             class: 'javascript',
           },
           {
-            name: 'TypeScript',
             icon: 'simpleTypescript',
             class: 'typescript',
           },
@@ -55,12 +49,10 @@ export class TechStackFactoryService {
       {
         stack: [
           {
-            name: 'Sass',
             icon: 'simpleSass',
             class: 'sass',
           },
           {
-            name: 'CSS',
             icon: 'simpleCss3',
             class: 'css3',
           },
