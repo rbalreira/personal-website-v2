@@ -10,7 +10,7 @@
 <img src="src/assets/imgs/avatar.jpg" alt="Logo" width="80" height="80" />
   <h3 align="center">balreira.dev | v2</h3>
   <p align="center">
-     The second iteration of <a href="https://balreira.com/" target="_blank">balreira.dev</a> built with <a href="https://angular.io/" target="_blank">Angular</a>, <a href="https://sass-lang.com/" target="_blank">SCSS</a>, <a href="https://ng-bootstrap.github.io/" target="_blank">Bootstrap</a>, <a href="https://gsap.com/" target="_blank">GSAP</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+     The second iteration of <a href="https://rbalreira.com/" target="_blank">balreira.dev</a> built with <a href="https://angular.io/" target="_blank">Angular</a>, <a href="https://sass-lang.com/" target="_blank">SCSS</a>, <a href="https://ng-bootstrap.github.io/" target="_blank">Bootstrap</a>, <a href="https://gsap.com/" target="_blank">GSAP</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
   </p>
   <p align="center">
   Previous iterations:
@@ -135,7 +135,7 @@ Ricardo Balreira - [LinkedIn][linkedin-url] - rbalreira@outlook.com
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/rbalreira/
 [project-preview]: src/assets/imgs/project-preview.gif
-[project-url]: https://balreira.com/
+[project-url]: https://rbalreira.com/
 [Angular]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
 [Angular-url]: https://angular.io/
 [SCSS]: https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=Sass&logoColor=white
