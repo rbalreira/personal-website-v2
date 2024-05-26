@@ -1,12 +1,11 @@
 @use "abstracts" as a;
 
 a {
-  display: inline-block;
-  width: auto;
-  color: var(--footer-text-color);
+  font-family: var(--footer-text-link-hover-font-family);
+  color: var(--footer-text-link-color);
   @include a.transition-ease-in-out();
 
   &:hover {
-    color: var(--footer-text-hover-color);
+    color: var(--footer-text-link-hover-color);
   }
 }

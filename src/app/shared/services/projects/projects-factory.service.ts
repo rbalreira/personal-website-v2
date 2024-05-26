@@ -26,7 +26,7 @@ export class ProjectsFactoryService {
       {
         name: 'PROJECTS.1.NAME',
         description: 'PROJECTS.1.DESCRIPTION',
-        github: this.socialMediaFactoryService.getPersonalWebsite(),
+        github: this.socialMediaFactoryService.getRepositoryUrl(),
         stack: ['Angular', 'SCSS', 'Bootstrap', 'GSAP'],
       },
       {

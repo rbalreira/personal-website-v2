@@ -128,8 +128,9 @@ $contact-title-font-family_light: "OpenSans-Medium";
 /* end contact theme */
 
 /* footer theme */
-$footer-text-color_light: $text-color_light;
-$footer-text-hover-color_light: $text-hover-color_light;
+$footer-text-link-color_light: $section-title-color_light;
+$footer-text-link-hover-color_light: $text-hover-color_light;
+$footer-text-link-hover-font-family_light: "OpenSans-Bold";
 /* end footer theme */
 
 /* button theme */
@@ -288,8 +289,9 @@ $not-found-title-font-family_light: "Poppins-SemiBold";
   /* end contact theme */
 
   /* footer theme */
-  --footer-text-color: #{$footer-text-color_light};
-  --footer-text-hover-color: #{$text-hover-color_light};
+  --footer-text-link-color: #{$footer-text-link-color_light};
+  --footer-text-link-hover-color: #{$footer-text-link-hover-color_light};
+  --footer-text-link-hover-font-family: #{$footer-text-link-hover-font-family_light};
   /* end footer theme */
 
   /* button theme */

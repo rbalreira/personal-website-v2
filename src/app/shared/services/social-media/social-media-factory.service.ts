@@ -8,8 +8,12 @@ export class SocialMediaFactoryService {
   constructor() {}
 
   private github: string = 'https://github.com/rbalreira';
-  private personalWebsite: string =
+  private linkedin: string = 'https://www.linkedin.com/in/rbalreira/';
+  private repositoryUrl: string =
     'https://github.com/rbalreira/personal-website-v2';
+  private creativeCommonsLicenseUrl: string =
+    'https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1';
+  private creativeCommonsLicense: string = 'CC BY-NC 4.0';
   private email: string = 'rbalreira@outlook.com';
   private firstName: string = 'Ricardo';
   private lastName: string = 'Balreira';
@@ -24,7 +28,7 @@ export class SocialMediaFactoryService {
       {
         name: 'LinkedIn',
         icon: 'bootstrapLinkedin',
-        link: 'https://www.linkedin.com/in/rbalreira/',
+        link: this.getLinkedinSocialMedia(),
       },
     ];
   }
@@ -33,23 +37,35 @@ export class SocialMediaFactoryService {
     return this.github;
   }
 
+  getLinkedinSocialMedia(): string {
+    return this.linkedin;
+  }
+
   getEmailSocialMedia(): string {
     return this.email;
   }
 
-  getPersonalWebsite(): string {
-    return this.personalWebsite;
+  getRepositoryUrl(): string {
+    return this.repositoryUrl;
   }
 
-  getFirstName() {
+  getCreativeCommonsLicenseUrl(): string {
+    return this.creativeCommonsLicenseUrl;
+  }
+
+  getCreativeCommonsLicense(): string {
+    return this.creativeCommonsLicense;
+  }
+
+  getFirstName(): string {
     return this.firstName;
   }
 
-  getLastName() {
+  getLastName(): string {
     return this.lastName;
   }
 
-  getFullName() {
+  getFullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 }

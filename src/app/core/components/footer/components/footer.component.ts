@@ -10,5 +10,11 @@ import { SocialMediaFactoryService } from '@app/shared/services/social-media/soc
 export class FooterComponent {
   constructor(private socialMediaFactoryService: SocialMediaFactoryService) {}
 
-  portfolioWebsite = this.socialMediaFactoryService.getPersonalWebsite();
+  portfolioWebsite: string = this.socialMediaFactoryService.getRepositoryUrl();
+  linkedin: string = this.socialMediaFactoryService.getLinkedinSocialMedia();
+  fullName: string = this.socialMediaFactoryService.getFullName();
+  creativeCommonsLicenseUrl: string =
+    this.socialMediaFactoryService.getCreativeCommonsLicenseUrl();
+  creativeCommonsLicense: string =
+    this.socialMediaFactoryService.getCreativeCommonsLicense();
 }
