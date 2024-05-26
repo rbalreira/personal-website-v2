@@ -1,14 +1,22 @@
-<app-social-media-footer></app-social-media-footer>
-<div class="text-center mt-4">
-    <p class="pt-0 pb-0">
-        <a href="{{portfolioWebsite}}" target="_blank">
-            {{'FOOTER.DISCLAIMER' | translate}}
-        </a>
-    </p>
-    <p class="pt-0 pb-0">
-        {{'FOOTER.WORK_TITLE' | translate}} © 2024 {{'FOOTER.BY' |
-        translate}}
-        <a href="{{linkedin}}" target="_blank">{{fullName}}</a> {{'FOOTER.LICENSED' | translate}} <a
-            href="{{creativeCommonsLicenseUrl}}" target="_blank">{{creativeCommonsLicense}}</a>
-    </p>
+<div class="container">
+    <div class="row text-center justify-content-center">
+        <div class="col-12 mb-3">
+            <app-social-media-footer></app-social-media-footer>
+        </div>
+        <div class="col-12">
+            <p class="mb-2">
+                <a href="{{portfolioWebsite}}" target="_blank">
+                    {{'FOOTER.DISCLAIMER' | translate}}
+                </a>
+            </p>
+        </div>
+        <div class="col-12 col-md-9 col-lg-6">
+            <p>
+                {{'FOOTER.WORK_TITLE' | translate}} © 2024 {{'FOOTER.BY' |
+                translate}}
+                <a href="{{linkedin}}" target="_blank">{{fullName}}</a> {{'FOOTER.LICENSED' | translate}} <a
+                    href="{{creativeCommonsLicenseUrl}}" target="_blank">{{creativeCommonsLicense}}</a>
+            </p>
+        </div>
+    </div>
 </div>
