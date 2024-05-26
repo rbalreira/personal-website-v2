@@ -95,7 +95,10 @@
         "BUTTON": "Diz olá"
     },
     "FOOTER": {
-        "DISCLAIMER": "Desenhado e desenvolvido por Ricardo Balreira"
+        "DISCLAIMER": "Desenhado e desenvolvido por Ricardo Balreira",
+        "WORK_TITLE": "Website Pessoal",
+        "BY": "por",
+        "LICENSED": "está licenciado sob"
     },
     "NOTFOUND": {
         "ERROR": "Erro",

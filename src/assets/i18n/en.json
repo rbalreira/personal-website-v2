@@ -95,7 +95,10 @@
         "BUTTON": "Say Hello"
     },
     "FOOTER": {
-        "DISCLAIMER": "Designed & Built by Ricardo Balreira"
+        "DISCLAIMER": "Designed & Built by Ricardo Balreira",
+        "WORK_TITLE": "Personal Website",
+        "BY": "by",
+        "LICENSED": "is licensed under"
     },
     "NOTFOUND": {
         "ERROR": "Error",
