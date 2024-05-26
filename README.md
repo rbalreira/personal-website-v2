@@ -70,7 +70,8 @@
 
 ## Getting Started
 
-This project was generated with [Angular CLI][Angular-CLI-url] version 16.1.1.<br />To get a local copy up and running follow these simple example steps.
+This project was generated with [Angular CLI][Angular-CLI-url] version 16.1.1.<br />
+To get a local copy up and running follow these simple example steps:
 
 ### Clone the repo
 
