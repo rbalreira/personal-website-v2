@@ -111,7 +111,7 @@ Navigate to `http://localhost:4200/`.
 In case you want to generate a production build (<u>you might need to update your [Node.js][Node.js-url] version first</u>).
 
 ```shell
-ng build --prod
+ng build
 ```
 
 This will generate <b>minification</b> code in "dist" folder. Then you have to upload the file content of this "dist" folder.
