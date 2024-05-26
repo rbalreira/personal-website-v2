@@ -90,9 +90,9 @@
         }
     },
     "CONTACT": {
-        "SUBTITLE": "Dá-me um toque!",
-        "DESCRIPTION": "Se surgirem questões, comentários ou sugestões, não hesite em me contactar!",
-        "BUTTON": "Diz olá"
+        "SUBTITLE": "Dê-me um toque!",
+        "DESCRIPTION": "Se surgirem questões, comentários ou sugestões, não hesite em contactar-me!",
+        "BUTTON": "Diga olá"
     },
     "FOOTER": {
         "DISCLAIMER": "Desenhado e desenvolvido por Ricardo Balreira",
@@ -102,7 +102,7 @@
     },
     "NOTFOUND": {
         "ERROR": "Erro",
-        "MESSAGE": "Subestimaste o poder do átomo das trevas",
+        "MESSAGE": "O poder do átomo das trevas foi subestimado",
         "BUTTON": "Voltar"
     }
 }
