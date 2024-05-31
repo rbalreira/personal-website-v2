@@ -122,7 +122,7 @@ This will generate <b>minification</b> code in "dist" folder. Then you have to u
 
 ## License
 
-Distributed under the CC BY-NC 4.0 License. See [Creative Commons License][License-url] for more information.
+Distributed under the [CC BY-NC 4.0][License-url] License.
 
 <!-- CONTACT -->
 
