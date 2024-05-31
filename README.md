@@ -122,7 +122,7 @@ This will generate <b>minification</b> code in "dist" folder. Then you have to u
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the CC BY-NC 4.0 License. See [Creative Commons License][License-url] for more information.
 
 <!-- CONTACT -->
 
@@ -146,3 +146,4 @@ Ricardo Balreira - [LinkedIn][linkedin-url] - rbalreira@outlook.com
 [GSAP-url]: https://gsap.com/
 [Angular-CLI-url]: https://github.com/angular/angular-cli
 [Node.js-url]: https://nodejs.org/en
+[License-url]: https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1
