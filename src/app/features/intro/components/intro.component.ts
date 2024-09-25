@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { ITechStack } from '@app/shared/models/tech-stack.interface';
 

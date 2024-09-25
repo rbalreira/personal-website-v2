@@ -13,6 +13,10 @@ export class TechStackFactoryService {
       {
         stack: [
           {
+            icon: 'simplePython',
+            class: 'python',
+          },
+          {
             icon: 'simpleDotnet',
             class: 'dotnet',
           },

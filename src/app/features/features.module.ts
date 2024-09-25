@@ -12,6 +12,7 @@ import {
   bootstrapFolder2Open,
 } from '@ng-icons/bootstrap-icons';
 import {
+  simplePython,
   simpleDotnet,
   simpleCsharp,
   simpleReact,
@@ -61,6 +62,7 @@ import { ContactComponent } from './contact/components/contact.component';
       bootstrapLink45deg,
       bootstrapPinFill,
       bootstrapFolder2Open,
+      simplePython,
       simpleDotnet,
       simpleCsharp,
       simpleReact,

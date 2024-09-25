@@ -79,6 +79,10 @@
       }
 
       ng-icon {
+        &.python {
+          color: var(--intro-icons-python-color);
+        }
+
         &.dotnet {
           color: var(--intro-icons-dotnet-color);
         }

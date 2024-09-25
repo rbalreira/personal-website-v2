@@ -77,6 +77,7 @@ $intro-stack-title-font-family_light: "Poppins-Regular";
 $intro-stack-title-color_light: $navbar-items-color_light;
 $intro-stack-border-bottom-color_light: $section-cosmetic-content-title-color_light;
 // icons
+$intro-icons-python-color_light: f.light-color(blue, light);
 $intro-icons-dotnet-color_light: $section-title-color_light;
 $intro-icons-csharp-color_light: f.light-color(purple, darker);
 $intro-icons-go-color_light: f.light-color(blue, lighter);
@@ -238,6 +239,7 @@ $not-found-title-font-family_light: "Poppins-SemiBold";
   --intro-stack-title-color: #{$intro-stack-title-color_light};
   --intro-stack-border-bottom-color: #{$intro-stack-border-bottom-color_light};
   // icons
+  --intro-icons-python-color: #{$intro-icons-python-color_light};
   --intro-icons-dotnet-color: #{$intro-icons-dotnet-color_light};
   --intro-icons-csharp-color: #{$intro-icons-csharp-color_light};
   --intro-icons-go-color: #{$intro-icons-go-color_light};
